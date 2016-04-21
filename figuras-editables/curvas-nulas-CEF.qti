@@ -1,0 +1,456 @@
+QtiPlot 0.9.7 project file
+<scripting-lang>	muParser
+<windows>	1
+<multiLayer>
+Graph1	1	1	07-11-08 11:43
+geometry	434	0	521	556	active
+WindowLabel		2
+Margins	5	5	5	5
+Spacing	5	5
+LayerCanvasSize	1045	447
+Alignement	0	0
+<graph>
+ggeometry	2	5	506	496
+PlotTitle	Curvas radiales nulas	#000000	4228
+<Antialiasing>1</Antialiasing>
+Background	#ffffff	255
+Margin	0
+Border	0	#000000
+grid	0	0	0	0	#0000ff	0	0.5	#a0a0a4	2	0.4	#0000ff	0	0.5	#a0a0a4	2	0.4	0	0	2	0	0
+EnabledAxes	1	0	1	0	
+AxesTitles	r/m	(c/m) t 	 	 	
+AxesTitleColors	#000000	#000000	#000000	#000000	
+AxesTitleAlignment	4	4	4	4
+AxesTitleDistance	2	-1	2	-1
+TitleFont	Sans Serif	15	75	0	0	0
+ScaleFont0	Times New Roman	19	50	1	0	0
+ScaleFont1	Sans Serif	13	75	0	0	0
+ScaleFont2	Times New Roman	19	50	1	0	0
+ScaleFont3	Sans Serif	13	75	0	0	0
+AxisFont0	Sans Serif	13	50	0	0	0
+AxisFont1	Sans Serif	13	50	0	0	0
+AxisFont2	Sans Serif	13	50	0	0	0
+AxisFont3	Sans Serif	13	50	0	0	0
+EnabledTickLabels	0	1	1	1	
+AxesColors	#000000	#000000	#000000	#000000
+AxesNumberColors	#000000	#000000	#000000	#000000
+AxesBaseline	0	0	0	0	
+CanvasBackground	#ffffff	255
+<Function>
+<Type>0</Type>
+<Title>F2</Title>
+<Expression>-(x-4)</Expression>
+<Variable>x</Variable>
+<Range>0	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F1</Title>
+<Expression>-(x-6)</Expression>
+<Variable>x</Variable>
+<Range>0	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F4</Title>
+<Expression>-(x-8)</Expression>
+<Variable>x</Variable>
+<Range>0	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F5</Title>
+<Expression>-(x-10)</Expression>
+<Variable>x</Variable>
+<Range>0	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F3</Title>
+<Expression>20+(x-(10)+4*ln((x-2)/(10-2)))</Expression>
+<Variable>x</Variable>
+<Range>2.01	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F6</Title>
+<Expression>15+(x-(10)+4*ln((x-2)/(10-2)))</Expression>
+<Variable>x</Variable>
+<Range>2.01	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F7</Title>
+<Expression>10+(x-(10)+4*ln((x-2)/(10-2)))</Expression>
+<Variable>x</Variable>
+<Range>2.01	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F8</Title>
+<Expression>5+(x-(10)+4*ln((x-2)/(10-2)))</Expression>
+<Variable>x</Variable>
+<Range>2.01	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F9</Title>
+<Expression>-(x-12)</Expression>
+<Variable>x</Variable>
+<Range>0	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F10</Title>
+<Expression>-(x-14)</Expression>
+<Variable>x</Variable>
+<Range>0	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F11</Title>
+<Expression>-(x-16)</Expression>
+<Variable>x</Variable>
+<Range>0	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#000000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F15</Title>
+<Expression>0+(x-(0.5)+4*ln((x-2)/(0.5-2)))</Expression>
+<Variable>x</Variable>
+<Range>0.01	1.99</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F16</Title>
+<Expression>0+(x-(1)+4*ln((x-2)/(1-2)))</Expression>
+<Variable>x</Variable>
+<Range>0.01	1.99</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F17</Title>
+<Expression>0+(x-(1.5)+4*ln((x-2)/(1.5-2)))</Expression>
+<Variable>x</Variable>
+<Range>0.01	1.99</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F18</Title>
+<Expression>0+(x-(1.7)+4*ln((x-2)/(1.7-2)))</Expression>
+<Variable>x</Variable>
+<Range>0.01	1.99</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F19</Title>
+<Expression>0+(x-(1.8)+4*ln((x-2)/(1.8-2)))</Expression>
+<Variable>x</Variable>
+<Range>0.01	1.99</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F20</Title>
+<Expression>0+(x-(1.93)+4*ln((x-2)/(1.93-2)))</Expression>
+<Variable>x</Variable>
+<Range>0.01	1.99</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F12</Title>
+<Expression>0+(x-(1.99)+4*ln((x-2)/(1.99-2)))</Expression>
+<Variable>x</Variable>
+<Range>0.01	1.999</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F13</Title>
+<Expression>25+(x-(10)+4*ln((x-2)/(10-2)))</Expression>
+<Variable>x</Variable>
+<Range>2.01	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+<Function>
+<Type>0</Type>
+<Title>F14</Title>
+<Expression>50+(x-(10)+4*ln((x-2)/(10-2)))</Expression>
+<Variable>x</Variable>
+<Range>2.00001	10</Range>
+<Points>1000</Points>
+<Style>0</Style>
+<LineStyle>1</LineStyle>
+<Pen>
+	<Color>#ff0000</Color>
+	<Style>0</Style>
+	<Width>2</Width>
+</Pen>
+<xAxis>2</xAxis>
+<yAxis>0</yAxis>
+<Visible>1</Visible>
+</Function>
+scale	0	0	10	0	11	5	0	0
+scale	1	0	10	0	8	5	0	0
+scale	2	0	10	0	8	5	0	0
+scale	3	0	10	0	8	5	0	0
+LabelsFormat	0	4	0	4	0	4	0	4	
+AxisType	0	0	0	0	
+MajorTicks	1	1	1	1	
+MinorTicks	1	1	1	1	
+TicksLength	5	9
+DrawAxesBackbone	1
+AxesLineWidth	1
+LabelsRotation	0	0
+<line>	1.76600441501104	8.74074074074074	1.76600441501104	8.74074074074074	1	#000000	SolidLine	0	0	4	45	1</line>
+<line>	8.47682119205298	5.80246913580247	8.16777041942605	6.88888888888889	1	#000000	SolidLine	1	0	4	45	1</line>
+<line>	6.42384105960265	1.92592592592593	6.86534216335541	2.83950617283951	1	#000000	SolidLine	1	0	4	45	1</line>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>7.5938189845475</x>
+<y>5.8271604938272</y>
+<right>9.5364238410596</right>
+<bottom>5.03703703703704</bottom>
+<Text>
+salientes
+</Text>
+<Font>Sans Serif	12	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+<Legend>
+<Frame>0</Frame>
+<Color>#000000</Color>
+<FrameWidth>1</FrameWidth>
+<LineStyle>0</LineStyle>
+<x>5.2317880794702</x>
+<y>2</y>
+<right>7.35099337748344</right>
+<bottom>1.20987654320988</bottom>
+<Text>
+entrantes
+</Text>
+<Font>Sans Serif	12	50	0	0	0</Font>
+<TextColor>#000000</TextColor>
+<Background>#ffffff</Background>
+<Alpha>0</Alpha>
+<Angle>0</Angle>
+<AutoUpdate>0</AutoUpdate>
+<TeXOutput>0</TeXOutput>
+</Legend>
+</graph>
+</multiLayer>
+<open>1</open>
