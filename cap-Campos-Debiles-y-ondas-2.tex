@@ -507,30 +507,33 @@ Esta predicci'on fue testeada por primera vez con el pulsar binario de Hulse y T
 \end{figure}
 \end{center}
 
-\begin{align}
-\frac{da}{dt} &= -\frac{64}{5}\frac{G^3\mu M^2}{c^5a^3}\frac{1}{\left(1-e^2\right)^{7/2}}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right) ,\\
-\frac{de}{dt} &= -\frac{304}{15}\frac{G^3\mu M^2}{c^5a^4}\frac{e}{\left(1-e^2\right)^{5/2}}\left(1+\frac{121}{304}e^2\right).
-\end{align}
 
-Introduciendo la escala de distancias $R_\ast:=GM/c^2$ podemos escribir las ecuaciones anteriores en t'erminos de la cantidad adimensional $\bar{a}:=a/R_\ast$ y el tiempo adimensional $\bar{t}:=ct/R_\ast$:
-%\begin{equation}
-%R_\ast^3=4G^3\mu M^2/c^6
-%\end{equation}
-%\begin{align}
-%\frac{d\tilde{a}}{d\tilde{t}} &= -\frac{16}{5}\frac{1}{\tilde{a}^3}\frac{1}{\left(1-e^2\right)^{7/2}}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right) ,\\
-%\frac{de}{d\tilde{t}} &= -\frac{76}{15}\frac{1}{\tilde{a}^4}\frac{e}{\left(1-e^2\right)^{5/2}}\left(1+\frac{121}{304}e^2\right) .
-%\end{align}
 \begin{align}
-\frac{d\bar{a}}{d\bar{t}}=&-\frac{64}{5}\frac{\nu}{\bar{a}^3}\frac{1}{(1-e^2)^{7/2}}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right),\\
-\frac{de}{d\bar{t}}=&-\frac{304}{15}\frac{\nu}{\bar{a}^4}\frac{e}{(1-e^2)^{5/2}}\left(1+\frac{121}{304}e^2\right),
+\frac{da}{dt} &= -\frac{64}{5}\frac{G^3\mu M^2}{c^5a^3}\frac{1}{\left(1-e^2\right)^{7/2}}\left(1+\frac{73}{24}e^2+\frac{37}{96}e^4\right) \label{dadt},\\
+\frac{de}{dt} &= -\frac{304}{15}\frac{G^3\mu M^2}{c^5a^4}\frac{e}{\left(1-e^2\right)^{5/2}}\left(1+\frac{121}{304}e^2\right). \label{dedt}
 \end{align}
-con $\nu:=\mu/M$.
 
 En el caso de una 'orbita circular, $e=0$, la ecuaci'on se reduce a
 \begin{equation}
 \frac{da}{dt} = -\frac{64}{5}\frac{G^3\mu M^2}{c^5a^3},
 \end{equation}
 cuya soluci'on es...
+\begin{equation}
+a(t) = \left[a_0^4-\frac{256}{5}\frac{G^3\mu M^2}{c^5}(t-t_0)\right]^{1/4}.
+\end{equation}
+
+Dividiendo las ecuaciones \eqref{dadt} \eqref{dedt} para $\dot{a}$ y $\dot{e}$ podemos eliminar el tiempo de estas expresiones y encontrar una ecuaci'on que relaciona directamente $a$ con $e$:
+\begin{equation}
+\frac{da}{de}=\frac{12}{19}a\frac{1+(73/24)e^2+(37/96)e^4}{e(1-e^2)[1+(121/304)e^2]}.
+\end{equation}
+La soluci'on de esta ecuaci'on es de la forma
+\begin{equation}
+a(e)=a_{0}\frac{g(e)}{g(e_{0})},
+\end{equation}
+con 
+\begin{equation}
+g(e):= \frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304} \right)^{870/2299}.
+\end{equation}
 
 % \section{Ecuaci'on de movimiento para una part'icula de prueba}
 %
