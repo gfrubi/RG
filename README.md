@@ -7,3 +7,4 @@ Esta obra ha sido publicada bajo una [licencia GPL v3](https://github.com/gfrubi
 
 Otros apuntes en https://sites.google.com/site/apuntesdecienciasfisicas
 
+Los notebooks pueden ejecturarse en línea en forma interactiva a través de mybinder.org [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/repo/gfrubi/GR/Notebooks)
