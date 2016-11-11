@@ -22,7 +22,7 @@ Como vemos en la figura \ref{1-1}, sobre cada vecindad $U$ pueden definirse sist
 un conjunto ordenado de n'umeros $x^i=(x^1,\dots ,x^n)$,
 $i,j,\dots =1,\dots ,n$, llamados \textit{coordenadas de} $P$. Se exige que este mapeo uno a
 uno sea continuo, de modo que, cuando $P$ se mueve en $U$, la correspondiente $n$-upla
-($x^1,\dots ,x^n$) se mueve continuamente en un dominio $D$ contenido en $R_n$. Tambi'en se asume que la dimensi'on $n$ del mapeo de puntos de $M$ a $R_n$ es siempre la misma, en la vecindad de cada punto de la variedad.
+($x^1,\dots ,x^n$) se mueve continuamente en un dominio $D$ contenido en $R_n$. Tambi'en se supone que la dimensi'on $n$ del mapeo de puntos de $M$ a $R_n$ es siempre la misma, en la vecindad de cada punto de la variedad.
 \begin{center}
 \begin{figure}[H]
 \centerline{\psfig{file=fig/fig-cambio-coordenadas.pdf,height=6cm,angle=0}}
@@ -726,8 +726,7 @@ espacio que cuenta con una ley para definir distancias.
 \end{quotation}
 
 Sean $x^i $ y $x^i +dx^i $ las coordenadas de dos puntos infinitesimalmente
-cercanos $P$ y $Q$ en una variedad, respecto a un SC $x$. La expresi'on para la distancia $d\ell$ entre estos puntos puede (en principio) ser muy general, pero se exige que sea un escalar, es decir, que su valor sea independiente del sistema coordenado. El caso m'as
-estudiado es el que asume que la distancia entre dichos puntos
+cercanos $P$ y $Q$ en una variedad, respecto a un SC $x$. La expresi'on para la distancia $d\ell$ entre estos puntos puede (en principio) ser muy general, pero se exige que sea un escalar, es decir, que su valor sea independiente del sistema coordenado. El caso m'as estudiado es el que supone que la distancia entre dichos puntos
 est'a dada por una expresi'on de la forma:
 \begin{equation}\marginnote{m'etrica y elem. de l'inea}
 \boxed{d\ell^2:= g_{ij}(x)dx^i dx^j ,} \label{g1}
@@ -878,7 +877,7 @@ Se define la \textbf{geod'esica} como la curva \textit{de longitud m'inima  (ext
 
 Si $\cal C$ es una curva representada param'etricamente por
 $x^i =x^i (\lambda)$, entonces $\cal C$ es una geod'esica entre $P$ y $Q$ si y
-s'olo si\footnote{Asumimos, por simplicidad, pero sin perder generalidad, que el par'ametro $\lambda$ \textit{crece} desde $P$ a $Q$, de modo que en la integral $d\lambda>0$.}
+s'olo si\footnote{Suponemos, por simplicidad, pero sin perder generalidad, que el par'ametro $\lambda$ \textit{crece} desde $P$ a $Q$, de modo que en la integral $d\lambda>0$.}
 \begin{equation}
 L=\int_P^Qd\ell= \int_P^Q\sqrt{g_{ij}(x(\lambda))dx^idx^j}=\int_{\lambda i}^{\lambda_{f}}\sqrt{g_{ij}(x(\lambda))\frac{dx^i}{d\lambda}\frac{dx^j }{d\lambda}}\, d\lambda \label{gm1}
 \end{equation}
@@ -1291,7 +1290,7 @@ $\partial_iA_j=0$, pues esta condici'on no es independiente del SC usado. De hec
 
 \textbf{Definici'on:} Llamamos \textbf{conexi'on}\footnote{Tambi'en llamada \textbf{conexi'on af'in} o \textbf{afinidad}.}, $\Gamma$, \textit{a un arreglo de} $n^3$ \textit{cantidades definidas en cada punto de la variedad para las cuales:}
 \begin{itemize}
-\item Asumimos un conjunto de valores dados en cada SC particular y,
+\item Suponemos un conjunto de valores dados en cada SC particular y,
 \item Cambian sus valores bajo una TGC de acuerdo a la siguiente ley de transformaci'on:
 \begin{equation}\marginnote{Conexi'on}
 \bar{\Gamma}_{\ jk}^i=\frac{\partial\bar{x}^i}{\partial x^l }\frac{\partial
@@ -1308,7 +1307,7 @@ A partir de una conexi'on y de un campo vectorial (covariante) es posible defini
 El tensor $\nabla_iA_j$ es llamado la \textbf{derivada covariante} de $A_j$ \textit{con respecto a la conexi'on} $\Gamma$. Se debe notar que $\Gamma$ est'a definida \textit{sobre} nuestra variedad y puede ser concebida,\textit{ en general}, como un objeto geom'etrico \textit{no necesariamente relacionado con una  m'etrica}.
 
 
-Es simple verificar a partir de \eqref{ord2} y \eqref{dinv6} que $\nabla_iA_j$ es efectivamente covariante (es decir, un tensor), si asumimos que las componentes de $\Gamma$ transforman de acuerdo a \eqref{dinv72}.
+Es simple verificar a partir de \eqref{ord2} y \eqref{dinv6} que $\nabla_iA_j$ es efectivamente covariante (es decir, un tensor), si suponemos que las componentes de $\Gamma$ transforman de acuerdo a \eqref{dinv72}.
 
 Note que el segundo t'ermino del lado derecho de \eqref{dinv72} es independiente de $\Gamma$ y depende entonces s'olo de la transformaci'on de coordenadas. Esta es la propiedad implica que una conexi'on $\Gamma$ no sea nula en todo SC, a'un cuando puede serlo en algunos. Otra consecuencia de la ley de transformaci'on \eqref{dinv72} es que si \textit{dos conexiones}, $\Gamma$ y $\hat{\Gamma}$, definidas en la misma variedad, entonces \textit{su diferencia es un tensor}. En efecto, bajo una TGC se tiene que
 \begin{align}
@@ -1514,7 +1513,7 @@ la condici'on (\ref{condint}) es equivalente a
 \textbf{Resumiendo: si una conexi'on es integrable, existen vectores (no nulos) covariantemente constantes.}
 \end{quotation}
 Por otro lado, puede considerarse a (\ref{ecdeintegr}) como una ecuaci'on
-diferencial que determina el campo (covariantemente constante) $A^i(x)$ dada la conexi'on, asumiendo que 'esta es integrable. Las \textbf{condiciones de
+diferencial que determina el campo (covariantemente constante) $A^i(x)$ dada la conexi'on, suponiendo que 'esta es integrable. Las \textbf{condiciones de
 integrabilidad} de esta ecuaci'on son por lo tanto las condiciones para que la
 conexi'on sea integrable.
 
@@ -1641,7 +1640,7 @@ Comparamos ambos vectores transportado calculando la diferencia de sus component
 %proporcional a la curvatura.
 Esto demuestra que el tensor de curvatura de una conexi'on mide localmente (en una regi'on infinitesimal) la magnitud de la dependencia del transporte (inducido por la conexi'on, de vectores y tensores) con la trayectoria.
 
-La relaci'on \eqref{19} que implica que, si la curvatura es nula, el transporte de cualquier vector es independiente de la trayectoria en una regi'on infinitesimal. Este resultado puede extenderse a trayectorias finitas que unan extremos comunes considerando una sucesi'on de ``deformaciones infinitesimales'' de una curva en otra, tal como lo ilustra la figura. Para esto, asumimos que la variedad ``no tiene agujeros'', es decir, que es \textbf{simplemente conexa}. Por lo tanto, si el tensor de curvatura es nulo y la variedad es simplemente conexa entonces el transporte es independiente de la trayectoria, es decir, la conexi'on es integrable.
+La relaci'on \eqref{19} que implica que, si la curvatura es nula, el transporte de cualquier vector es independiente de la trayectoria en una regi'on infinitesimal. Este resultado puede extenderse a trayectorias finitas que unan extremos comunes considerando una sucesi'on de ``deformaciones infinitesimales'' de una curva en otra, tal como lo ilustra la figura. Para esto, suponemos que la variedad ``no tiene agujeros'', es decir, que es \textbf{simplemente conexa}. Por lo tanto, si el tensor de curvatura es nulo y la variedad es simplemente conexa entonces el transporte es independiente de la trayectoria, es decir, la conexi'on es integrable.
 
 \subsection{Interpretaci'on geom'etrica de la torsi\'on*}
 Consideremos tres puntos $P$, $Q$ y $S$ de la variedad, infinitesimalmente
@@ -2198,7 +2197,7 @@ En particular, en el punto $P$ las primeras derivadas se reducen a
 \begin{equation}\label{jg2}
 \frac{\partial\bar{x}^i}{\partial x^j}(P)=B^i_{\ j},
 \end{equation}
-por lo que su inversa en ese punto es simplemente (asumimos que la matriz correspondiente a $B^i_{\ j}$ es invertible)
+por lo que su inversa en ese punto es simplemente (suponemos que la matriz correspondiente a $B^i_{\ j}$ es invertible)
 \begin{equation}\label{jg3}
 \frac{\partial x^i}{\partial \bar{x}^j}(P)=(B^{-1})^i_{\ j}.
 \end{equation}
