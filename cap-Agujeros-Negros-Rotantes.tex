@@ -26,8 +26,13 @@ z&=r\cos\theta,   \label{zrt}
 \end{aligned}
 \end{equation}
 se obtiene, a partir de \eqref{BL}, la soluci\'on de Kerr en la forma original en la que fue encontrada, es decir, en la \textit{forma de Kerr}:
+\begin{align}
+ds^2 &= c^2d\bar{t}^2-dx^2-dy^2-dz^2 \nonumber \\
+&\quad -\frac{2mR^3}{R^4+a^2z^2}\left(cd\bar{t}+\frac{R}{R^2+a^2}(xdx+ydy)+\frac{a}{R^2+a^2}(ydx-xdy)+\frac{z}{R}dz \right)^2 , \label{Kerr}
+\end{align}
+donde $R(x,y,z)$ satisface
 \begin{equation}
-ds^2=c^2d\bar{t}^2-dx^2-dy^2-dz^2-\frac{2mr^3}{r^4+a^2z^2}\left(cd\bar{t}+\frac{r}{a^2+r^2}(xdx+ydy)+\frac{a}{a^2+r^2}(ydx-xdy)+\frac{z}{r}dz \right)^2 . \label{Kerr}
+R^4 - (x^2+y^2+x^2-a^2)R^2 -a^2z^2=0.
 \end{equation}
 
 Algunas primeras caracter\'isticas destacables de esta soluci\'on es que es estacionaria y tiene simetr\'ia axial, ya que los coeficientes m\'etricos no depende de $t$ ni de $\varphi$ (por lo tanto $\partial_t$ y $\partial_\phi$ son vectores de Killing). Adem'as, la m\'etrica es invariante bajo reflexiones de estas coordenadas y, debido a la forma del elemento de l\'inea, es equivalente a decir que es invariante bajo las transformaciones
@@ -499,29 +504,27 @@ Se define la \textit{Erg\'osfera} (del griego \textit{ergon} que significa traba
 
 \subsection{Geod\'esicas tipo luz}
 
-A diferencia de la soluci\'on de Schwarzschild en este caso no existen geod\'esicas nulas radiales, ya que no hay simetr\'ia esf\'erica, pero s\'i es posible encontrar geod\'esicas nulas (de una part\'icula tipo luz) a partir del hecho que esta soluci\'on es axialmente sim\'etrica, es decir, buscaremos geod\'esicas con la condici\'on $\theta=\rm cte$. As\'i
+A diferencia de la soluci\'on de Schwarzschild en este caso no existen geod\'esicas nulas radiales, ya que no hay simetr\'ia esf\'erica. Sin embargo, s\'i es posible encontrar soluciones anal'iticas para el caso particular en que las trayectorias est'an contenidas en el cono definido por $\theta=\rm cte$. As\'i,
 \begin{equation}
-\dot{\theta}=0,\qquad ds^2=0.
+\theta={\rm cte},\qquad ds^2=0.
 \end{equation}
 
-El punto sobre la coordenada denota la derivada con respecto a un par\'ametro af\'in $\lambda$. Lo siguiente es resolver la ecuaciones de Euler-Lagrange para este caso. Se sabe que el lagrangiano de una part\'icula tiene la siguiente forma
+Lo siguiente es resolver la ecuaci'on de la geod'esica para este caso. Sabemos que la ecuaci'on de la geod'esica puede ser derivada como las ecuaciones de Euler-Lagrange del lagrangiano efectivo dado, ver \eqref{gm1} y \eqref{gm4}, por
 \begin{equation} \label{lagrange1}
-L=\alpha\sqrt{-g_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu}}.
+\tilde{L}=\sqrt{-g_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu}},
 \end{equation}
- 
-Donde $\alpha$ es una constante con dimensiones de momentum lineal y $g_{\mu \nu}$ viene dada por \eqref{BL}. Pero, si se utiliza un par\'ametro af\'in entonces se puede demostrar que el lagrangiano dado por
+donde la $\dot{x}^{\mu}=dx^\mu/d\lambda$ y $\lambda$ es alg'un par'ametro. Si bien podemos simplemente plantear la ecuaci'on de la geod'esica y resolverla, en esta secci'on haremos uso del siguiente hecho, que suministra un m'etodo alternativo (aunque equivalente), y que en algunos casos simplifica el c'alculo: Si $\lambda$ es un par\'ametro af\'in entonces la (misma) ecuaci'on geod'esica puede ser obtenida del siguiente lagrangeano ``alternativo'':
 \begin{equation} \label{lagrange2}
-\tilde{L}=-\beta g_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu}.
+\bar{L}= g_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu}.
 \end{equation}
  
-conduce a las mismas ecuaciones de Euler-Lagrange que \eqref{lagrange1}, donde $\beta$ una constante que dimensionaliza el lagrangiano. Luego, se utilizar\'a por simplicidad \eqref{lagrange2} para derivar las ecuaciones de movimiento. La funci\'on que se utilizar\'a para obtener las ecuaciones de movimiento es
+En el caso de la soluci'on de Kerr, este lagrangiano adopta la forma
 \begin{equation}\label{lagrangeano1}
-\tilde{L}=-\beta\left[\frac{\Delta}{\rho^2}(c\dot{t}-a\sen^2\theta \dot{\varphi})^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]^2-\frac{\rho^2}{\Delta}\dot{r}^2\right].
+\bar{L}=\frac{\Delta}{\rho^2}(c\dot{t}-a\sen^2\theta \dot{\varphi})^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]^2-\frac{\rho^2}{\Delta}\dot{r}^2.
 \end{equation}
-
-Las ecuaciones de Euler-Lagrange vienen dadas por
+Las ecuaciones de Euler-Lagrange vienen entonces dadas por
 \begin{equation}\label{el}
-\frac{\partial \tilde{L}}{\partial x^{\mu}}-\frac{d}{d\lambda}\left(\frac{\partial \tilde{L}}{\partial \dot{x}^{\mu}} \right)=0.
+\frac{\partial \bar{L}}{\partial x^{\mu}}-\frac{d}{d\lambda}\left(\frac{\partial \bar{L}}{\partial \dot{x}^{\mu}} \right)=0.
 \end{equation}
 
 Utilizando $x^0=ct$ en \eqref{el}, se obtiene la primera ecuaci\'on de movimiento:
