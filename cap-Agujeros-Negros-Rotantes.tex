@@ -744,8 +744,8 @@ d\bar{\varphi}&=d	\varphi+\frac{a}{\Delta}dr.\\
 Por lo tanto, las congruencias entrantes de las geod\'esicas nulas  en el sistema de coordenadas de Eddington-Finkelstein vienen dadas por
 \begin{equation}
 \begin{aligned}
-c\bar{t}&=r_0-r+ct_0,\\
-\bar{\varphi}&=\varphi_0.\\
+c\bar{t}&=r_0-r+c\bar{t}_0,\\
+\bar{\varphi}&=\bar{\varphi}_0.\\
 \end{aligned}
 \end{equation}
 
@@ -775,7 +775,7 @@ As\'i la expresi\'on entre corchetes cuadrados debe ser positiva. Debido  a que 
 \end{equation}
 donde $\Omega_{\pm}$ son la ra\'ices de la expresi\'on entre corchetes cuadrados en \eqref{cuadrados}
 \begin{equation}\label{roots}
-\Omega_{\pm}= c\left[ \frac{-g_{0\varphi}\pm\sqrt{g_{0\varphi}^2-g_{00}g_{\varphi \varphi}}}{g_{\varphi \varphi}} \right].
+\Omega_{\pm}= c\left[ \frac{-g_{0\varphi}\mp\sqrt{g_{0\varphi}^2-g_{00}g_{\varphi \varphi}}}{g_{\varphi \varphi}} \right].
 \end{equation}
 
 Utilizando \eqref{BL2} notamos que $\Omega_{-}=0$ cuando $g_{00}=r^2-2mr+a^2\cos^2 \theta=0$, cuya soluci\'on (respetando que $r_+<r$) es justamente la superficie de redshift infinito $S_{+}$ que viene dada por el radio
@@ -783,13 +783,20 @@ Utilizando \eqref{BL2} notamos que $\Omega_{-}=0$ cuando $g_{00}=r^2-2mr+a^2\cos
 r_{s_+}=m+\sqrt{m^2-a^2\cos^2\theta}.
 \end{equation}
 
-En el caso que $r_+<r<r_{s_+}$ la velocidad angular $\Omega$ siempre ser\'a postivo ya que en ese caso $\Omega_{-}>0$, que viene del hecho que $g_{00}>0$ (coordenada $ct$ es tipo tiempo). Por lo tanto, en este rango no pueden existir observadores est\'aticos (es decir con $\Omega=0$). As\'i, s\'olo en el caso en que $r=r_{s_+}$ se tiene que $\Omega=0$, raz\'on por la cual se le llama \textit{L\'imite Est\'atico}.\\
+En el caso que $r_+<r<r_{s_+}$ la velocidad angular $\Omega$ siempre ser\'a postiva ya que en ese caso $\Omega_{-}>0$, que viene del hecho que $g_{00}>0$ (coordenada $ct$ es tipo tiempo). Por lo tanto, en este rango no pueden existir observadores est\'aticos (es decir con $\Omega=0$). As\'i, s\'olo en el caso en que $r=r_{s_+}$ se tiene que $\Omega=0$, raz\'on por la cual se le llama \textit{L\'imite Est\'atico}.\\
 
-De \eqref{roots} se observa que los observadores estacionarios no existen si $g_{0\varphi}^2-g_{00}g_{\varphi \varphi}<0$, lo que se traduce en que $\Delta <0$, ya que
+\begin{figure}[H]
+\centering
+\includegraphics[height=7cm,angle=0]{fig/fig-omega-ecuatorial.pdf}
+\caption{Frecuencias angulares permitidas para orbitas circulares ecuatoriales.}
+\label{fig:omegaecua}
+\end{figure}
+
+Adem'as, de \eqref{roots} se observa que los observadores estacionarios no existen si $g_{0\varphi}^2-g_{00}g_{\varphi \varphi}<0$, lo que se traduce en que $\Delta <0$, ya que
 \begin{equation}
 (r-r_-)(r-r_+)<0.
 \end{equation}
-As\'i, los observadores estacionarios existen s\'olo cuando $r>r_+$ que viene a ser la generalizaci\'on del hecho que los observadores est\'aticos no existen dentro del horizonte de eventos en la soluci\'on de Schwarzschild.\\
+As\'i, los observadores estacionarios existen s\'olo cuando $r>r_+$ que viene a ser la generalizaci\'on del hecho que los observadores est\'aticos no existen dentro del horizonte de eventos en la soluci\'on de Schwarzschild. Ver tambi'en la figura \ref{fig:omegaecua}.
 
 \subsubsection{Estructura de los Conos de Luz en la Erg\'osfera}
 
