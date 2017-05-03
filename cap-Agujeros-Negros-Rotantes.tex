@@ -515,12 +515,12 @@ Lo siguiente es resolver la ecuaci'on de la geod'esica para este caso. Sabemos q
 \end{equation}
 donde la $\dot{x}^{\mu}=dx^\mu/d\lambda$ y $\lambda$ es alg'un par'ametro. Si bien podemos simplemente plantear la ecuaci'on de la geod'esica y resolverla, en esta secci'on haremos uso del siguiente hecho, que suministra un m'etodo alternativo (aunque equivalente), y que en algunos casos simplifica el c'alculo: Si $\lambda$ es un par\'ametro af\'in entonces la (misma) ecuaci'on geod'esica puede ser obtenida del siguiente lagrangeano ``alternativo'':
 \begin{equation} \label{lagrange2}
-\bar{L}= g_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu}.
+\bar{L}= \frac{1}{2}g_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu}.
 \end{equation}
  
 En el caso de la soluci'on de Kerr, este lagrangiano adopta la forma
 \begin{equation}\label{lagrangeano1}
-\bar{L}=\frac{\Delta}{\rho^2}(c\dot{t}-a\sen^2\theta \dot{\varphi})^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]^2-\frac{\rho^2}{\Delta}\dot{r}^2.
+2\bar{L}=\frac{\Delta}{\rho^2}(c\dot{t}-a\sen^2\theta \dot{\varphi})^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]^2-\frac{\rho^2}{\Delta}\dot{r}^2.
 \end{equation}
 Las ecuaciones de Euler-Lagrange vienen entonces dadas por
 \begin{equation}\label{el}
@@ -529,7 +529,7 @@ Las ecuaciones de Euler-Lagrange vienen entonces dadas por
 
 Utilizando $x^0=ct$ en \eqref{el}, se obtiene la primera ecuaci\'on de movimiento:
 \begin{equation}\label{elt}
-\frac{\partial}{\partial c\dot{t}}\left(g_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu}\right)=:2l.
+\frac{\partial\bar{L}}{\partial c\dot{t}}=:l.
 \end{equation}
  
 Donde $l$ es una constante de integraci\'on. Desarrollando \eqref{elt}, se tiene lo siguiente:
@@ -539,7 +539,7 @@ Donde $l$ es una constante de integraci\'on. Desarrollando \eqref{elt}, se tiene
  
  Ahora se buscar\'a la ecuaci\'on de movimiento correspondiente a $x^3=\varphi$, nuevamente de \eqref{el} se obtiene la siguiente ecuaci\'on de movimiento
  \begin{equation}\label{elp}
- \frac{\partial}{\partial \dot{\varphi}}\left(g_{\mu \nu}\dot{x}^{\mu}\dot{x}^{\nu}\right)=: -2 n,
+ \frac{\partial\bar{L}}{\partial \dot{\varphi}}=: -n,
  \end{equation}
  
 donde $n$ tambi\'en es una constante de movimiento.\\
@@ -799,65 +799,61 @@ Adem'as, de \eqref{roots} se observa que los observadores estacionarios no exist
 \end{equation}
 As\'i, los observadores estacionarios existen s\'olo cuando $r>r_+$ que viene a ser la generalizaci\'on del hecho que los observadores est\'aticos no existen dentro del horizonte de eventos en la soluci\'on de Schwarzschild. Ver tambi'en la figura \ref{fig:omegaecua}.
 
-\subsubsection{Estructura de los Conos de Luz en la Erg\'osfera}
-
-Se consideran ahora curvas de part\'iculas tipo luz que tienen las coordenadas $r$ y $\theta$ fijas $(dr=d\theta=0)$ (no son geod\'esicas), es decir, part\'iculas que inicialmente estaban obligadas a orbitar la fuente con esta condici\'on de \eqref{BL} se obtiene que
-\begin{equation}
-\frac{\Delta}{\rho^2}(cdt-a\sen^2\theta d\varphi)^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)d\varphi-acdt \right]^2=0,
-\end{equation}
-
-de donde se tiene que 
-\begin{equation}\label{dphidt}
-\left( \frac{d\varphi}{dt} \right) _{\pm}=\frac{ac\sen \theta \pm c\sqrt{\Delta}}{(r^2+a^2)\sen\theta \pm a\sqrt{\Delta}\sen^2\theta}.
-\end{equation}
-
-En el caso de elegir la soluci\'on positiva en \eqref{dphidt} entonces  $d\varphi/dt >0$, con lo cual la part\'icula gira en el mismo sentido de la fuente. Ahora la pregunta es, para qu\'e caso  $d\varphi/dt \leqslant 0$, es decir, que la part\'icula gira en sentido contrario o parece estacionaria en estas coordenadas.\\
-
-Si se parte con la condici\'on $r> r_{+}$ en la soluci\'on negativa de \eqref{dphidt} se puede concluir f\'acilmente que el denominador de \eqref{dphidt} es positivo
-\begin{equation}
-(r^2+a^2)\sen\theta - a\sqrt{\Delta}\sen^2\theta >0.
-\end{equation}
-
-Luego, el sentido de rotaci\'on queda inmediatamente ligado al numerador de \eqref{dphidt}
-\begin{equation} \label{numerador}
-\frac{d\varphi}{dt}  \leqslant   0 \quad  \Leftrightarrow \quad  a\sen \theta - \sqrt{\Delta} \leqslant 0.
-\end{equation} 
-
-Desarrollando en \eqref{numerador} la condici\'on impuesta en el numerador, podemos escribir
-\begin{equation}
-\begin{aligned}
-a^2\sen^2 \theta &\leqslant \Delta ,\\
- a^2\sen^2 \theta &\leqslant r^2-2mr+a^2 , \\
- 0 &\leqslant r^2-2mr+a^2\cos^2 \theta ,\\
- 0 &\leqslant (r-r_{s_{+}})(r-r_{s_{-}}).\\
-\end{aligned}
-\end{equation}
-
-Como $r>r_{+}$ entonces $r>r_{s_-}$, luego la condici\'on buscada para que \eqref{dphidt} sea menor o igual que cero es que
-\begin{equation}
-r\geqslant r_{s_+}.
-\end{equation}
-
-Analizando este resultado, se tiene que si la part\'icula se encuentra sobre la superficie $S_+$, entonces \'esta parece estar estacionaria (para un observador estacionario en el infinito). En cambio m\'as all\'a de la supeficie dada, las part'iculas luminosas en el r\'egimen impuesto recorren las curvas en sentido inverso a la rotaci\'on de la fuente, no as\'i dentro de la erg\'osfera, donde las part\'iculas orientan su cono luz en la direcci\'on del giro de la fuente.\\
+%\subsubsection{Estructura de los Conos de Luz en la Erg\'osfera}
+%
+%Se consideran ahora curvas de part\'iculas tipo luz que tienen las coordenadas $r$ y $\theta$ fijas $(dr=d\theta=0)$ (no son geod\'esicas), es decir, part\'iculas que inicialmente estaban obligadas a orbitar la fuente con esta condici\'on de \eqref{BL} se obtiene que
+%\begin{equation}
+%\frac{\Delta}{\rho^2}(cdt-a\sen^2\theta d\varphi)^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)d\varphi-acdt \right]^2=0,
+%\end{equation}
+%
+%de donde se tiene que 
+%\begin{equation}\label{dphidt}
+%\left( \frac{d\varphi}{dt} \right) _{\pm}=\frac{ac\sen \theta \pm c\sqrt{\Delta}}{(r^2+a^2)\sen\theta \pm a\sqrt{\Delta}\sen^2\theta}.
+%\end{equation}
+%
+%En el caso de elegir la soluci\'on positiva en \eqref{dphidt} entonces  $d\varphi/dt >0$, con lo cual la part\'icula gira en el mismo sentido de la fuente. Ahora la pregunta es, para qu\'e caso  $d\varphi/dt \leqslant 0$, es decir, que la part\'icula gira en sentido contrario o parece estacionaria en estas coordenadas.\\
+%
+%Si se parte con la condici\'on $r> r_{+}$ en la soluci\'on negativa de \eqref{dphidt} se puede concluir f\'acilmente que el denominador de \eqref{dphidt} es positivo
+%\begin{equation}
+%(r^2+a^2)\sen\theta - a\sqrt{\Delta}\sen^2\theta >0.
+%\end{equation}
+%
+%Luego, el sentido de rotaci\'on queda inmediatamente ligado al numerador de \eqref{dphidt}
+%\begin{equation} \label{numerador}
+%\frac{d\varphi}{dt}  \leqslant   0 \quad  \Leftrightarrow \quad  a\sen \theta - \sqrt{\Delta} \leqslant 0.
+%\end{equation} 
+%
+%Desarrollando en \eqref{numerador} la condici\'on impuesta en el numerador, podemos escribir
+%\begin{equation}
+%\begin{aligned}
+%a^2\sen^2 \theta &\leqslant \Delta ,\\
+% a^2\sen^2 \theta &\leqslant r^2-2mr+a^2 , \\
+% 0 &\leqslant r^2-2mr+a^2\cos^2 \theta ,\\
+% 0 &\leqslant (r-r_{s_{+}})(r-r_{s_{-}}).\\
+%\end{aligned}
+%\end{equation}
+%
+%Como $r>r_{+}$ entonces $r>r_{s_-}$, luego la condici\'on buscada para que \eqref{dphidt} sea menor o igual que cero es que
+%\begin{equation}
+%r\geqslant r_{s_+}.
+%\end{equation}
+%
+%Analizando este resultado, se tiene que si la part\'icula se encuentra sobre la superficie $S_+$, entonces \'esta parece estar estacionaria (para un observador estacionario en el infinito). En cambio m\'as all\'a de la supeficie dada, las part'iculas luminosas en el r\'egimen impuesto recorren las curvas en sentido inverso a la rotaci\'on de la fuente, no as\'i dentro de la erg\'osfera, donde las part\'iculas orientan su cono luz en la direcci\'on del giro de la fuente.\\
 
 \section{Extracci\'on de Energ\'ia de una Agujero Negro Rotante}
 
 \subsection{Geod\'esicas tipo tiempo}
 
-En este caso se calcular\'an las geod\'esicas de part\'iculas en movimiento en el plano ecuatorial $\theta=\pi/2$. Para resolver el caso general se puede utilizar una forma descubierta por B. Carter\footnote{Brandon Carter (1942) f\'isico te\'orico australiano \url{http://en.wikipedia.org/wiki/Brandon_Carter}.} (ver $[41]$) donde utilizan el m\'etodo de Hamilton-Jacobi.
+En este caso se calcular\'an las geod\'esicas de part\'iculas en movimiento en el plano ecuatorial $\theta=\pi/2$. Para resolver el caso general se puede utilizar una forma descubierta por B. Carter\footnote{Brandon Carter (1942) f\'isico te\'orico australiano \url{http://en.wikipedia.org/wiki/Brandon_Carter}.}, que utiliza el m\'etodo de Hamilton-Jacobi.
 
-Utilizando la funci\'on lagrangeana proporcional a la dada en \eqref{lagrangeano1}, se tiene que
-\begin{equation}\label{lagrangeano2}
-\tilde{L}=\frac{1}{2}g_{\mu \nu} \dot{x}^{\mu} \dot{x}^{\nu}=\frac{1}{2}\left[\left(1-\frac{2m}{r}\right)c^2\dot{t}^2-\frac{r^2}{\Delta}\dot{r}^2-\left(r^2+a^2+\frac{2ma^2}{r}\right)\dot{\varphi}^2
-+\frac{4am}{r}\dot{\varphi}(c\dot{t}) \right],
-\end{equation}
-con $\dot{x}^{\mu}=dx^{\mu}/d \lambda$ y $\lambda$ es un par\'ametro af\'in. Por conveniencia elegimos $\lambda=\tau/m_0$, donde $m_0$ es la masa de la part\'icula movi\'endose en este campo gravitacional y $\tau$ su tiempo propio. Tal como se puede observar en \eqref{lagrangeano2} este lagrangiano no depende expl'icitamente de las coordenadas $ct$ y $\varphi$, por lo que existen dos constantes de movimiento\footnote{donde $E$ es la energ\'ia de la part\'icula y $L$ su momentum angular.}, a saber
+Usaremos la funci\'on lagrangeana \eqref{lagrangeano1}, con $\dot{x}^{\mu}=dx^{\mu}/d \lambda$ y $\lambda$ es un par\'ametro af\'in que, por conveniencia, elegimos como $\lambda=\tau/m_0$, donde $m_0$ es la masa de la part\'icula movi\'endose en este campo gravitacional y $\tau$ su tiempo propio. Ya que el lagrangiano no depende expl'icitamente de las coordenadas $ct$ y $\varphi$, existen dos constantes de movimiento: $p^0=E/c$ y $p^\varphi=-L$, donde $E$ es la energ\'ia de la part\'icula y $L$ su momentum angular:
 \begin{equation}
 \begin{aligned}
-p_{t}&=\frac{\partial \tilde{L}}{\partial(c\dot{t})}=\left(1-\frac{2m}{r}\right)c\dot{t}+\frac{2am\dot{\varphi}}{r}:=\frac{E}{c},\\ 
-p_{\varphi}&=\frac{\partial \tilde{L}}{\partial \dot{\varphi}}=\frac{2am}{r}c\dot{t}-\left(r^2+a^2+\frac{2ma^2}{r}\right)\dot{\varphi}:=-L.\\
+p^{t}&:=\frac{\partial \bar{L}}{\partial(c\dot{t})}=\left(1-\frac{2m}{r}\right)c\dot{t}+\frac{2am\dot{\varphi}}{r}:=\frac{E}{c},\\ 
+p^{\varphi}&:=\frac{\partial \bar{L}}{\partial \dot{\varphi}}=\frac{2am}{r}c\dot{t}-\left(r^2+a^2+\frac{2ma^2}{r}\right)\dot{\varphi}:=-L,\\
 \end{aligned}
 \end{equation}
+y en general $p^\mu:=\partial\bar{L}/\partial\dot{x}^\mu$.
 
 Despejando $c\dot{t}$ y $\dot{\varphi}$, de estas ecuaciones se obtiene que
 \begin{equation}
@@ -896,11 +892,14 @@ de modo que \eqref{dotr2} adopta la forma:
 \begin{equation}
 r^3\left(\frac{dr}{d\lambda}\right)^2=R(E,L,r).
 \end{equation}
+De este modo, $R$ act'ua como un potencial unidimensional efectivo para nuestro problema.
 
-En el caso de que la \'orbita de la part\'icula sea una circunsferencia, $\dot{r}=0$ y $\ddot{r}=0$, lo que require que 
+
+Nos restringuimos ahora al caso en que la \'orbita de la part\'icula sea una circunsferencia, $\dot{r}=0$ y $\ddot{r}=0$, que entonces require que 
 \begin{equation}
 R=0, \qquad \frac{\partial R}{\partial r}=0.
 \end{equation}
+[\textbf{Tarea}: verifique la segunda condici'on, usando la ecuaci'on de la geod'esica]
 
 Con estas condiciones se pueden encontrar los valores de $E$ y $L$ para el caso de una \'orbita circular:
 \begin{equation}
@@ -911,18 +910,26 @@ Con estas condiciones se pueden encontrar los valores de $E$ y $L$ para el caso 
 \frac{L}{m_0c}=\pm\frac{\sqrt{mr}\left(r^2\mp 2a\sqrt{mr}+a^2 \right)}{r\left(r^2-3mr\pm 2a\sqrt{mr}\right)^{\frac{1}{2}}} .\label{Lkerr} 
 \end{equation}
 
-El signo de arriba ($+$) en \eqref{Lkerr} indica que la part\'icula gira en el mismo sentido que el agujero negro, en cambio con el de abajo $(-$) gira en sentido contrario al agujero (sentido retr\'ogrado).\\
+El signo de arriba ($+$) al frente de \eqref{Lkerr} indica que la part\'icula gira en el mismo sentido que el agujero negro, en cambio con el de abajo $(-$) gira en sentido contrario al agujero (sentido retr\'ogrado).\\
 
-Las \'orbitas circulares para part\'iculas con masa $m_0\neq 0$ existen desde el infinito hasta que la \'orbita circular coincida con la de un fot\'on, esto es en el caso que el denominador de \eqref{Ekerr} sea cero ($m_0=0$). As\'i,
+Las \'orbitas circulares para part\'iculas con masa $m_0\neq 0$ existen desde el infinito hasta que la \'orbita circular anule el denominador de \eqref{Ekerr}--\eqref{Lkerr}\footnote{Esto equivale al caso de que las 'orbitas sean tipo luz, lo que se obtiene en el l'imite $L$ finito y $m_0\to 0$, de modo que $L/m_0\to\infty$.}. As\'i,
 \begin{equation}
-r^2-3mr\pm 2a\sqrt{mr}=0,
+r^2_{\rm f}-3mr_{\rm f}\pm 2a\sqrt{mr_{\rm f}}=0,
 \end{equation}
-cuya soluci\'on es
+cuya soluci\'on puede escribirse como
 \begin{equation}\label{phorbit}
 r_{\rm f}=2m\left(1+\cos\left[\frac{2}{3}\cos^{-1}\left(\mp \frac{a}{m} \right) \right] \right).
 \end{equation}
 
 Donde $r_{\rm f}$ corresponde al radio de la \'orbita de un fot\'on en el plano ecuatorial. Cabe destacar que si $a=0$ entonces $r_{\rm f}=3m$, en cambio, si $a=m$ (rotaci\'on extrema) entonces $r_{\rm f}=m$ para 'orbitas que tienen el mismo sentido de la fuente y $r_{\rm f}=4m$ para \'orbitas retrogradas con respecto al sentido del giro de la fuente.\\
+
+\begin{figure}[H]
+\begin{center}
+\includegraphics[height=7cm,angle=0]{fig/fig-Ecirc.pdf}
+\caption{Energ'ias de 'orbitas circulares ecuatoriales.}
+\label{fig:Ecirc}
+\end{center}
+\end{figure}
 
 Se tiene que las \'orbitas con energ\'ia $E/m_0c^2>1$ son tales que bajo perturbaciones del radio las part\'iculas escapan al infinito con trayectoria hiperb\'olica y esto puede ocurrir perfectamente para $r>r_{\rm f}$. Luego los radios para los cuales las \'orbitas circulares son ligadas cumplen que $r>r_{\rm ll}$, donde $r_{\rm ll}$ es la \'orbita circular levemente ligada con energ\'ia $E/m_0c^2=1$, cuyo radio es
 \begin{equation}\label{mborbit}
