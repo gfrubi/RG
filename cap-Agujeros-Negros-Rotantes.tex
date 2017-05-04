@@ -914,29 +914,28 @@ El signo de arriba ($+$) al frente de \eqref{Lkerr} indica que la part\'icula gi
 
 Las \'orbitas circulares para part\'iculas con masa $m_0\neq 0$ existen desde el infinito hasta que la \'orbita circular anule el denominador de \eqref{Ekerr}--\eqref{Lkerr}\footnote{Esto equivale al caso de que las 'orbitas sean tipo luz, lo que se obtiene en el l'imite $L$ finito y $m_0\to 0$, de modo que $L/m_0\to\infty$.}. As\'i,
 \begin{equation}
-r^2_{\rm f}-3mr_{\rm f}\pm 2a\sqrt{mr_{\rm f}}=0,
+r^2_{\rm f}-3mr_{\rm f}\pm 2a\sqrt{mr_{\rm f}}=0.
 \end{equation}
-cuya soluci\'on puede escribirse como
-\begin{equation}\label{phorbit}
-r_{\rm f}=2m\left(1+\cos\left[\frac{2}{3}\cos^{-1}\left(\mp \frac{a}{m} \right) \right] \right).
-\end{equation}
-
-Donde $r_{\rm f}$ corresponde al radio de la \'orbita de un fot\'on en el plano ecuatorial. Cabe destacar que si $a=0$ entonces $r_{\rm f}=3m$, en cambio, si $a=m$ (rotaci\'on extrema) entonces $r_{\rm f}=m$ para 'orbitas que tienen el mismo sentido de la fuente y $r_{\rm f}=4m$ para \'orbitas retrogradas con respecto al sentido del giro de la fuente.\\
+%cuya soluci\'on puede escribirse como
+%\begin{equation}\label{phorbit}
+%r_{\rm f}=2m\left(1+\cos\left[\frac{2}{3}\cos^{-1}\left(\mp \frac{a}{m} \right) \right] \right).
+%\end{equation}
+El valor de $r_{\rm f}$ corresponde al radio de la \'orbita de un fot\'on en una 'orbita geod'esica circular ecuatorial. Notamos que si $a=0$ entonces $r_{\rm f}=3m$. En cambio, si $a=m$ (rotaci\'on extrema), entonces $r_{\rm f}^+=m$ para 'orbitas co-rotantes con el agujero y $r_{\rm f}^-=4m$ para \'orbitas contra-rotantes.
 
 \begin{figure}[H]
 \begin{center}
-\includegraphics[height=7cm,angle=0]{fig/fig-Ecirc.pdf}
-\caption{Energ'ias de 'orbitas circulares ecuatoriales, para $a=0.3m$. C'odigo Python \href{https://github.com/gfrubi/GR/blob/master/figuras-editables/fig-Ecirc.py}{aqu\'i}.}
+\includegraphics[height=8cm,angle=0]{fig/fig-Ecirc.pdf}
+\caption{Energ'ias de 'orbitas circulares ecuatoriales, para $a=0.55m$. C'odigo Python \href{https://github.com/gfrubi/GR/blob/master/figuras-editables/fig-Ecirc.py}{aqu\'i}.}
 \label{fig:Ecirc}
 \end{center}
 \end{figure}
 
-Se tiene que las \'orbitas con energ\'ia $E/m_0c^2>1$ son tales que bajo perturbaciones del radio las part\'iculas escapan al infinito con trayectoria hiperb\'olica y esto puede ocurrir perfectamente para $r>r_{\rm f}$. Luego los radios para los cuales las \'orbitas circulares son ligadas cumplen que $r>r_{\rm ll}$, donde $r_{\rm ll}$ es la \'orbita circular levemente ligada con energ\'ia $E/m_0c^2=1$, cuyo radio es
+Las \'orbitas con energ\'ia $E/m_0c^2>1$ son tales que bajo perturbaciones del radio las part\'iculas pueden escapar al infinito. Luego los radios para los cuales las \'orbitas circulares son ligadas cumplen que $r>r_{\rm ll}$, donde $r_{\rm ll}$ es la \'orbita circular ``levemente ligada'', cuyo radio puede ser determinado usando \eqref{Ekerr} resolviendo la condici'on $E/m_0c^2=1$ para la coordenada $r$. As'i obtenemos
 \begin{equation}\label{mborbit}
-r_{ll}=2m\mp a+2\sqrt{m\left(m\mp a \right)}.
+r_{\rm ll}=2m\mp a+2\sqrt{m\left(m\mp a \right)}.
 \end{equation}
 
-Se tiene que si $a=0$ entonces $r_{\rm ll}=4m$ y para $a=m$, $r_{\rm ll}=m$ si la part\'icula gira en el mismo sentido que el agujero y $r_{\rm ll}=5.83m$ si la rotaci\'on es retrograda con respecto al agujero negro.\\
+Vemos que si $a=0$ entonces $r_{\rm ll}=4m$ y para $a=m$, $r_{\rm ll}^+=m$ si la part\'icula gira en el mismo sentido que el agujero y $r_{\rm ll}^-=5.83m$ si la rotaci\'on es retrograda con respecto al agujero.
 
 La estabilidad de la \'orbita estar\'a garantizada si $\partial^2 R/\partial r^2 \leq 0$. Utilizando \eqref{R} tenemos que
 \begin{equation}

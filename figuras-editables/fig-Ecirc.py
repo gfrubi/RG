@@ -3,7 +3,9 @@ from numpy import *
 style.use('classic')
 
 ra = linspace(1,10,10000)
-aa = 0.3
+aa = 0.55
+
+rap = 1+sqrt(1-aa**2) 
 
 Ep = (ra**2-2*ra+aa*sqrt(ra))/(ra*sqrt(ra**2-3*ra+2*aa*sqrt(ra)))
 Em = (ra**2-2*ra-aa*sqrt(ra))/(ra*sqrt(ra**2-3*ra-2*aa*sqrt(ra)))
@@ -15,13 +17,16 @@ um = sort((roots([1,0,-3,-2*aa])))
 ump = um[where(um>0)]
 rfam = ump[-1]**2
 
+rllap = 2 - aa + 2*sqrt(1-aa)
+rllam = 2 + aa + 2*sqrt(1+aa)
+
 plot(ra,Ep, label='co-rotante', lw=2)
 plot(ra,Em, label='contra-rotante', lw=2)
-vlines(rfap,-20,20, linestyle='dashed')
-vlines(rfam,-20,20, linestyle='dashed')
-xticks([1,2,rfap,rfam], [r'$m$',r'$2m$', r'$r_{\rm f+}$', r'$r_{\rm f-}$'])
-ylabel(r'$E/m_0c^2$')
-grid()
+vlines([1,2,rfap,rfam,rllap,rllam],0,3, linestyle='dotted')
+hlines(1,0,10, linestyle='dotted')
+xticks([rap,2,rfap,rfam,rllap,rllam], [r'$r^+$',r'$2m$', r'$r^+_{\rm f}$', r'$r_{\rm f}^-$', r'$r_{\rm ll}^+$', r'$r_{\rm ll}^-$'], fontsize=10, rotation=45)
+
+ylabel(r'$E/m_0c^2$', fontsize=15)
 xlim(0,10)
 ylim(0.,3)
 legend()
