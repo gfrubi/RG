@@ -3,7 +3,7 @@ from numpy import *
 style.use('classic')
 
 ra = linspace(1,10,10000)
-aa = 0.55
+aa = 0.6
 
 rap = 1+sqrt(1-aa**2) 
 
@@ -22,12 +22,12 @@ rllam = 2 + aa + 2*sqrt(1+aa)
 
 plot(ra,Ep, label='co-rotante', lw=2)
 plot(ra,Em, label='contra-rotante', lw=2)
-vlines([1,2,rfap,rfam,rllap,rllam],0,3, linestyle='dotted')
+vlines([rap,2,rfap,rfam,rllap,rllam],0,3, linestyle='dotted')
 hlines(1,0,10, linestyle='dotted')
-xticks([rap,2,rfap,rfam,rllap,rllam], [r'$r^+$',r'$2m$', r'$r^+_{\rm f}$', r'$r_{\rm f}^-$', r'$r_{\rm ll}^+$', r'$r_{\rm ll}^-$'], fontsize=10, rotation=45)
+xticks([rap,2,rfap,rfam,rllap,rllam], [r'$r_+$',r'$2m$', r'$r^+_{\rm f}$', r'$r_{\rm f}^-$', r'$r_{\rm ll}^+$', r'$r_{\rm ll}^-$'], fontsize=10, rotation=45)
 
 ylabel(r'$E/m_0c^2$', fontsize=15)
-xlim(0,10)
+xlim(0,6)
 ylim(0.,3)
 legend()
 savefig('../fig/fig-Ecirc.pdf')
