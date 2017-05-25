@@ -1072,9 +1072,9 @@ An'alogamente, en el caso ondulatorio (ondas electromagn\'eticas o gravitacional
 
 \subsubsection{L\'imite Inferior de la Velocidad Relativa}
 
-James Maxwell Bardeen et al. en su trabajo de 1972 \cite{Bardeen72} mostraron que existe un l\'imite inferior para la velocidad relativa entre las part\'iculas (creadas de la separaci\'on de la part\'icula entrante) que se encuentran en la erg\'osfera del agujero negro para que se lleve a cabo el mecanismo de Penrose.\\
+Bardeen, Press y Teukolsky, en su trabajo de 1972 \cite{Bardeen72} mostraron que existe un l\'imite inferior para la velocidad relativa entre las part\'iculas (creadas de la separaci\'on de la part\'icula entrante) que se encuentran en la erg\'osfera del agujero negro para que se lleve a cabo el mecanismo de Penrose.
 
-Se considera una part\'icula de masa $m_0$ y una cantidad conservada $E=cp_{\mu}\xi_{(t)}^{\mu}$ a lo largo de la geod\'esica, que se identifica con la energ\'ia, donde $\xi_{(t)}^{\mu}=(1,0,0,0)$ es el vector de Killing temporal (vector asociado a la simetr\'ia en la direcci\'on temporal de la soluci\'on de Kerr) y $p^{\mu}=m_0 u^{\mu}$ es el 4-momentum. Lo primero que se har\'a ser\'a encontrar cu\'al es rango de energ\'ia de la cantidad $E/m_0c^2$ para un punto del espacio-tiempo en general.\\
+Se considera una part\'icula de masa $m_0$ y 4-momentum $p^\mu$. Su energ'ia (que es conservada a lo largo de una trayectoria geod'esica) es dada por $E=cp_{\mu}\xi_{(t)}^{\mu}$. Aqu'i $\xi_{(t)}^{\mu}=(1,0,0,0)$ es el vector de Killing temporal. Bajo estos supuestos, estudiaremos cu\'al es rango de valores que la energ\'ia $E$ puede adoptar en en un punto dado del espacio-tiempo.
 
 Escogiendo una tetrada ortonormal $\left(e^{\mu}_a\right)_{a=1,4}$ como base  para expresar la 4-velocidad y el vector de Killing temporal en un punto determinado, se tiene que
 \begin{equation}\label{uyxi}
@@ -1087,22 +1087,22 @@ De \eqref{uyxi}, el cuociente entre la energ\'ia de la part\'icula y su energ\'i
 \frac{E}{m_0c^2}=\frac{g_{\mu \nu}u^{\mu}\xi_{(t)}^{\nu}}{c}=\frac{\eta_{ab}u^a\xi^b_{(t)}}{c}=\gamma\left(\xi^{\hat{0}}-\frac{\vec{v} \cdot \vec{\xi}}{c} \right).
 \end{equation}
 
-Una condici\'on necesaria para que \eqref{E/mu} sea un extremo es que $\vec{v}$ y $\vec{\xi}$ sean (anti)paralelos, de modo que $\vec{v} \cdot \vec{\xi}=\pm v\xi$ con $\xi=\sqrt{\vec{\xi}\cdot \vec{\xi}}$. Adem\'as, se tiene que
+Una condici\'on necesaria para que \eqref{E/mu} sea un extremo es que $\vec{v}$ y $\vec{\xi}$ sean (anti)paralelos, de modo que $\vec{v} \cdot \vec{\xi}=\pm v\xi$ con $\xi=\sqrt{\vec{\xi}\cdot \vec{\xi}}$. Adem\'as, se tiene que la norma del 4-vector $\xi{(t)}$ es 
 \begin{equation}\label{xi2}
-\xi_{(t)}^2=g_{\mu \nu} \xi_{(t)}^{\mu}\xi_{(t)}^{\nu}=g_{00}=\left( 1-\frac{2mr}{\rho^2}\right)
+\xi_{(t)}^2=g_{\mu \nu} \xi_{(t)}^{\mu}\xi_{(t)}^{\nu}=g_{00}=\left( 1-\frac{2mr}{\rho^2}\right),
 \end{equation}
-donde el valor de la norma del 4-vector es un escalar, con lo cual es independiente de las coordenadas utilizadas, en particular al utilizar las coordenadas de Kerr se obtiene \eqref{xi2}.
+cuyo valor es independiente de las coordenadas utilizadas.
 
-Por lo tanto, si la part\'icula se encuentra en la erg\'osfera entonces $\xi_{(t)}^{\mu}$ es un vector tipo espacio, que significa que $\xi^2_{(t)}<0$ entonces $\xi_{\hat{0}}^2-\xi^{2}<0$, con lo cual $\xi^{\hat{0}} < \xi$. As\'i, de \eqref{E/mu} se ve que todos los valores son permitidos para $E/m_0c^2$, donde el l\'imite superior se da con $v \rightarrow c$ y $\vec{v} \cdot \vec{\xi}=-v\xi$ y el inferior tambi\'en con $v \rightarrow c$ y $\vec{v} \cdot \vec{\xi}=+v\xi$. Por lo tanto,
+Por lo tanto, si la part\'icula se encuentra en la erg\'osfera entonces $\xi_{(t)}$ es un vector tipo espacio ($\xi^2_{(t)}<0)$, de modo que $\xi_{\hat{0}}^2-\xi^{2}<0$ y $\xi^{\hat{0}} < \xi$. As\'i, de \eqref{E/mu} vemos que $E/m_0c^2$ aporta su valor m'aximo si  $v \rightarrow c$ y $\vec{v} \cdot \vec{\xi}=-v\xi$ y m'inimo en el caso en que $v \rightarrow c$ y $\vec{v} \cdot \vec{\xi}=+v\xi$. De aqu'i se desprende que los valores posibles de la energ'ia son en efecto todos los valores reales,
 \begin{equation}\label{condicion1}
 -\infty <\frac{E}{m_0c^2}<+\infty.
 \end{equation}
 
-En el caso de estar fuera de la erg\'osfera de \eqref{xi2} se tiene que $\xi_t^{\mu}$ es tipo tiempo, con lo cual $\xi^{\hat{0}} >\xi$. Con esto el valor de la energ\'ia es siempre positivo, donde se debe determinar el l\'imite inferior del rango permitido para el cuociente \eqref{E/mu}.
+En el caso de estar fuera de la erg\'osfera $\xi_{(t)}$ es tipo tiempo, con lo cual $\xi^{\hat{0}} >\xi$. Con esto el valor de la energ\'ia es siempre positivo, donde se debe determinar el l\'imite inferior del rango permitido para el cuociente \eqref{E/mu}.
 
 Derivando la expresi\'on \eqref{E/mu} con respecto a $v$ e igual'andola a 0, se encuentra que el valor de la velocidad que extremiza el valor de la energ\'ia es:
 \begin{equation}\label{v}
-v=\frac{c\xi}{\xi^{\hat{0}}}.
+v=c\frac{\xi}{\xi^{\hat{0}}}.
 \end{equation}
 
 Reemplazado \eqref{v} en \eqref{E/mu}, se obtiene que el l\'imite inferior viene dado por la norma del m\'odulo del vector de Killing en el caso que es tipo tiempo $\xi_{(t)}$ (donde $\xi^2_{(t)}=\xi_{\hat{0}}^2-\xi^2$) :
@@ -1115,7 +1115,7 @@ Como \eqref{condicion2} est\'a dentro del rango \eqref{condicion1}, entonces se 
 \frac{E^{2}}{m_0^2c^4}-\xi_{(t)}^2 \geq 0.
 \end{equation}
 
-Para encontrar el l\'imite inferior para la velocidad, se debe considerar lo siguiente: Dada las \'orbitas de dos part\'iculas de masa $m_1$ y $m_2$ que se intersectan en un punto, donde las energ\'ias de cada part\'icula son $E_1$ y $E_2$, respectivamente, y con diferentes 4-velocidades, tal que la norma vector de velocidad relativa $|w|$ (velocidad de una part\'icula vista por un observador com\'ovil con la otra part\'icula) es distinto de cero.\\
+Para encontrar el l\'imite inferior para la velocidad, se debe considerar lo siguiente: Dadas las \'orbitas de dos part\'iculas de masa $m_1$ y $m_2$ que se intersectan en un punto, donde las energ\'ias de cada part\'icula son $E_1$ y $E_2$, respectivamente, y con diferentes 4-velocidades, tal que la norma vector de velocidad relativa $|w|$ (velocidad de una part\'icula vista por un observador com\'ovil con la otra part\'icula) es distinto de cero.\\
 
 Se escoge nuevamente una tetrada ortonormal como base de los 4-vectores en este punto, tal que las correspondientes 4-velocidades son
 \begin{equation}
@@ -1157,20 +1157,18 @@ Resolviendo la \'ultima desigualdad para $v/c$ se tiene que
 
 Aplicando las relaciones encontradas al caso de tener la geometr\'ia de Kerr, de \eqref{xi2} con $r \geq r_+$, encontramos
 \begin{equation}
-|\xi_{(t)}^2| \leq 1, \qquad  \forall \quad \theta,\varphi .
+|\xi_{(t)}^2| \leq 1, \qquad  \forall\ \theta,\varphi .
 \end{equation}
 
-Por ejemplo, si $E_1$ el valor de la m\'inima energ\'ia de una part\'icula que se encuentra en el m\'inimo radio en que la \'orbita circular es estable, la cual se da cuando $a \rightarrow m$ y $E_2$ tiene el valor de la energ\'ia de una part\'icula que se encuentra en el borde de la regi\'on de energ\'ia negativa, entonces
+Consideremos el caso en que $E_1$ es el valor de la m\'inima energ\'ia que puede tener una part\'icula que se encuentra en el m\'inimo radio en que la \'orbita circular es estable, lo que ocurre cuando $a \rightarrow m$. Adem'as, supondremos que $E_2$ tiene el valor de la energ\'ia de una part\'icula que se encuentra en el borde de la regi\'on de energ\'ia negativa. Bajo estos supuestos, tenemos que
 \begin{equation}
 \frac{E_1}{m_1c^2}=\frac{1}{\sqrt{3}}, \qquad \frac{E_2}{m_2c^2}=0.
 \end{equation}
-
-De \eqref{v/c} se obtiene que
+Entonces, \eqref{v/c} obtenemos que
 \begin{equation}\label{finalv/c}
 \frac{v}{c} \geq 2-\sqrt{3}.
 \end{equation}
-
-Y finalmente, reemplazando \eqref{finalv/c} en \eqref{w}, se obtiene la siguiente desigualdad
+Finalmente, reemplazando \eqref{finalv/c} en \eqref{w}, se obtiene la siguiente desigualdad
 \begin{equation}
 |w|\geq \frac{c}{2}.
 \end{equation}
