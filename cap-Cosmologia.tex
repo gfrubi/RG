@@ -19,11 +19,15 @@ dl^{2}= dx^{2} + dy^{2} + \frac{(xdx + ydy)^{2}}{a^2-(x^2 + y^2)},
 \end{equation}
 donde hemos usado la condici'on $x^2 +y^2 + z^2 =a^2$ para eliminar la coordenada $z$.
 
-An'alogamente podemos generar otra superficie is'otropa y homog'enea usando ahora la condici'on $z^2-x^2-y^2=a^2$ (superficie hiperb'olica), obteni'endose
+An'alogamente podemos generar otra superficie is'otropa y homog'enea considerando un espacio tridimensional ``Lorentziano", con elemento de l'inea
+\begin{equation}
+dl^{2}= dx^{2} + dy^{2}  -dz^{2},
+\end{equation}
+y luego restringui'endonos a la superficie determinada por la condici'on $z^2-x^2-y^2=a^2$ (superficie hiperb'olica), obteni'endose
 \begin{equation}
 dl^{2}= dx^{2} + dy^{2} - \frac{(xdx + ydy)^{2}}{a^2+(x^2 + y^2)}.
 \end{equation}
-\\
+
 En resumen, podemos escribir\footnote{Usando el elemento de l'inea $dl^{2}= dx^{2} + dy^{2} + kdz^{2}$ y adem'as $z^2 +k(x^2 + y^2)=a^2$.}
 \begin{equation}
 dl^{2}= dx^{2} + dy^{2} + k\frac{(xdx + ydy)^{2}}{a^2-k(x^2 + y^2)},\label{60j}
@@ -39,10 +43,10 @@ k=\left\{\begin{array}{rl}
 Estas tres superficies poseen curvatura constante. En efecto, las componentes no nulas de la conexi'on en estas coordenadas son:
 \begin{align}
 \Gamma^{1}_{11} &= \frac{{k}^{2}\,x\,{y}^{2}-a^{2}\,k\,x}{a^{2}\,k\,{y}^{2}+a^{2}\,k\,{x}^{2}-a^{4}}, \quad
-\Gamma^{1}_{12}=\frac{{k}^{2}\,{y}^{3}-a^{2}\,k\,y}{a^{2}\,k\,{y}^{2}+a^{2}\,k\,{x}^{2}-a^{4}}, \\
-\Gamma^{1}_{21} &= \frac{-{k}^{2}\,{x}^{2}\,y}{a^{2}\,k\,{y}^{2}+a^{2}\,k\,{x}^{2}-a^{4}},\quad
-\Gamma^{1}_{22}=\frac{-{k}^{2}\,x\,{y}^{2}}{a^{2}\,k\,{y}^{2}+a^{2}\,k\,{x}^{2}-a^{4}},\\
-\Gamma^{2}_{21} &= \frac{{k}^{2}\,{x}^{3}-a^{2}\,k\,x}{a^{2}\,k\,{y}^{2}+a^{2}\,k\,{x}^{2}-a^{4}}, \quad
+\Gamma^{2}_{11}=\frac{{k}^{2}\,{y}^{3}-a^{2}\,k\,y}{a^{2}\,k\,{y}^{2}+a^{2}\,k\,{x}^{2}-a^{4}}, \\
+\Gamma^{1}_{12} &= \frac{-{k}^{2}\,{x}^{2}\,y}{a^{2}\,k\,{y}^{2}+a^{2}\,k\,{x}^{2}-a^{4}},\quad
+\Gamma^{2}_{12}=\frac{-{k}^{2}\,x\,{y}^{2}}{a^{2}\,k\,{y}^{2}+a^{2}\,k\,{x}^{2}-a^{4}},\\
+\Gamma^{1}_{22} &= \frac{{k}^{2}\,{x}^{3}-a^{2}\,k\,x}{a^{2}\,k\,{y}^{2}+a^{2}\,k\,{x}^{2}-a^{4}}, \quad
 \Gamma^{2}_{22}=\frac{\left( {k}^{2}\,{x}^{2}-a^{2}\,k\right) \,y}{a^{2}\,k\,{y}^{2}+a^{2}\,k\,{x}^{2}-a^{4}},
 \end{align}
 y entonces el escalar de curvatura es dado por
@@ -50,6 +54,10 @@ y entonces el escalar de curvatura es dado por
 R=\frac{2k}{a^2}.
 \end{equation}
 Puede verificarse adem'as que estos espacios son \textbf{maximalmente sim'etricos}, ya que poseen el n'umero m'aximo de 3 vectores de Killing independientes permitidos por la dimensi'on.
+Puede elegirse como vectores de Killing independientes a
+\begin{equation}
+\hat{\xi}_{1}=\sqrt{1-k(x^2+y^2)}\partial_x, \qquad \hat{\xi}_{2}=\sqrt{1-k(x^2+y^2)}\partial_y, \qquad \hat{\xi}_{3} = x\partial_y -y\partial_x.
+\end{equation}
 
 \section{La m'etrica de Friedman-Lema\^itre-Robertson-Walker}
 Propuesta 1922 por \href{http://es.wikipedia.org/wiki/Aleksandr_Fridman}{Alexander Friedman} la m'etrica de Friedman-Lema\^itre-Robertson-Walker (FLRW) fue redescubierta en 1930 por \href{http://en.wikipedia.org/wiki/Howard_P._Robertson}{Howard Robertson} y \href{http://en.wikipedia.org/wiki/Arthur_Geoffrey_Walker}{Arthur G. Walker}, quienes la hicieron famosa y por lo mismo lleva sus nombres. Esta m'etrica describe un Universo en expansi'on (o contracci'on), espacialmente homog'eneo e is'otropo.
