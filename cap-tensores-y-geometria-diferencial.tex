@@ -497,223 +497,223 @@ invariante (independiente de las coordenadas usadas).
 % \end{equation}
 % Por lo tanto, bajo las hip'otesis mencionadas $S$ debe ser un tensor.
 
-% \section{Densidades tensoriales.}
-%
-% Consideremos un campo vectorial contravariante $A^i $ y la integral:
-% \begin{equation}
-% \int_\Omega A^i d^nx, \label{den1}%
-% \end{equation}
-% donde $d^nx:=dx^1dx^2\cdots dx^n$ y la integral se toma sobre una
-% regi'on $\Omega$ dada de $M$. Observamos que el resultado de esta integral
-% \textit{no constituye un vector bajo TGC's} (ya que b'asicamente se est'an
-% sumando vectores definimos en distintos puntos de la variedad, que bajo una
-% TGC transforman de forma distinta en cada punto). Del mismo modo,
-% consideremos la integral de un campo escalar $A$:
-% \begin{equation}
-% I=\int_\Omega A\,d^nx. \label{den2}%
-% \end{equation}
-% Veamos c'omo transforma bajo $I$ bajo una TGC. El elemento de volumen
-% transforma de acuerdo al teorema de cambio de variables para integrales de
-% Riemann m'ultiples:
-% \begin{equation}
-% d^nx=\left| \frac{\partial x^k }{\partial\bar{x}^j }\right| d^n
-% \bar{x} ,
-% \end{equation}
-% donde $\left| \frac{\partial x^k }{\partial\bar{x}^j }\right|$ es el m'odulo
-% del jacobiano de la transformaci'on. Luego:
-% \begin{equation}
-% I=\int_\Omega A\,d^nx=\int_\Omega\bar{A}\left| \frac{\partial x^k
-% }{\partial\bar{x}^j %
-% }\right| d^n\bar{x}\neq\int_\Omega\bar{A}\,d^n\bar{x}=\bar{I}.
-% \label{den3}%
-% \end{equation}
-% De este modo $I$ \textit{no es invariante bajo una TGC} (de hecho, $I$ y
-% $\bar{I}$ ni siquiera son proporcionales, en general). Pero nos interesa poder
-% definir integrales de la forma (\ref{den2}) cuyo resultado s'i sea un
-% escalar, es decir, independiente del SC en el que se calcule. Esto implica
-% entonces que, para que $I$ sea un escalar, $A$ no puede ser un campo escalar.
-% Por otra parte,
-% sabemos que si sumamos s'olo cantidades escalares el resultado es un escalar.
-% En nuestro caso tenemos una integral en vez de una suma. Luego, si
-% $A\,d^nx$ es
-% un escalar entonces $I$ ser'a un escalar. Para esto la ley de transformaci'on
-% de $A$ no debe ser $A=\bar{A}$, sino\footnote{Desde ahora, denotaremos a las
-% densidades (tensoriales) usando letras cursivas.}
-% \begin{equation}
-% {\cal A}=\left| \frac{\partial\bar{x}^i }{\partial x^k }\right| \bar{{\cal
-% A}},
-% \label{den4}%
-% \end{equation}
-% de modo que
-% \begin{equation}
-% I=\int_\Omega {\cal A}\,d^nx=\int_\Omega\bar{{\cal A}}\left|
-% \frac{\partial\bar{x}^i }{\partial x^k %
-% }\right| \left| \frac{\partial x^k }{\partial\bar{x}^j }\right|
-% d^n\bar{x}
-% =\int_\Omega\bar{{\cal A}}\,d^n\bar{x}=\bar{I}. \label{den5}%
-% \end{equation}
-% Ahora $I$ es un escalar, pero ${\cal A}$ no lo es. Esto motiva la siguiente
-% definici'on:
-%
-% \textbf{Definici'on:} Una cantidad $\rho$ es llamada \textit{densidad escalar
-% de peso} $p$ si bajo una TGC 'esta obdece la ley:
-% \begin{equation}
-% \bar{\rho}=\left| \frac{\partial x^i }{\partial\bar{x}^j }\right| ^p%
-% \rho. \label{den6}%
-% \end{equation}
-% De lo anterior se concluye que $d^nx$ es una densidad escalar de peso $-1$,
-% y que la integral de una densidad escalar de peso $+1$ es un escalar.
-%
-% \textbf{Definici'on:} Un conjunto de $n^{r+s}$ cantidades ${\cal A}_{\ \ \ \ \
-% k_1\cdots k_{s}}^{i_1\cdots i_{r}}(P)$ son las componentes de una densidad
-% tensorial de peso $p$ y tipo $(^r_s)$ en un punto $P$, si bajo una TGC dichas
-% componentes transforman seg'un la ley:
-% \begin{equation}
-% \boxed{\bar{{\cal A}}_{\ \ \ \ \ k_1\cdots k_{s}}^{i_1\cdots
-% i_{r}}(P)=\left| \frac{\partial
-% x^i }{\partial\bar{x}^k }\right|^p(P) \frac{\partial\bar{x}^{i_1}%
-% }{\partial x^{l_1}}(P)\cdots \frac{\partial\bar{x}^{i_{r}}}{\partial
-% x^{l_{r}}}(P)\frac{\partial x^{m_1}}{\partial\bar{x}^{k_1}}(P)\cdots
-% \frac{\partial x^{m_{s}}}{\partial\bar{x}^{k_{s}}}(P){\cal A}_{\ \ \ \ \
-% m_1\cdots m_{s}}^{l_1\cdots l_{r}}(P).}
-% \label{den7}%
-% \end{equation}
-% No se debe inferir que la integral de las componentes de una densidad
-% tensorial es un tensor, pues no lo es (salvo el caso de una densidad escalar).
-%
-% Consecuencias inmediatas de la definici'on de densidades tensoriales son:
-% \begin{itemize}
-% \item Si todas las componentes de una densidad son nulas en un SC, entonces
-% son nulas en cualquier SC. Como consecuencia, las ecuaciones entre densidades
-% son independientes del SC.
-% \item La suma o diferencia de densidades del mismo tipo y referidas al mismo
-% punto es otra densidad del mismo tipo.
-% \item El producto de una densidad tensorial de tipo $(^r_s)$ y peso $p$ por
-% una densidad tensorial de tipo $(^t_u)$ y peso $q$ es una densidad tensorial
-% de tipo $(^{r+t}_{s+u})$ y peso $p+q$.
-% \item La contracci'on de 'indices puede realizarse para densidades
-% tensoriales de tipo $(^r_s)$ con $r,s\geq1$, del mismo modo que para tensores,
-% resultando una densidad de tipo ($_{s-1}^{r-1}$) y del mismo peso.
-% \end{itemize}
-%
-% \subsection{Densidades tensoriales de Levi-Civita}
-% Considere ahora un tensor $T_{i_1\cdots i_n}$ de tipo ($_n^0$)
-% \textit{totalmente
-% antisim'etrico}. Si denotamos el valor num'erico de $T_{12\dots n}$ por
-% ${\cal T}$, entonces cualquier otra componente $T_{i_1\cdots i_n}$ tendr'a
-% valor
-% $\pm{\cal T}$ de acuerdo a si la permutaci'on $i_1\cdots i_n$ es par o
-% impar, o
-% bien ser'a nula si se repite un 'indice. Escribamos la ley de transformaci'on
-% para la componente $T_{12\cdots n}$:
-% \begin{equation}
-% \bar{T}_{12\cdots n}=\frac{\partial
-% x^{k_1}}{\partial\bar{x}^1}\frac{\partial
-% x^{k_2}}{\partial\bar{x}^2}\cdots \frac{\partial x^{k_n}}{\partial\bar
-% {x}^n}\,T_{k_1\cdots k_n}. \label{den8}%
-% \end{equation}
-% Escribiendo expl'icitamente la suma y usando las propiedades
-% antisim'etricas de $T$ se obtiene:
-% \begin{equation}
-% \bar{T}_{12\cdots n}=\left| \frac{\partial x^k }{\partial\bar{x}^i }\right|
-% T_{12\cdots n}, \label{den9}%
-% \end{equation}
-% es decir,
-% \begin{equation}
-% \bar{{\cal T}}=\left| \frac{\partial x^k }{\partial\bar{x}^i }\right| {\cal
-% T}.
-% \label{den10}%
-% \end{equation}
-% Esto significa que el valor de una componente (no nula) de un tensor
-% antisim'etrico de tipo ($_n^0$) es una densidad escalar de tipo $+1$. Por
-% otro lado, ya que todos los valores de $T_{i_1\cdots i_n}$ son
-% proporcionales a $T_{12\cdots n}={\cal T}$, podemos escribir que
-% \begin{equation}
-% T_{i_1\cdots i_n}={\cal T}\hat{\epsilon}_{i_1\cdots i_n},
-% \label{TcalT}
-% \end{equation}
-% donde $\hat{\epsilon}_{i_1\cdots i_n}$ denota un objeto que es definido
-% tal que es totalmente antisim'etrico y que \textit{en todo SC}
-% $\hat{\epsilon}_{12\cdots n}:=1$. Ya que $T_{i_1\cdots i_n}$ es un tensor
-% (es decir, una densidad tensorial de peso $0$) y ${\cal T}$ es una densidad
-% tensorial de peso $+1$ concluimos de (\ref{TcalT}) que
-% $\hat{\epsilon}_{i_1\cdots i_n}$ \textbf{es una densidad tensorial de
-% peso} $-1$, llamada \textbf{densidad tensorial de Levi-Civita}.
-%
-% An'alogamente, podemos descomponer cualquier tensor contravariante
-% $A^{i_1\cdots i_n}$ en
-% \begin{equation}
-% A^{i_1\cdots i_n}={\cal A}\,\epsilon^{i_1\cdots i_n}, \label{AcalA}
-% \end{equation}
-% donde ${\cal A}:=A^{1\cdots n}$ es una densidad escalar de peso $-1$ y
-% $\epsilon^{i_1\cdots i_n}$ es la densidad de Levi-Civita de peso $+1$,
-% definida como totalmente antisim'etrica y tal que
-% \textit{en todo SC} $\epsilon^{1\cdots n}:=1$.
-%
-% Las densidades tensoriales de Levi-Civita son cantidades num'ericamente
-% invariantes que pueden ser definidas en cualquier variedad.
-%
-%
-% En el caso que $n=4$, ellas satisfacen las siguientes identidades:
-% \begin{eqnarray}
-% \epsilon^{ijkl}\, \hat{\epsilon}_{mnpq}&=&4!\, \delta^i_{[m}\delta ^j_n
-% \delta^k_p \delta^l_{q]}, \\
-% \epsilon^{ijkl}\, \hat{\epsilon}_{mnpl}&=&3!\, \delta^i_{[m}\delta ^j_n
-% \delta^k_{p]} , \\
-% \epsilon^{ijkl}\, \hat{\epsilon}_{mnkl}&=&2!\, \left( \delta^i_m\delta ^j_n -
-% \delta^j_m \delta^i_n\right), \label{idep2} \\
-% \epsilon^{ijkl}\, \hat{\epsilon}_{mjkl}&=&3!\, \delta^i_m, \label{idep3}\\
-% \epsilon^{ijkl}\, \hat{\epsilon}_{ijkl}&=&4! .
-% \end{eqnarray}
-%
-% \section{Tensores antisim'etricos y densidades tensoriales duales}
-% Consideremos una variedad de 4 dimensiones. Si disponemos de un tensor
-% antisim'etrico de tipo ($_2^0$), $A_{ij}$, que tendr'a en general 6
-% componentes linealmente independientes, podemos definir una densidad tensorial
-% antisim'etrica de peso $+1$, por
-% \begin{equation}
-% {\cal A}^{ij}:=\frac{1}2\,\epsilon^{ijkl}A_{kl} .\label{den13}
-% \end{equation}
-% Puede verificarse que ${\cal A}_{ij}$ es equivalente a $A_{ij}$ en el sentido
-% que contiene la misma informaci'on. En efecto, usando la identidad
-% (\ref{idep2}) podemos encontrar que
-% \begin{equation}
-% A_{ij} :=\frac{1}{2!}\,\epsilon_{ijkl}{\cal A}^{kl}.
-% \end{equation}
-% Por tanto, es posible considerar en forma alternativa, pero equivalentemente,
-% al tensor antisim'etrico $A_{ij}$ y a la densidad antisim'etrica de peso
-% $+1$ ${\cal A}^{ij}$, que es usualmente llamado \textit{dual de} $A_{ij}$
-%
-% An'alogamente (para $n=4$) existe una relaci'on 1 a 1 entre tensores
-% totalmente antisim'etricos de tipo $(^0_3)$ $A_{ijk}$ y densidades
-% (``duales'') vectoriales
-% contravariante de peso $+1$ ${\cal A}^i$ definidas por ${\cal
-% A}^i:=\frac{1}{3!}\epsilon^{ijkl}A_{jkl}$, ya que
-% $A_{jkl}:=\epsilon_{ijkl}{\cal A}^i$, como puede verificarse usando
-% (\ref{idep3}).
-%
-% En general, puede establecerse el siguiente resultado:
-%
-% \begin{quotation}
-% \textbf{Teorema:} A todo tensor antisim'etrico $T_{i_1\dots i_{p}}
-% $ de tipo $(^0_p)$ ($p\leq n$) se le puede hacer corresponder una densidad
-% tensorial ${\cal T}^{j_1\dots j_{n-p}}$ de tipo $(_{\ \, 0 }^{n-p})$ y peso
-% $+1$, cuyas componentes contienen las componentes independientes del tensor.
-% Las componentes de ${\cal T}^{j_1\dots j_{n-p}}$ est'an dadas por:
-% \begin{equation}
-% {\cal T}^{j_1\dots j_{n-p}}:=\frac{1}{p!}\epsilon^{j_1\dots
-% j_{n-p}i_1\dots i_{p}}\,T_{i_1\dots i_{p}}, \label{den16}%
-% \end{equation}
-% y recibe el nombre de \textbf{densidad adjunta o dual} del tensor original.
-% Adem'as se satisface que
-% \begin{equation}
-% T_{i_1\dots i_{p}}=\frac{1}{(n-p)!}\epsilon_{j_1\dots j_{n-p}i_1\dots
-% i_{p}}\,{\cal T}^{j_1\dots j_{n-p}}.
-% \end{equation}
-% Finalmente, una equivalencia similar es v'alida entre tensores antisim'etricos
-% de tipo $(^p_0)$ y densidades tensoriales antisim'etricas de tipo $(^{\ \,
-% 0}_{n-p})$ y peso $-1$.
-% \end{quotation}
+ \section{Densidades tensoriales *}
+
+ Consideremos un campo vectorial contravariante $A^i $ y la integral:
+ \begin{equation}
+ \int_\Omega A^i d^nx, \label{den1}%
+ \end{equation}
+ donde $d^nx:=dx^1dx^2\cdots dx^n$ y la integral se toma sobre una
+ regi'on $\Omega$ dada de $M$. Observamos que el resultado de esta integral
+ \textit{no constituye un vector bajo TGC's} (ya que b'asicamente se est'an
+ sumando vectores definimos en distintos puntos de la variedad, que bajo una
+ TGC transforman de forma distinta en cada punto). Del mismo modo,
+ consideremos la integral de un campo escalar $A$:
+ \begin{equation}
+ I=\int_\Omega A\,d^nx. \label{den2}%
+ \end{equation}
+ Veamos c'omo transforma bajo $I$ bajo una TGC. El elemento de volumen
+ transforma de acuerdo al teorema de cambio de variables para integrales de
+ Riemann m'ultiples:
+ \begin{equation}
+ d^nx=\left| \frac{\partial x^k }{\partial\bar{x}^j }\right| d^n
+ \bar{x} ,
+ \end{equation}
+ donde $\left| \frac{\partial x^k }{\partial\bar{x}^j }\right|$ es el m'odulo
+ del jacobiano de la transformaci'on. Luego:
+ \begin{equation}
+ I=\int_\Omega A\,d^nx=\int_\Omega\bar{A}\left| \frac{\partial x^k
+ }{\partial\bar{x}^j %
+ }\right| d^n\bar{x}\neq\int_\Omega\bar{A}\,d^n\bar{x}=\bar{I}.
+ \label{den3}%
+ \end{equation}
+ De este modo $I$ \textit{no es invariante bajo una TGC} (de hecho, $I$ y
+ $\bar{I}$ ni siquiera son proporcionales, en general). Pero nos interesa poder
+ definir integrales de la forma (\ref{den2}) cuyo resultado s'i sea un
+ escalar, es decir, independiente del SC en el que se calcule. Esto implica
+ entonces que, para que $I$ sea un escalar, $A$ no puede ser un campo escalar.
+ Por otra parte,
+ sabemos que si sumamos s'olo cantidades escalares el resultado es un escalar.
+ En nuestro caso tenemos una integral en vez de una suma. Luego, si
+ $A\,d^nx$ es
+ un escalar entonces $I$ ser'a un escalar. Para esto la ley de transformaci'on
+ de $A$ no debe ser $A=\bar{A}$, sino\footnote{Desde ahora, denotaremos a las
+ densidades (tensoriales) usando letras cursivas.}
+ \begin{equation}
+ {\cal A}=\left| \frac{\partial\bar{x}^i }{\partial x^k }\right| \bar{{\cal
+ A}},
+ \label{den4}%
+ \end{equation}
+ de modo que
+ \begin{equation}
+ I=\int_\Omega {\cal A}\,d^nx=\int_\Omega\bar{{\cal A}}\left|
+ \frac{\partial\bar{x}^i }{\partial x^k %
+ }\right| \left| \frac{\partial x^k }{\partial\bar{x}^j }\right|
+ d^n\bar{x}
+ =\int_\Omega\bar{{\cal A}}\,d^n\bar{x}=\bar{I}. \label{den5}%
+ \end{equation}
+ Ahora $I$ es un escalar, pero ${\cal A}$ no lo es. Esto motiva la siguiente
+ definici'on:
+
+ \textbf{Definici'on:} Una cantidad $\rho$ es llamada \textit{densidad escalar
+ de peso} $p$ si bajo una TGC 'esta obdece la ley:
+ \begin{equation}
+ \bar{\rho}=\left| \frac{\partial x^i }{\partial\bar{x}^j }\right| ^p%
+ \rho. \label{den6}%
+ \end{equation}
+ De lo anterior se concluye que $d^nx$ es una densidad escalar de peso $-1$,
+ y que la integral de una densidad escalar de peso $+1$ es un escalar.
+
+ \textbf{Definici'on:} Un conjunto de $n^{r+s}$ cantidades ${\cal A}_{\ \ \ \ \
+ k_1\cdots k_{s}}^{i_1\cdots i_{r}}(P)$ son las componentes de una densidad
+ tensorial de peso $p$ y tipo $(^r_s)$ en un punto $P$, si bajo una TGC dichas
+ componentes transforman seg'un la ley:
+ \begin{equation}
+ \boxed{\bar{{\cal A}}_{\ \ \ \ \ k_1\cdots k_{s}}^{i_1\cdots
+ i_{r}}(P)=\left| \frac{\partial
+ x^i }{\partial\bar{x}^k }\right|^p(P) \frac{\partial\bar{x}^{i_1}%
+ }{\partial x^{l_1}}(P)\cdots \frac{\partial\bar{x}^{i_{r}}}{\partial
+ x^{l_{r}}}(P)\frac{\partial x^{m_1}}{\partial\bar{x}^{k_1}}(P)\cdots
+ \frac{\partial x^{m_{s}}}{\partial\bar{x}^{k_{s}}}(P){\cal A}_{\ \ \ \ \
+ m_1\cdots m_{s}}^{l_1\cdots l_{r}}(P).}
+ \label{den7}%
+ \end{equation}
+ No se debe inferir que la integral de las componentes de una densidad
+ tensorial es un tensor, pues no lo es (salvo el caso de una densidad escalar).
+
+ Consecuencias inmediatas de la definici'on de densidades tensoriales son:
+ \begin{itemize}
+ \item Si todas las componentes de una densidad son nulas en un SC, entonces
+ son nulas en cualquier SC. Como consecuencia, las ecuaciones entre densidades
+ son independientes del SC.
+ \item La suma o diferencia de densidades del mismo tipo y referidas al mismo
+ punto es otra densidad del mismo tipo.
+ \item El producto de una densidad tensorial de tipo $(^r_s)$ y peso $p$ por
+ una densidad tensorial de tipo $(^t_u)$ y peso $q$ es una densidad tensorial
+ de tipo $(^{r+t}_{s+u})$ y peso $p+q$.
+ \item La contracci'on de 'indices puede realizarse para densidades
+ tensoriales de tipo $(^r_s)$ con $r,s\geq1$, del mismo modo que para tensores,
+ resultando una densidad de tipo ($_{s-1}^{r-1}$) y del mismo peso.
+ \end{itemize}
+
+ \subsection{Densidades tensoriales de Levi-Civita*}
+ Considere ahora un tensor $T_{i_1\cdots i_n}$ de tipo ($_n^0$)
+ \textit{totalmente
+ antisim'etrico}. Si denotamos el valor num'erico de $T_{12\dots n}$ por
+ ${\cal T}$, entonces cualquier otra componente $T_{i_1\cdots i_n}$ tendr'a
+ valor
+ $\pm{\cal T}$ de acuerdo a si la permutaci'on $i_1\cdots i_n$ es par o
+ impar, o
+ bien ser'a nula si se repite un 'indice. Escribamos la ley de transformaci'on
+ para la componente $T_{12\cdots n}$:
+ \begin{equation}
+ \bar{T}_{12\cdots n}=\frac{\partial
+ x^{k_1}}{\partial\bar{x}^1}\frac{\partial
+ x^{k_2}}{\partial\bar{x}^2}\cdots \frac{\partial x^{k_n}}{\partial\bar
+ {x}^n}\,T_{k_1\cdots k_n}. \label{den8}%
+ \end{equation}
+ Escribiendo expl'icitamente la suma y usando las propiedades
+ antisim'etricas de $T$ se obtiene:
+ \begin{equation}
+ \bar{T}_{12\cdots n}=\left| \frac{\partial x^k }{\partial\bar{x}^i }\right|
+ T_{12\cdots n}, \label{den9}%
+ \end{equation}
+ es decir,
+ \begin{equation}
+ \bar{{\cal T}}=\left| \frac{\partial x^k }{\partial\bar{x}^i }\right| {\cal
+ T}.
+ \label{den10}%
+ \end{equation}
+ Esto significa que el valor de una componente (no nula) de un tensor
+ antisim'etrico de tipo ($_n^0$) es una densidad escalar de tipo $+1$. Por
+ otro lado, ya que todos los valores de $T_{i_1\cdots i_n}$ son
+ proporcionales a $T_{12\cdots n}={\cal T}$, podemos escribir que
+ \begin{equation}
+ T_{i_1\cdots i_n}={\cal T}\hat{\epsilon}_{i_1\cdots i_n},
+ \label{TcalT}
+ \end{equation}
+ donde $\hat{\epsilon}_{i_1\cdots i_n}$ denota un objeto que es definido
+ tal que es totalmente antisim'etrico y que \textit{en todo SC}
+ $\hat{\epsilon}_{12\cdots n}:=1$. Ya que $T_{i_1\cdots i_n}$ es un tensor
+ (es decir, una densidad tensorial de peso $0$) y ${\cal T}$ es una densidad
+ tensorial de peso $+1$ concluimos de (\ref{TcalT}) que
+ $\hat{\epsilon}_{i_1\cdots i_n}$ \textbf{es una densidad tensorial de
+ peso} $-1$, llamada \textbf{densidad tensorial de Levi-Civita}.
+
+ An'alogamente, podemos descomponer cualquier tensor contravariante
+ $A^{i_1\cdots i_n}$ en
+ \begin{equation}
+ A^{i_1\cdots i_n}={\cal A}\,\epsilon^{i_1\cdots i_n}, \label{AcalA}
+ \end{equation}
+ donde ${\cal A}:=A^{1\cdots n}$ es una densidad escalar de peso $-1$ y
+ $\epsilon^{i_1\cdots i_n}$ es la densidad de Levi-Civita de peso $+1$,
+ definida como totalmente antisim'etrica y tal que
+ \textit{en todo SC} $\epsilon^{1\cdots n}:=1$.
+
+ Las densidades tensoriales de Levi-Civita son cantidades num'ericamente
+ invariantes que pueden ser definidas en cualquier variedad.
+
+
+ En el caso que $n=4$, ellas satisfacen las siguientes identidades:
+ \begin{eqnarray}
+ \epsilon^{ijkl}\, \hat{\epsilon}_{mnpq}&=&4!\, \delta^i_{[m}\delta ^j_n
+ \delta^k_p \delta^l_{q]}, \\
+ \epsilon^{ijkl}\, \hat{\epsilon}_{mnpl}&=&3!\, \delta^i_{[m}\delta ^j_n
+ \delta^k_{p]} , \\
+ \epsilon^{ijkl}\, \hat{\epsilon}_{mnkl}&=&2!\, \left( \delta^i_m\delta ^j_n -
+ \delta^j_m \delta^i_n\right), \label{idep2} \\
+ \epsilon^{ijkl}\, \hat{\epsilon}_{mjkl}&=&3!\, \delta^i_m, \label{idep3}\\
+ \epsilon^{ijkl}\, \hat{\epsilon}_{ijkl}&=&4! .
+ \end{eqnarray}
+
+ \section{Tensores antisim'etricos y densidades tensoriales duales*}
+ Consideremos una variedad de 4 dimensiones. Si disponemos de un tensor
+ antisim'etrico de tipo ($_2^0$), $A_{ij}$, que tendr'a en general 6
+ componentes linealmente independientes, podemos definir una densidad tensorial
+ antisim'etrica de peso $+1$, por
+ \begin{equation}
+ {\cal A}^{ij}:=\frac{1}2\,\epsilon^{ijkl}A_{kl} .\label{den13}
+ \end{equation}
+ Puede verificarse que ${\cal A}_{ij}$ es equivalente a $A_{ij}$ en el sentido
+ que contiene la misma informaci'on. En efecto, usando la identidad
+ (\ref{idep2}) podemos encontrar que
+ \begin{equation}
+ A_{ij} :=\frac{1}{2!}\,\epsilon_{ijkl}{\cal A}^{kl}.
+ \end{equation}
+ Por tanto, es posible considerar en forma alternativa, pero equivalentemente,
+ al tensor antisim'etrico $A_{ij}$ y a la densidad antisim'etrica de peso
+ $+1$ ${\cal A}^{ij}$, que es usualmente llamado \textit{dual de} $A_{ij}$
+
+ An'alogamente (para $n=4$) existe una relaci'on 1 a 1 entre tensores
+ totalmente antisim'etricos de tipo $(^0_3)$ $A_{ijk}$ y densidades
+ (``duales'') vectoriales
+ contravariante de peso $+1$ ${\cal A}^i$ definidas por ${\cal
+ A}^i:=\frac{1}{3!}\epsilon^{ijkl}A_{jkl}$, ya que
+ $A_{jkl}:=\epsilon_{ijkl}{\cal A}^i$, como puede verificarse usando
+ (\ref{idep3}).
+
+ En general, puede establecerse el siguiente resultado:
+
+ \begin{quotation}
+ \textbf{Teorema:} A todo tensor antisim'etrico $T_{i_1\dots i_{p}}
+ $ de tipo $(^0_p)$ ($p\leq n$) se le puede hacer corresponder una densidad
+ tensorial ${\cal T}^{j_1\dots j_{n-p}}$ de tipo $(_{\ \, 0 }^{n-p})$ y peso
+ $+1$, cuyas componentes contienen las componentes independientes del tensor.
+ Las componentes de ${\cal T}^{j_1\dots j_{n-p}}$ est'an dadas por:
+ \begin{equation}
+ {\cal T}^{j_1\dots j_{n-p}}:=\frac{1}{p!}\epsilon^{j_1\dots
+ j_{n-p}i_1\dots i_{p}}\,T_{i_1\dots i_{p}}, \label{den16}%
+ \end{equation}
+ y recibe el nombre de \textbf{densidad adjunta o dual} del tensor original.
+ Adem'as se satisface que
+ \begin{equation}
+ T_{i_1\dots i_{p}}=\frac{1}{(n-p)!}\epsilon_{j_1\dots j_{n-p}i_1\dots
+ i_{p}}\,{\cal T}^{j_1\dots j_{n-p}}.
+ \end{equation}
+ Finalmente, una equivalencia similar es v'alida entre tensores antisim'etricos
+ de tipo $(^p_0)$ y densidades tensoriales antisim'etricas de tipo $(^{\ \,
+ 0}_{n-p})$ y peso $-1$.
+ \end{quotation}
 
 \section{M'etrica}
 
