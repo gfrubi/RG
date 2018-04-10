@@ -184,7 +184,7 @@ C_{0i} = & \  \frac{1}{4}(\partial_i h^{jk}_{(1)})(\partial_0 h_{jk}^{(1)})
 \end{align}
 Para conseguir una simplificaci'on adicional, consideramos que en la \textit{zona de radiaci'on} (l'imite de campo lejano) los campos (que representan ondas \textit{salientes}) satisfacen la relaci'on\footnote{Esta relaci'on puede tambi'en derivarse a partir de la forma asint'otica de la soluci'on de la ecuaci'on de onda en coordenadas esf'ericas.}, ver (\ref{hradT}),
 \begin{equation}\label{zrad}
-\partial_i h^{(1)}_{jk}=-\frac{\hat{r}_i}{c}\partial_t h^{(1)}_{jk}+O(r^{-2}),
+\partial_i h^{(1)}_{jk}=-\frac{\hat{r}_i}{c}\partial_t h^{(1)}_{jk}+\mathcal{O}(r^{-2}),
 \end{equation}
 donde $\hat{r}_i=\hat{r}^i:=x^i/r$ es el vector unitario correspondiente al vector que une las fuentes con el punto de observaci'on.
 
@@ -560,7 +560,7 @@ g(e):= \frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304} \right)^{870/2299}.
 % The post-Newtonian approximation is based on an expansion of
 % the quantities involved in the determination of the trajectories of the
 % particles, in powers of the small parameter $v$, taking into account
-% that $O(\phi)\sim O(v^2)$, and keeping only the first post-Newtonian
+% that $\mathcal{O}(\phi)\sim \mathcal{O}(v^2)$, and keeping only the first post-Newtonian
 % correction in a consistent way. In this section we follow the conventions
 % and notation of Weinberg \cite{Wei72} and use $c=1$, and a metric with
 % signature $(-,+,+,+)$.
@@ -660,9 +660,9 @@ g(e):= \frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304} \right)^{870/2299}.
 %
 % In summary, in the post-Newtonian approximation the metric tensor is given by
 % \begin{eqnarray}
-% g_{00}&=&-1 -2\phi -2\phi^2 -2\psi + O(v^6),\\
-% g_{0i}&=&\xi_i + O(v^5),\\
-% g_{ij}&=&\delta_{ij}\left(1-2\phi\right) +O(v^4)\, .
+% g_{00}&=&-1 -2\phi -2\phi^2 -2\psi + \mathcal{O}(v^6),\\
+% g_{0i}&=&\xi_i + \mathcal{O}(v^5),\\
+% g_{ij}&=&\delta_{ij}\left(1-2\phi\right) +\mathcal{O}(v^4)\, .
 % \end{eqnarray}
 % The geodesic eq. (\ref{geo}) in vector notation takes the form
 % (see \cite{Wei72}, eq. (9.2.1)):
@@ -671,7 +671,7 @@ g(e):= \frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304} \right)^{870/2299}.
 % -\frac{\partial\vec{\xi}}{\partial t} + \vec{v}\, \times\left(\vec{\nabla}
 % \times \vec{\xi}\right) \nonumber \\
 % && + 3\vec{v}\, \frac{\partial\phi}{\partial t}+4\vec{v}
-% \left(\vec{v}\cdot\vec{\nabla}\right)\phi -v^2\vec{\nabla}\phi +O(v^6/r) \, .
+% \left(\vec{v}\cdot\vec{\nabla}\right)\phi -v^2\vec{\nabla}\phi +\mathcal{O}(v^6/r) \, .
 % \end{eqnarray}
 %
 % \section{Static, spherically symmetric pressureless matter distribution}
@@ -699,9 +699,9 @@ g(e):= \frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304} \right)^{870/2299}.
 %
 % Under these simplifications the metric is given by
 % \begin{eqnarray}
-% g_{00}&=&-1 -2\phi -2\phi^2 -2\psi + O(v^6),\\
-% g_{0i}&=&0 + O(v^5),\\
-% g_{ij}&=&\delta_{ij}\left(1-2\phi\right) +O(v^4)\, es decir,
+% g_{00}&=&-1 -2\phi -2\phi^2 -2\psi + \mathcal{O}(v^6),\\
+% g_{0i}&=&0 + \mathcal{O}(v^5),\\
+% g_{ij}&=&\delta_{ij}\left(1-2\phi\right) +\mathcal{O}(v^4)\, es decir,
 % \end{eqnarray}
 % with
 % \begin{eqnarray}
@@ -715,7 +715,7 @@ g(e):= \frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304} \right)^{870/2299}.
 % \begin{equation}
 % \frac{d\vec{v}}{dt}=-\vec{\nabla}\left(\phi +2\phi^2+\psi\right)
 % +4\vec{v}\left(\vec{v}\cdot\vec{\nabla}\right)\phi -v^2\vec{\nabla}\phi
-% +O(v^6/r) \, .
+% +\mathcal{O}(v^6/r) \, .
 % \end{equation}
 %
 % For a finite matter distribution the potentials $\phi$ and $\psi$ approach
@@ -730,10 +730,10 @@ g(e):= \frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304} \right)^{870/2299}.
 % asymptotically by
 % \begin{eqnarray}
 % g_{00}&=&-1 +2\frac{G\stackrel{0}{M}}{r} + 2\frac{G\stackrel2{M}}{r}
-% + O(r^{-2},v^6),\\
-% g_{0i}&=&0 + O(v^5),\\
+% + \mathcal{O}(r^{-2},v^6),\\
+% g_{0i}&=&0 + \mathcal{O}(v^5),\\
 % g_{ij}&=&\delta_{ij}\left(1+2\frac{G\stackrel{0}{M}}{r}\right)
-% +O(r^{-2},v^4)\, es decir,
+% +\mathcal{O}(r^{-2},v^4)\, es decir,
 % \end{eqnarray}
 % where
 % \begin{equation}
@@ -750,9 +750,9 @@ g(e):= \frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304} \right)^{870/2299}.
 % 2\phi\right)$,
 % so that to first post-newtonian order, we can write
 % \begin{eqnarray}
-% g_{00}&=&-1 -2\phi_g -2\phi_g^2 + O(v^6),\\
-% g_{0i}&=&0 + O(v^5),\\
-% g_{ij}&=&\delta_{ij}\left(1-2\phi_g\right) +O(v^4)\, es decir,
+% g_{00}&=&-1 -2\phi_g -2\phi_g^2 + \mathcal{O}(v^6),\\
+% g_{0i}&=&0 + \mathcal{O}(v^5),\\
+% g_{ij}&=&\delta_{ij}\left(1-2\phi_g\right) +\mathcal{O}(v^4)\, es decir,
 % \end{eqnarray}
 % where
 % \begin{equation}
@@ -764,7 +764,7 @@ g(e):= \frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304} \right)^{870/2299}.
 % \begin{equation}\label{geopn}
 % \frac{d\vec{v}}{dt}=-\vec{\nabla}\left(\phi_g +2\phi_g^2\right)
 % +4\vec{v}\left(\vec{v}\cdot\vec{\nabla}\right)\phi_g -v^2\vec{\nabla}
-% \phi_g +O(v^6/r) \, .
+% \phi_g +\mathcal{O}(v^6/r) \, .
 % \end{equation}
 %
 % In newtonian terms, this procedure can be thought as a mass renormalization.
@@ -794,7 +794,7 @@ g(e):= \frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304} \right)^{870/2299}.
 % Using the equation of motion \ref{geopn}) one shows that these quantities are
 % conserved within our approximation:
 % \begin{equation}
-% \frac{dE}{dt}=0 +O(v^7/r), \qquad \frac{d\vec{l}}{dt}=\vec{0} + O(v^6) \,.
+% \frac{dE}{dt}=0 +\mathcal{O}(v^7/r), \qquad \frac{d\vec{l}}{dt}=\vec{0} + \mathcal{O}(v^6) \,.
 % \end{equation}
 %
 % In the orbit plane, one can use cylindrical coordinates $(r,\varphi)$
@@ -813,7 +813,7 @@ g(e):= \frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304} \right)^{870/2299}.
 % \begin{equation}
 % \frac{l^2}{r^4}\left(\frac{dr}{d\varphi}\right)^2=2(1-2\phi)E-\frac{l^2}{r^2}
 % -2\phi +6\phi^2 %-\psi
-% +O(v^6) \, .
+% +\mathcal{O}(v^6) \, .
 % \end{equation}
 % Thus, one obtains
 % \begin{equation}\label{fideere}

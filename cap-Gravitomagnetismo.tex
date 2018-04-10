@@ -75,12 +75,12 @@ Nuestra tarea es evaluar (\ref{geo}) para el caso de una part'icula masiva que s
 
 Para esto, consideramos los s'imbolos de Christoffel a primer orden en $G$, ya calculados en la secci'on \ref{sec:conG1}. Espec'ificamente, a partir de \eqref{Gamma1}, junto con las identificaciones \eqref{hbar00} y \eqref{hbar0i}, obtenemos
 \begin{align}
-\Gamma^0_{\ 0 0}={}&\frac{1}{c^3}\frac{\partial \phi}{\partial t}+O(G^2),\label{simbolo1}\\
-\Gamma^0_{\ 0 i}={}&\frac{1}{c^2}\partial_i\phi+O(G^2)=\Gamma^0_{\ i 0},\\
-\Gamma^0_{\ i j}={}&-\frac{1}{2c^2}\left( \partial_i A^{j}+\partial_j A^{i}\right)-\frac{1}{c^3}\delta_{ij}\frac{\partial \phi}{\partial t}+O(G^2),\label{simbolo3}\\
-\Gamma^i_{\ 0 0}={}&\frac{1}{c^2}\partial_i \phi+O(G^2),\label{chaudadt}\\
-\Gamma^i_{\ 0 j}={}&-\frac{1}{2c^2}\left(\partial_i A^{j}-\partial_j A^{i}\right)-\frac{1}{c^3}\delta_{ij}\frac{\partial \phi}{\partial t}+O(G^2)=\Gamma^i_{\ j 0},\\
-\Gamma^i_{\ j k}={}&\frac{1}{c^2}\left( \delta_{jk}\ \partial_i\phi-\delta_{ij}\ \partial_k\phi-\delta_{ik}\ \partial_j\phi \right)+O(G^2)\label{simbolo6},
+\Gamma^0_{\ 0 0}={}&\frac{1}{c^3}\frac{\partial \phi}{\partial t}+\mathcal{O}(G^2),\label{simbolo1}\\
+\Gamma^0_{\ 0 i}={}&\frac{1}{c^2}\partial_i\phi+\mathcal{O}(G^2)=\Gamma^0_{\ i 0},\\
+\Gamma^0_{\ i j}={}&-\frac{1}{2c^2}\left( \partial_i A^{j}+\partial_j A^{i}\right)-\frac{1}{c^3}\delta_{ij}\frac{\partial \phi}{\partial t}+\mathcal{O}(G^2),\label{simbolo3}\\
+\Gamma^i_{\ 0 0}={}&\frac{1}{c^2}\partial_i \phi+\mathcal{O}(G^2),\label{chaudadt}\\
+\Gamma^i_{\ 0 j}={}&-\frac{1}{2c^2}\left(\partial_i A^{j}-\partial_j A^{i}\right)-\frac{1}{c^3}\delta_{ij}\frac{\partial \phi}{\partial t}+\mathcal{O}(G^2)=\Gamma^i_{\ j 0},\\
+\Gamma^i_{\ j k}={}&\frac{1}{c^2}\left( \delta_{jk}\ \partial_i\phi-\delta_{ij}\ \partial_k\phi-\delta_{ik}\ \partial_j\phi \right)+\mathcal{O}(G^2)\label{simbolo6},
 \end{align}
 donde en (\ref{chaudadt}) hemos usado el hecho que $\partial A^{i}/\partial t$ es despreciable, dada nuestra aproximaci'on, ver \eqref{a0}.
 
@@ -109,7 +109,7 @@ que es una ecuaci'on diferencial de primer orden para $\vec{v}(t)$, dependiente 
 Finalmente, sustituyendo (\ref{simbolo1})-(\ref{simbolo6}) en (\ref{movc}), encontramos expl'icitamente la ecuaci'on de movimiento a primer orden en $G$, para una part'icula masiva en t'erminos su velocidad y de los potenciales gravitacionales:
 \begin{align}
 \frac{dv^{i}}{dt}={}&-\partial_i\phi+\frac{v^j}{c}(\partial_iA^{j}-\partial_jA^{i})+3\frac{v^i}{c}\frac{1}{c}\frac{\partial \phi}{\partial t}\nonumber\\
-{}&+4\frac{v^i}{c}\frac{v^j}{c}\partial_j \phi-\frac{v^2}{c^2}\partial_i\phi-\frac{v^i}{c}\frac{v^j}{c}\frac{v^k}{c}\partial_j A^{k}-\frac{v^i}{c}\frac{v^2}{c^2}\frac{1}{c}\frac{\partial\phi}{\partial t}+O(G^2).\label{movpot}
+{}&+4\frac{v^i}{c}\frac{v^j}{c}\partial_j \phi-\frac{v^2}{c^2}\partial_i\phi-\frac{v^i}{c}\frac{v^j}{c}\frac{v^k}{c}\partial_j A^{k}-\frac{v^i}{c}\frac{v^2}{c^2}\frac{1}{c}\frac{\partial\phi}{\partial t}+\mathcal{O}(G^2).\label{movpot}
 \end{align}
 
 \subsection{Ecuaci'on del movimiento de una part'icula ligada no-relativista y definici'on de los campos gravitomagn'eticos}
@@ -397,14 +397,14 @@ Si reemplazamos ahora \eqref{aphii} en \eqref{ds2phiA}, obtenemos el elemento de
 %\vspace{4mm}
 %\frac{2GJ}{c^3r^2}\sen \theta \cos\varphi & 0 &-1-\frac{2GM}{c^2r} & 0 \\
 %0 & 0 & 0 &-1-\frac{2GM}{c^2r} \\
-%\end{array} \right)+O(G^2).\label{grafica2}
+%\end{array} \right)+\mathcal{O}(G^2).\label{grafica2}
 %\end{equation}
 \begin{equation}
-ds^2=\left(1-\frac{2GM}{c^2r}\right)c^2dt^2-\left(1+\frac{2GM}{c^2r}\right)d\vec{x}^2+\frac{4GJ}{c^3r^2}\sen\theta (\hat\varphi\cdot d\vec{x})cdt+O(G^2).\label{ds22}
+ds^2=\left(1-\frac{2GM}{c^2r}\right)c^2dt^2-\left(1+\frac{2GM}{c^2r}\right)d\vec{x}^2+\frac{4GJ}{c^3r^2}\sen\theta (\hat\varphi\cdot d\vec{x})cdt+\mathcal{O}(G^2).\label{ds22}
 \end{equation}
 En coodenadas esf'ericas, sabemos que $\hat\varphi\cdot d\vec{x}=r\sen\theta\,d\varphi$, y por lo tanto la expresi'on a primer orden en $G$ para el elemento de l'inea fuera de la distribuci'on esf'erica rotante, en coordenadas esf'ericas y en t'erminos de $M$ y $J$, resulta ser
 \begin{equation}\boxed{
-ds^2=\left(1-\frac{2GM}{c^2r}\right)c^2dt^2-\left(1+\frac{2GM}{c^2r}\right)\left[dr^2+r^2d\Omega^2\right]+\frac{4GJ}{c^3r}\sen^2 \theta d\varphi (cdt)+O(G^2).}\label{dssss2}
+ds^2=\left(1-\frac{2GM}{c^2r}\right)c^2dt^2-\left(1+\frac{2GM}{c^2r}\right)\left[dr^2+r^2d\Omega^2\right]+\frac{4GJ}{c^3r}\sen^2 \theta d\varphi (cdt)+\mathcal{O}(G^2).}\label{dssss2}
 \end{equation}
 Es posible verificar que la soluci'on exacta del agujero negro rotante de Kerr en coordenadas isotr'opicas, se reduce a (\ref{dssss2}) en el l'imite de campo debil. Si adicionalmente hacemos $J=0$ recobramos la soluci'on de Schwarzschild, a primer orden en $G$, tambi'en en coordenadas isotr'opicas.
 
@@ -518,35 +518,35 @@ Primero, si evaluamos (\ref{giro1}) para $\mu=i$ y notamos que $dx^{0}/dt=c$, en
 Luego, si reemplazamos en (\ref{giro12}), los valores de los s'imbolos de Christoffel dados en (\ref{simbolo1})-(\ref{simbolo6}), obtenemos
 \begin{align}
 \frac{dS^{i}}{dt}={}&-\frac{1}{c}(\partial_i\phi)S^0+\frac{1}{2c^2}(\partial_i A^j-\partial_j A^i)S^0v^j+\frac{1}{c^3}\frac{\partial \phi}{\partial t}S^0v^i+\frac{1}{2c}(\partial_i A^j-\partial_j A^i)S^j+\frac{1}{c^2}\frac{\partial \phi}{\partial t}S^i\nonumber\\
-{}&-\frac{1}{c^2}(\partial_i \phi) S^jv^j+\frac{1}{c^2}v^j(\partial_j\phi)S^i+\frac{1}{c^2}(\partial_j \phi) S^jv^i+O(G^2)\label{dsidt}.
+{}&-\frac{1}{c^2}(\partial_i \phi) S^jv^j+\frac{1}{c^2}v^j(\partial_j\phi)S^i+\frac{1}{c^2}(\partial_j \phi) S^jv^i+\mathcal{O}(G^2)\label{dsidt}.
 \end{align}
 
 %Por otra parte, usando las expresiones para las componentes de la m'etrica $g_{\mu\nu}$ en t'erminos de los potenciales, dadas en (\ref{gphiA}), podemos escribir expl'icitamente (\ref{giro2}) hasta orden $G$:
 %\begin{equation}
-%(S^0)^2+\frac{2}{c^2}\phi(S^0)^2-\frac{2}{c^2}A^iS^0S^i-S^iS^i+\frac{2}{c^2}\phi S^iS^i+O(G^2)=\text{cte}.\label{sisicte}
+%(S^0)^2+\frac{2}{c^2}\phi(S^0)^2-\frac{2}{c^2}A^iS^0S^i-S^iS^i+\frac{2}{c^2}\phi S^iS^i+\mathcal{O}(G^2)=\text{cte}.\label{sisicte}
 %\end{equation}
 Necesitamos escribir $S^0$ en t'erminos de las dem'as cantidades, para lo cual la ecuaci'on (\ref{giro3}) nos ser'a 'util:
 \begin{align}
-S^0-\frac{2\phi}{c^2}S^0-\frac{1}{c^3}A^iv^iS^0-\frac{1}{c^2}A^iS^i-\frac{1}{c}S^iv^i-\frac{2\phi}{c^3}S^iv^i+O(G^2)=0.\label{giro32}
+S^0-\frac{2\phi}{c^2}S^0-\frac{1}{c^3}A^iv^iS^0-\frac{1}{c^2}A^iS^i-\frac{1}{c}S^iv^i-\frac{2\phi}{c^3}S^iv^i+\mathcal{O}(G^2)=0.\label{giro32}
 \end{align}
 De \eqref{giro32} podemos despejar $S^0$, como siempre despreciando t'erminos de orden $G^2$:
 \begin{equation}
-S^0=\frac{1}{c}v^iS^i+\frac{1}{c^2}A^iS^i+\frac{4}{c^3}\phi S^iv^i+O(G^2).\label{S00}
+S^0=\frac{1}{c}v^iS^i+\frac{1}{c^2}A^iS^i+\frac{4}{c^3}\phi S^iv^i+\mathcal{O}(G^2).\label{S00}
 \end{equation}
 Note que el t'ermino $(S^iv^i)(A^jv^j)/c^4$ ha sido despreciado debido a que es de orden $G^2$, pues $v^i\sim G^{1/2}$. 
 %A partir de \eqref{S00} calculamos $(S^0)^2$ qued'andonos con t'erminos hasta orden $G^{3/2}$:
 %\begin{equation}
-%(S^0)^2=\frac{1}{c^2}(v^iS^i)(v^jS^j)+\frac{2}{c^3}(A^iS^i)(v^jS^j)+O(G^2).\label{S002}
+%(S^0)^2=\frac{1}{c^2}(v^iS^i)(v^jS^j)+\frac{2}{c^3}(A^iS^i)(v^jS^j)+\mathcal{O}(G^2).\label{S002}
 %\end{equation}
 Finalmente, si reemplazamos \eqref{S00} %y \eqref{S002} 
 en \eqref{dsidt}, %y \eqref{sisicte}
 obtenemos dos ecuaciones en que s'olo aparecen $S^i$, $v^i$, $\phi$ y $A^i$, dadas por
 \begin{align}
 \frac{dS^{i}}{dt} &= \frac{1}{2c}\left(\partial_iA^j-\partial_jA^i\right)S^j+\frac{1}{c^2}\frac{\partial \phi}{\partial t}S^i \nonumber \\
-&\quad  -\frac{2}{c^2}(\partial_i\phi) S^jv^j+\frac{1}{c^2}(\partial_j\phi)v^jS^i+\frac{1}{c^2}(\partial_j\phi)S^jv^i+O(G^2).\label{dsidt2}
+&\quad  -\frac{2}{c^2}(\partial_i\phi) S^jv^j+\frac{1}{c^2}(\partial_j\phi)v^jS^i+\frac{1}{c^2}(\partial_j\phi)S^jv^i+\mathcal{O}(G^2).\label{dsidt2}
 \end{align}
 %\begin{equation}
-%S^iS^i-\frac{2\phi}{c^2}S^iS^i-\frac{1}{c^2}(v^iS^i)^2+O(G^2)=\text{cte}.\label{sisicte2}
+%S^iS^i-\frac{2\phi}{c^2}S^iS^i-\frac{1}{c^2}(v^iS^i)^2+\mathcal{O}(G^2)=\text{cte}.\label{sisicte2}
 %\end{equation}
 %La ecuaci'on (\ref{sisicte2}) sugiere definir el vector de spin auxiliar 
 %\begin{equation}\boxed{
@@ -554,7 +554,7 @@ obtenemos dos ecuaciones en que s'olo aparecen $S^i$, $v^i$, $\phi$ y $A^i$, dad
 %\end{equation}
 %cuyo m'odulo cuadrado reproduce precisamente el lado izquierdo de \eqref{sisicte2}, y por lo tanto satisface 
 %\begin{equation}
-%{\cal L}^i{\cal L}^i=\text{cte.}+O(G^2) ,\label{lilicte}
+%{\cal L}^i{\cal L}^i=\text{cte.}+\mathcal{O}(G^2) ,\label{lilicte}
 %\end{equation}
 %es decir, que su m'odulo cuadrado es constante a orden $G^{3/2}$.
 %
@@ -564,38 +564,38 @@ obtenemos dos ecuaciones en que s'olo aparecen $S^i$, $v^i$, $\phi$ y $A^i$, dad
 %\end{equation}
 %Luego, reemplazando (\ref{dsidt2}) y la ecuaci'on del movimiento (\ref{movnorel}) en (\ref{dlidt}), se obtiene la siguiente ecuaci'on que incluye t'erminos hasta  orden $G^{3/2}$:
 %\begin{align}
-%\frac{d{\cal L}^i}{dt}=\frac{1}{2c}(\partial_iA^j-\partial_jA^i)S^j+\frac{3}{2c^2}\left(v^i\partial_j\phi-v^j\partial_i\phi\right)S^j+O(G^2).\label{dlidt2}
+%\frac{d{\cal L}^i}{dt}=\frac{1}{2c}(\partial_iA^j-\partial_jA^i)S^j+\frac{3}{2c^2}\left(v^i\partial_j\phi-v^j\partial_i\phi\right)S^j+\mathcal{O}(G^2).\label{dlidt2}
 %\end{align}
 %Finalmente, podemos reemplazar $S^j$ por ${\cal L}^j$ en el lado derecho de (\ref{dlidt2}), ya que ambas cantidades difieren en t'erminos de orden mayor o igual a $G$. Adem'as, si utilizamos el s'imbolo de Levi-Civita, obtenemos
 %\begin{equation}
-%\frac{d{\cal L}^i}{dt}=\frac{1}{2c}\epsilon_{ijk}{\cal L}^j\left(\epsilon_{klm}\partial_l A^m\right)+\frac{3}{2c^2}\epsilon_{ijk}{\cal L}^k\left(\epsilon_{jlm}v^l\partial_m\phi\right)+O(G^2),\label{dlidt3}
+%\frac{d{\cal L}^i}{dt}=\frac{1}{2c}\epsilon_{ijk}{\cal L}^j\left(\epsilon_{klm}\partial_l A^m\right)+\frac{3}{2c^2}\epsilon_{ijk}{\cal L}^k\left(\epsilon_{jlm}v^l\partial_m\phi\right)+\mathcal{O}(G^2),\label{dlidt3}
 %\end{equation}
 %y en notaci'on vectorial,
 %\begin{equation}\boxed{
-%\frac{d\vec{{\cal L}}}{dt}=\left[-\frac{1}{2c}(\vec{\nabla}\times\vec{A})-\frac{3}{2c^2}(\vec{v}\times\vec{\nabla}\phi)\right]\times\vec{{\cal L}}+O(G^2).}
+%\frac{d\vec{{\cal L}}}{dt}=\left[-\frac{1}{2c}(\vec{\nabla}\times\vec{A})-\frac{3}{2c^2}(\vec{v}\times\vec{\nabla}\phi)\right]\times\vec{{\cal L}}+\mathcal{O}(G^2).}
 %\end{equation}
 Esta ecuaci'on puede reescribirse como 
 \begin{align}
 \frac{dS^i}{dt} =& \frac{1}{2c}\epsilon_{ijk}S^j\left(\epsilon_{klm}\partial_l A^m\right)+\frac{3}{2c^2}\epsilon_{ikj}S^k\left(\epsilon_{jlm}v^l\partial_m\phi\right)\nonumber\\
-& +\frac{1}{2c^2}\left[2(\partial_j\phi)v^jS^i-(\partial_i\phi)v^jS^j -(\partial_j\phi)v^iS^j\right]+O(G^2),\label{dlidt3}
+& +\frac{1}{2c^2}\left[2(\partial_j\phi)v^jS^i-(\partial_i\phi)v^jS^j -(\partial_j\phi)v^iS^j\right]+\mathcal{O}(G^2),\label{dlidt3}
 \end{align}
 y en notaci'on vectorial,
 \begin{equation}\boxed{
 \frac{d\vec{S}}{dt} = \left[-\frac{1}{2c}(\vec{\nabla}\times\vec{A})-\frac{3}{2c^2}(\vec{v}\times\vec{\nabla}\phi)\right]\times\vec{S} 
 +\frac{1}{2c^2}\left[2\vec{S}(\vec{v}\cdot\vec{\nabla}\phi)-(\vec{\nabla}\phi)\vec{v}\cdot\vec{S}
--(\vec{S}\cdot\vec\nabla\phi)\vec{v}\right]+O(G^2).}
+-(\vec{S}\cdot\vec\nabla\phi)\vec{v}\right]+\mathcal{O}(G^2).}
 \end{equation}
 
 %Debido a que adem'as $\vec{{\cal L}}$ en (\ref{lilicte}) satisface
 %\begin{align}\boxed{
-%\vec{{\cal L}}\hspace{1mm}^2+O(G^2)=\text{cte},}
+%\vec{{\cal L}}\hspace{1mm}^2+\mathcal{O}(G^2)=\text{cte},}
 %\end{align}
 %entonces podemos identificar una velocidad angular $\vec{\Omega}$ asociada a la precesi'on del spin auxiliar del gir'oscopo:
 %\begin{equation}
-%\frac{d\vec{{\cal L}}}{dt}=\vec{\Omega}\times\vec{{\cal L}}+O(G^2),
+%\frac{d\vec{{\cal L}}}{dt}=\vec{\Omega}\times\vec{{\cal L}}+\mathcal{O}(G^2),
 %\end{equation}
 \begin{equation}
-\frac{d\vec{S}}{dt}=\vec{\Omega}\times\vec{{\cal S}}+\cdots + O(G^2),
+\frac{d\vec{S}}{dt}=\vec{\Omega}\times\vec{{\cal S}}+\cdots + \mathcal{O}(G^2),
 \end{equation}
 donde hemos definido,
 \begin{equation}
