@@ -27,7 +27,7 @@ donde
 \begin{equation}\label{defphii}
  \phi_{\rm ret}(\vec{x},t):=-G\int\frac{\rho(\vec{x}',t_{\rm ret})}{\left|\vec{x}-\vec{x}'\right|}\, d^3x'
 \end{equation}
-denota el potencial newtoniano \textit{retardado}, mientras que
+denota el potencial newtoniano \textit{retardado}, ya que $t_{\rm ret}=t-|\vec{x}-\vec{x}'|/c$. Adem'as, 
 \begin{eqnarray}
 \bar{h}_{0i}(\vec{x},t)&\approx& \frac{4G}{c^3}\int\frac{(\rho v^i)(\vec{x}',t_{\rm ret})}{\left|\vec{x}-\vec{x}'\right|}\, d^3x' =-\frac{1}{c^2}A^i_{\rm ret}, \label{hbar0i}
 % \\
@@ -52,7 +52,7 @@ Con esto, el elemento de l'inea adopta la forma
 ret}\right)c^2dt^2-\frac{2}{c}dt\,\vec{A}_{\rm ret}\cdot d\vec{x}-\left(1-\frac{2}{c^2}\phi_{\rm ret}\right)d\vec{x}\cdot d\vec{x}.}
 \end{equation}
 
-Note la similaridad de $\phi_{\rm ret}$ y $\vec{A}_{\rm ret}$ con las expresiones para los potenciales escalar y vectorial retardados de la teor'ia electromagn'etica cl'asica, en el gauge de Lorenz. Por esto, algunos autores se refieren a $\phi$ como el potencial  ``gravitoel'ectrico'', mientras que a $\vec{A}$ como el potencial ``gravitomagn'etico''. De hecho, \textit{los efectos del campo $\vec{A}_{\rm ret}$, producido por movimiento de masas, son an'alogos a los efectos de un campo magn'etico} (producido por el movimiento de cargas).
+Note la similaridad de $\phi_{\rm ret}$ y $\vec{A}_{\rm ret}$ con las expresiones para los potenciales escalar y vectorial retardados de la teor'ia electromagn'etica cl'asica, en el gauge de Lorenz. Por esto, algunos autores se refieren a $\phi$ como el potencial  ``gravitoel'ectrico'', mientras que a $\vec{A}$ como el potencial ``gravitomagn'etico''. De hecho, \textit{los efectos del campo $\vec{A}_{\rm ret}$, producido por movimiento de masas, son an'alogos a los efectos de un campo magn'etico} (producido por el movimiento de cargas). Note que el factor num'erico en la definici'on \eqref{defAret} (elegido como $4$ en nuestro caso) es convencional.
 
 En t'erminos de estos potenciales, la condici'on de gauge de Lorenz \eqref{lgauge} para $\bar{h}_{\mu\nu}$ se reduce, para $\mu=0$, a
 \begin{equation}
@@ -84,7 +84,7 @@ Para esto, consideramos los s'imbolos de Christoffel a primer orden en $G$, ya c
 \end{align}
 donde en (\ref{chaudadt}) hemos usado el hecho que $\partial A^{i}/\partial t$ es despreciable, dada nuestra aproximaci'on, ver \eqref{a0}.
 
-Debido a que las coordenadas usadas son ``cuasi-inerciales'' es conveniente parametrizar las geod'esicas usando la coordenada temporal $t$. Entonces podemos interpretar a $x^i=x^i(t)$ como la trayectoria que describe la part'icula masiva vista por un observador ``cuasi-inercial'' con coordenadas $x^\mu$. As'i, eligiendo $\lambda\stackrel{!}{=}t$ en (\ref{geo}), encontramos que la componente $\mu=0$ implica
+Debido a que las coordenadas usadas son ``cuasi-inerciales'' es conveniente parametrizar las geod'esicas usando la coordenada temporal $t$. As'i, eligiendo $\lambda\stackrel{!}{=}t$ en (\ref{geo}), encontramos que la componente $\mu=0$ implica
 \begin{equation}
 \frac{d^2x^{0}}{dt^2}+\Gamma^{0}_{\ 00}\frac{dx^{0}}{dt}\frac{dx^{0}}{dt}+2\ \Gamma^{0}_{\ 0i}\frac{dx^{0}}{dt}\frac{dx^{i}}{dt}+\Gamma^{0}_{\ ij}\frac{dx^{i}}{dt}\frac{dx^{j}}{dt}=f(t)\frac{dx^{0}}{dt}.\label{geot2}
 \end{equation}
