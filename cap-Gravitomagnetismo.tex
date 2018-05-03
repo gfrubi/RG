@@ -527,13 +527,14 @@ Luego, si reemplazamos en (\ref{giro12}), los valores de los s'imbolos de Christ
 %\end{equation}
 Necesitamos escribir $S^0$ en t'erminos de las dem'as cantidades, para lo cual la ecuaci'on (\ref{giro3}) nos ser'a 'util:
 \begin{align}
-S^0-\frac{2\phi}{c^2}S^0-\frac{1}{c^3}A^iv^iS^0-\frac{1}{c^2}A^iS^i-\frac{1}{c}S^iv^i-\frac{2\phi}{c^3}S^iv^i+\mathcal{O}(G^2)=0.\label{giro32}
+S^0+\frac{2\phi}{c^2}S^0-\frac{1}{c^3}A^iv^iS^0-\frac{1}{c^2}A^iS^i-\frac{1}{c}S^iv^i 
++\frac{2\phi}{c^3}S^iv^i+\mathcal{O}(G^2)=0.\label{giro32}
 \end{align}
-De \eqref{giro32} podemos despejar $S^0$, como siempre despreciando t'erminos de orden $G^2$:
+Podemos despejar $S^0$ de \eqref{giro32}. Notamos sin embargo, que para ser reemplazada en \eqref{dsidt} s'olo requerimos conocer $S^0$ a orden 0 en potencias de $G$ (ya que siempre aparece multiplicada por t'erminos de orden 1). Por lo tanto, nos basta con escribir:
 \begin{equation}
-S^0=\frac{1}{c}v^iS^i+\frac{1}{c^2}A^iS^i+\frac{4}{c^3}\phi S^iv^i+\mathcal{O}(G^2).\label{S00}
+S^0=\frac{1}{c}v^iS^i +\mathcal{O}(G).\label{S00}
 \end{equation}
-Note que el t'ermino $(S^iv^i)(A^jv^j)/c^4$ ha sido despreciado debido a que es de orden $G^2$, pues $v^i\sim G^{1/2}$. 
+%Note que el t'ermino $(S^iv^i)(A^jv^j)/c^4$ ha sido despreciado debido a que es de orden $G^2$, pues $v^i\sim G^{1/2}$. 
 %A partir de \eqref{S00} calculamos $(S^0)^2$ qued'andonos con t'erminos hasta orden $G^{3/2}$:
 %\begin{equation}
 %(S^0)^2=\frac{1}{c^2}(v^iS^i)(v^jS^j)+\frac{2}{c^3}(A^iS^i)(v^jS^j)+\mathcal{O}(G^2).\label{S002}
@@ -574,7 +575,7 @@ obtenemos dos ecuaciones en que s'olo aparecen $S^i$, $v^i$, $\phi$ y $A^i$, dad
 %\begin{equation}\boxed{
 %\frac{d\vec{{\cal L}}}{dt}=\left[-\frac{1}{2c}(\vec{\nabla}\times\vec{A})-\frac{3}{2c^2}(\vec{v}\times\vec{\nabla}\phi)\right]\times\vec{{\cal L}}+\mathcal{O}(G^2).}
 %\end{equation}
-Esta ecuaci'on puede reescribirse como 
+En el caso de un campo estacionario, esta ecuaci'on puede reescribirse como 
 \begin{align}
 \frac{dS^i}{dt} =& \frac{1}{2c}\epsilon_{ijk}S^j\left(\epsilon_{klm}\partial_l A^m\right)+\frac{3}{2c^2}\epsilon_{ikj}S^k\left(\epsilon_{jlm}v^l\partial_m\phi\right)\nonumber\\
 & +\frac{1}{2c^2}\left[2(\partial_j\phi)v^jS^i-(\partial_i\phi)v^jS^j -(\partial_j\phi)v^iS^j\right]+\mathcal{O}(G^2),\label{dlidt3}
@@ -656,7 +657,7 @@ Las expresiones (\ref{LT22}) son las predicciones de RG para el caso de un gir'o
 \begin{align}
 J_T=\frac{2}{5}M_TR_T^2\omega,
 \end{align}
-y finalmente considerando que el periodo de rotaci'on de la Tierra es $T=23.9345\,\rm hr$, se tiene $\omega=2\pi/T=7.2919\times 10^{-5}\,\rm Hz$ y por consiguiente $J_T=7.0679\times 10^{33}\,\rm kg\,m^2/s$.
+y finalmente considerando que el periodo de rotaci'on de la Tierra es $T=23.9345\,\rm hr$, se tiene $\omega=2\pi/T=7.2919\times 10^{-5}\,\rm rad/s$ y por consiguiente $J_T=7.0679\times 10^{33}\,\rm kg\,m^2/s$.
 Luego, evaluando todos los datos en (\ref{LT22}), y considerando $G=6.67\times 10^{-11}\,\rm N\,m^2/kg^2$, las predicciones num'ericas de RG para la precesi'on del gir'oscopo que confirm'o el sat'elite GPB son:
 \begin{align}
 \langle\vec{\Omega}_{\rm GEO}\rangle={}&6.6{\rm \frac{sec}{yr}}\hat{h},\\
