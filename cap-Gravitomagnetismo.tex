@@ -540,10 +540,10 @@ S^0=\frac{1}{c}v^iS^i +\mathcal{O}(G).\label{S00}
 %(S^0)^2=\frac{1}{c^2}(v^iS^i)(v^jS^j)+\frac{2}{c^3}(A^iS^i)(v^jS^j)+\mathcal{O}(G^2).\label{S002}
 %\end{equation}
 Finalmente, si reemplazamos \eqref{S00} %y \eqref{S002} 
-en \eqref{dsidt}, %y \eqref{sisicte}
+en \eqref{dsidt}, y suponemos que el campo gravitacional es estacionario, 
 obtenemos dos ecuaciones en que s'olo aparecen $S^i$, $v^i$, $\phi$ y $A^i$, dadas por
 \begin{align}
-\frac{dS^{i}}{dt} &= \frac{1}{2c}\left(\partial_iA^j-\partial_jA^i\right)S^j+\frac{1}{c^2}\frac{\partial \phi}{\partial t}S^i \nonumber \\
+\frac{dS^{i}}{dt} &= \frac{1}{2c}\left(\partial_iA^j-\partial_jA^i\right)S^j + \frac{1}{2c^3}(\partial_iA^j-\partial_jA^i)v^jv^kS^k \nonumber \\
 &\quad  -\frac{2}{c^2}(\partial_i\phi) S^jv^j+\frac{1}{c^2}(\partial_j\phi)v^jS^i+\frac{1}{c^2}(\partial_j\phi)S^jv^i+\mathcal{O}(G^2).\label{dsidt2}
 \end{align}
 %\begin{equation}
@@ -575,34 +575,32 @@ obtenemos dos ecuaciones en que s'olo aparecen $S^i$, $v^i$, $\phi$ y $A^i$, dad
 %\begin{equation}\boxed{
 %\frac{d\vec{{\cal L}}}{dt}=\left[-\frac{1}{2c}(\vec{\nabla}\times\vec{A})-\frac{3}{2c^2}(\vec{v}\times\vec{\nabla}\phi)\right]\times\vec{{\cal L}}+\mathcal{O}(G^2).}
 %\end{equation}
-En el caso de un campo estacionario, esta ecuaci'on puede reescribirse como 
+esta ecuaci'on puede reescribirse como 
 \begin{align}
-\frac{dS^i}{dt} =& \frac{1}{2c}\epsilon_{ijk}S^j\left(\epsilon_{klm}\partial_l A^m\right)+\frac{3}{2c^2}\epsilon_{ikj}S^k\left(\epsilon_{jlm}v^l\partial_m\phi\right)\nonumber\\
+\frac{dS^i}{dt} =& \frac{1}{2c}\epsilon_{ijk}S^j\left(\epsilon_{klm}\partial_l A^m\right)+\frac{3}{2c^2}\epsilon_{ikj}S^k\left(\epsilon_{jlm}v^l\partial_m\phi\right)
++ \frac{1}{2c^3}\epsilon_{ijk}v^j(\epsilon_{klm}\partial_l A^m)v^p S^p\nonumber\\
 & +\frac{1}{2c^2}\left[2(\partial_j\phi)v^jS^i-(\partial_i\phi)v^jS^j -(\partial_j\phi)v^iS^j\right]+\mathcal{O}(G^2),\label{dlidt3}
 \end{align}
 y en notaci'on vectorial,
-\begin{equation}\boxed{
-\frac{d\vec{S}}{dt} = \left[-\frac{1}{2c}(\vec{\nabla}\times\vec{A})-\frac{3}{2c^2}(\vec{v}\times\vec{\nabla}\phi)\right]\times\vec{S} 
-+\frac{1}{2c^2}\left[2\vec{S}(\vec{v}\cdot\vec{\nabla}\phi)-(\vec{\nabla}\phi)\vec{v}\cdot\vec{S}
--(\vec{S}\cdot\vec\nabla\phi)\vec{v}\right]+\mathcal{O}(G^2).}
-\end{equation}
-
-%Debido a que adem'as $\vec{{\cal L}}$ en (\ref{lilicte}) satisface
-%\begin{align}\boxed{
-%\vec{{\cal L}}\hspace{1mm}^2+\mathcal{O}(G^2)=\text{cte},}
-%\end{align}
-%entonces podemos identificar una velocidad angular $\vec{\Omega}$ asociada a la precesi'on del spin auxiliar del gir'oscopo:
-%\begin{equation}
-%\frac{d\vec{{\cal L}}}{dt}=\vec{\Omega}\times\vec{{\cal L}}+\mathcal{O}(G^2),
-%\end{equation}
+\begin{align}\label{dSdtvec}
+\frac{d\vec{S}}{dt} &= \left[-\frac{1}{2c}(\vec{\nabla}\times\vec{A})-\frac{3}{2c^2}(\vec{v}\times\vec{\nabla}\phi)\right]\times\vec{S} \nonumber \\
+ &\quad +\frac{1}{2c^2}\left[2\vec{S}(\vec{v}\cdot\vec{\nabla}\phi)-(\vec{\nabla}\phi)\vec{v}\cdot\vec{S}-(\vec{S}\cdot\vec\nabla\phi)\vec{v}\right] \nonumber\\
+ &\quad + \frac{1}{2c^3}[\vec{v}\times(\vec{\nabla}\times\vec{A})](\vec{v}\cdot\vec{S})+\mathcal{O}(G^2).
+\end{align}
+En el caso en que la 'orbita del gir'oscopo sea ligada, $v\sim G^{1/2}$, y el t'ermino en la tercera l'inea de \eqref{dSdtvec} es de orden $\mathcal{O}(G^2)$, de modo que debe ser despreciado. As'i obtenemos
+\begin{align}\label{dSdtvecfinal}
+\frac{d\vec{S}}{dt} &= \left[-\frac{1}{2c}(\vec{\nabla}\times\vec{A})-\frac{3}{2c^2}(\vec{v}\times\vec{\nabla}\phi)\right]\times\vec{S} \nonumber \\
+ &\quad +\frac{1}{2c^2}\left[2\vec{S}(\vec{v}\cdot\vec{\nabla}\phi)-(\vec{\nabla}\phi)\vec{v}\cdot\vec{S}-(\vec{S}\cdot\vec\nabla\phi)\vec{v}\right] +\mathcal{O}(G^2).
+\end{align}
+Escribimos esta expresi'on como
 \begin{equation}
-\frac{d\vec{S}}{dt}=\vec{\Omega}\times\vec{{\cal S}}+\cdots + \mathcal{O}(G^2),
+\frac{d\vec{S}}{dt}=\vec{\Omega}\times\vec{S}+\cdots + \mathcal{O}(G^2),
 \end{equation}
 donde hemos definido,
 \begin{equation}
 \vec{\Omega}:=\vec{\Omega}_{\rm GEO}+\vec{\Omega}_{\rm LT},
 \end{equation}
-con $\vec{\Omega}_{\rm GEO}$ la velocidad angular de preseci'on \emph{geod'esica}, dada por
+con $\vec{\Omega}_{\rm GEO}$ la velocidad angular de precesi'on \emph{geod'esica}, dada por
 \begin{align}\boxed{
 \vec{\Omega}_{\rm GEO}:=\frac{3}{2c^2}(\vec{v}\times\vec{g}),}\label{geodetic}
 \end{align}
