@@ -445,26 +445,26 @@ Parametrizamos la curva desde el origen hasta el punto de retorno sobre la circu
 Luego
 \begin{eqnarray}
 dr&=&\frac{cdt}{1-\frac{1}{2}h_+\cos(\omega t-kz-\varphi_+)\cos(2\varphi)}+\mathcal{O}(G^2)\\
-&=&\left[1+\frac{1}{2}h_+\cos(\omega t-kz-\varphi_+)\cos(2\varphi) \right]cdt+\mathcal{O}(G^2)
+&=&\left[1+\frac{1}{2}h_+\cos(\omega t-kz-\varphi_+)\cos(2\varphi) \right]cdt+\mathcal{O}(G^2).
 \end{eqnarray}
-Si $t_0$ es (la coordenada temporal correspondiente a) el instante en que el fot\'on sale del origen y $t_{i}$ al de llegada del fot'on a la posici'on de la part\'icula ubicada en la circunsferencia de radio $R$, entonces (a primer orden en $G$):
+Si $t_0$ es (la coordenada temporal correspondiente a) el instante en que el fot\'on sale del origen y $t_{\rm i}$ al de llegada del fot'on a la posici'on de la part\'icula ubicada en la circunsferencia de radio $R$, entonces (a primer orden en $G$):
 \begin{eqnarray}
-\int_{0}^{R}dr&=&\int_{t_0}^{t_{i}}\left[1+\frac{1}{2}h_+\cos(\omega t-kz-\varphi_+)\cos(2\varphi) \right]cdt\\
-R&=&c\left[t_{i}-t_{0}+\frac{h_+}{2w}\left[\sen(\omega t_i-kz-\varphi_+)-\sen(\omega t_0-kz-\varphi_+)\right]\cos(2\varphi) \right].
+\int_{0}^{R}dr&=&\int_{t_0}^{t_{\rm i}}\left[1+\frac{1}{2}h_+\cos(\omega t-kz-\varphi_+)\cos(2\varphi) \right]cdt\\
+R&=&c\left[t_{\rm i}-t_{0}+\frac{h_+}{2w}\left[\sen(\omega t_{\rm i}-kz-\varphi_+)-\sen(\omega t_0-kz-\varphi_+)\right]\cos(2\varphi) \right].
 \end{eqnarray}
 A partir de esta expresi'on, obtenemos
 \begin{eqnarray}
-t_i&=&t_0+\frac{R}{c}-\frac{h_+}{2\omega}\left[\sen(\omega t_i-kz-\varphi_+)-\sen(\omega t_0-kz-\varphi_+)\right]\cos(2\varphi) \label{ti1}\\
+t_{\rm i}&=&t_0+\frac{R}{c}-\frac{h_+}{2\omega}\left[\sen(\omega t_{\rm i}-kz-\varphi_+)-\sen(\omega t_0-kz-\varphi_+)\right]\cos(2\varphi) \label{ti1}\\
 &=&t_0+\frac{R}{c}+\mathcal{O}(G). \label{ti2}
 \end{eqnarray}
-Note que \eqref{ti1} define una ecuaci'on trascendental para $t_i$. Afortunadamente, debido a que estamos usando un esquema perturbativo, es posible encontrar una soluci'on anal'itica, a primer orden en $G$. Para esto usamos \eqref{ti2} e ``iteramos'', es decir, reemplazamos esta expresi'on en el lado derecho de \eqref{ti1}. Entonces, podemos escribir
+Note que \eqref{ti1} define una ecuaci'on trascendental para $t_{\rm i}$. Afortunadamente, debido a que estamos usando un esquema perturbativo, es posible encontrar una soluci'on anal'itica, a primer orden en $G$. Para esto usamos \eqref{ti2} e ``iteramos'', es decir, reemplazamos esta expresi'on en el lado derecho de \eqref{ti1}. Entonces, podemos escribir
 \begin{eqnarray}
-\sen(\omega t_i-kz-\varphi_+)&=&\sen(\omega t_0+\frac{Rw}{c}-\varphi_++\mathcal{O}(G))\\
+\sen(\omega t_{\rm i}-kz-\varphi_+)&=&\sen(\omega t_0+\frac{Rw}{c}-\varphi_++\mathcal{O}(G))\\
 &= &\sen(\omega t_0+\frac{Rw}{c}-\varphi_+)+\mathcal{O}(G) .
 \end{eqnarray}
-Por lo tanto, una expresi'on para $t_i$ (instante de llegada del fot\'on a la circunsferencia en funci\'on el tiempo de partida $t_0$ y $\varphi$), correcta a primer orden en $G$ es dada por
+Por lo tanto, una expresi'on para $t_{\rm i}$ (instante de llegada del fot\'on a la circunsferencia en funci\'on el tiempo de partida $t_0$ y $\varphi$), correcta a primer orden en $G$ es dada por
 \begin{equation}
-t_i=t_0+\frac{R}{c}-\frac{h_+}{2\omega}\left[\sen(\omega t_0+\frac{R\omega}{c}-kz-\varphi_+)-\sen(\omega t_0-kz-\varphi_+)\right]\cos(2\varphi)+\mathcal{O}(G^2). \label{ti3}
+t_{\rm i}=t_0+\frac{R}{c}-\frac{h_+}{2\omega}\left[\sen(\omega t_0+\frac{R\omega}{c}-kz-\varphi_+)-\sen(\omega t_0-kz-\varphi_+)\right]\cos(2\varphi)+\mathcal{O}(G^2). \label{ti3}
 \end{equation}
 Si el tama\~no de la circunsferencia es suficientemente peque\~no, espec\'ificamente si $R\ll 2\pi c/\omega=\lambda$, entonces podemos aproximar \eqref{ti3} realizando una expansi\'on de la siguiente forma:
 \begin{equation}
@@ -474,13 +474,13 @@ Si el tama\~no de la circunsferencia es suficientemente peque\~no, espec\'ificam
 Reemplazando (\ref{sin}) en (\ref{ti3}) se obtiene la siguiente relaci\'on
 
 \begin{equation}
-c(\Delta t)_i\approx R\left[1-\frac{h_+}{2}\cos(\omega t_0-kz-\varphi_+)\cos(2\varphi) \right].
+c(\Delta t)_{\rm i}\approx R\left[1-\frac{h_+}{2}\cos(\omega t_0-kz-\varphi_+)\cos(2\varphi) \right].
 \end{equation}
 
 De lo anterior, es posible obtener una expresi\'on para el intervalo $(\Delta t)_{\rm ir}$ de ida y vuelta del fot\'on desde el centro, dada por
 
 \begin{equation}
-c(\Delta t)_{ir}\approx 2R\left[1-\frac{h_+}{2}\cos(\omega t_0-kz-\varphi_+)\cos(2\varphi) \right]. \label{tir}
+c(\Delta t)_{\rm ir}\approx 2R\left[1-\frac{h_+}{2}\cos(\omega t_0-kz-\varphi_+)\cos(2\varphi) \right]. \label{tir}
 \end{equation}
 
 Note que es posible obtener este resultado directamente, asumiendo la misma aproximaci\'on $(R\ll \lambda)$, a partir de \eqref{dr} ya que en este caso podemos considerar el integrando de \eqref{dr}, $\cos(\omega t-kz-\varphi_+)$ (y por tanto la m\'etrica) como \textit{aproximadamente constante durante el viaje de ida y regreso del fot\'on}, es decir, $\cos(\omega t-kz-\varphi_+)\approx \cos(\omega t_0-kz-\varphi_+)$. En otras palabras, bajo estas condiciones el tiempo de vuelo del fot'on es mucho menor que el tiempo que requiere la onda para cambiar su fase apreciablemente.
@@ -518,12 +518,12 @@ Note que la amplitud del cambio de la distancia $L(\varphi)$ es $\delta L=Rh_+/2
 \begin{equation}
 \boxed{ \frac{\delta L}{L_0}\simeq h .}
 \end{equation}
-Se espera que los detectores de ondas gravitacionales interferom'etricos actuales alcancen una sensibilidad que permita detectar amplitudes hasta de $h\sim 10^{-20}$, que es tambi'en el orden de magnitud de la amplitud \textit{m'axima} de la radiaci'on gravitacional esperada en la Tierra debido a diversas fuentes astron'omicas. Por ejemplo, el proyecto \href{http://www.ligo.caltech.edu/}{LIGO}. consta de un interfer'ometro de 4\,km, de modo que deber'ia detectar fluctuaciones de distancia ($\delta L$) del orden de $10^{-17}\text{m}$, es decir, m'as peque\~nas que un n'ucleo at'omico!.
+Los detectores de ondas gravitacionales interferom'etricos actuales alcanzan una sensibilidad que permite detectar amplitudes hasta de $h\sim 10^{-20}$, que es tambi'en el orden de magnitud de la amplitud \textit{m'axima} de la radiaci'on gravitacional esperada en la Tierra debido a diversas fuentes astron'omicas. Por ejemplo, el proyecto \href{http://www.ligo.caltech.edu/}{LIGO}. consta de un interfer'ometro de 4\,km, de modo que puede detectar fluctuaciones de distancia ($\delta L$) del orden de $10^{-17}\text{m}$, es decir, m'as peque\~nas que un n'ucleo at'omico!.
 
 \begin{center}
 \begin{figure}[H]
 \centerline{\psfig{file=fig/fig-LIGO.pdf,height=5cm,angle=0}}
-\caption{Esquema de un detector interferom'etrico de ondas gravitacionales. Figura original \href{http://commons.wikimedia.org/wiki/File:Ligo.svg}{aqu'i}.}
+\caption{Esquema de un detector interferom'etrico de ondas gravitacionales. Figura original \href{http://commons.wikimedia.org/wiki/File:Ligo.svg}{aqu\'i}.}
 \label{fig:LIGO}
 \end{figure}
 \end{center}
