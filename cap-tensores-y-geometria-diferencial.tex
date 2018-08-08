@@ -12,7 +12,7 @@ es posible que ella no pueda ser cubierta completamente por un 'unico sistema co
 Curvas y superficies en el espacio $n$-dimensional $R_n$ son ejemplos de variedades.
 \begin{center}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-coordenadas.pdf,height=6cm,angle=0}}
+\centerline{\includegraphics[height=6cm]{fig/fig-coordenadas.pdf}}
 \caption{Una variedad y un sistema coordenado.}
 \label{1-1}
 \end{figure}
@@ -25,7 +25,7 @@ uno sea continuo, de modo que, cuando $P$ se mueve en $U$, la correspondiente $n
 ($x^1,\dots ,x^n$) se mueve continuamente en un dominio $D$ contenido en $R_n$. Tambi'en se supone que la dimensi'on $n$ del mapeo de puntos de $M$ a $R_n$ es siempre la misma, en la vecindad de cada punto de la variedad.
 \begin{center}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-cambio-coordenadas.pdf,height=6cm,angle=0}}
+\centerline{\includegraphics[height=6cm]{fig/fig-cambio-coordenadas.pdf}}
 \caption{Una variedad y dos sistemas coordenados.}
 \label{2-1}
 \end{figure}
@@ -834,7 +834,7 @@ tangente y cotangente.
 En espacios m'etricos es posible (y se acostumbra) no distinguir mayormente (en cuanto a su interpretaci'on) los vectores covariantes de sus ``duales'' contravariantes, y viceversa. Por el contrario, se acostumbra decir que los vectores son ``objetos geom'etricos'', cada uno de los cuales puede expresarse tanto por sus componentes covariantes como contravariantes. A esto se suma el hecho que el espacio euclideano $E_n$ es un espacio m'etrico en el cual $g_{ij}\overset{\ast}{=}\delta_{ij}=diag(+1,+1,\cdots)$ en coordenadas cartesianas, de modo que las componentes covariantes y contravariantes de cualquier vector coinciden num'ericamente (pero s'olo en coordenadas cartesianas!). De aqu'i que en tales espacios no sea necesaria la distinci'on entre estos dos tipos de vectores \textit{cuando se trabaja en coordenadas cartesianas}.
 \begin{center}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-espacios-tangente-y-cotangente.pdf,height=6cm,angle=0}}
+\centerline{\includegraphics[height=6cm]{fig/fig-espacios-tangente-y-cotangente.pdf}}
 \caption{El tensor m'etrico define una relaci'on uno a uno (isomorfismo) entre
 los espacios tangente y cotangente en cada punto de la variedad.}
 \label{5}
@@ -978,7 +978,7 @@ x^p}{\partial\bar{x}^j }\frac{\partial x^q}{\partial\bar{x}^k }\,
 \subsection{Isometr'ias (simetr'ias de la m'etrica)}
 \begin{center}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-Killing.pdf,height=5cm,angle=0}}
+\centerline{\includegraphics[height=5cm]{fig/fig-Killing.pdf}}
 \caption{Trasladando puntos en la direcci'on $\xi^i(x)$.}
 \label{fig:Killing}
 \end{figure}
@@ -1082,7 +1082,7 @@ donde
 \end{align}
 \begin{center}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-Killing-E2.pdf,height=4cm,angle=0}}
+\centerline{\includegraphics[height=4cm]{fig/fig-Killing-E2.pdf}}
 \caption{Vectores de Killing en el plano euclideano bidimensional.}
 \label{KE2}
 \end{figure}
@@ -1163,7 +1163,7 @@ con
 
 \begin{center}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-KS2x.pdf,height=4cm,angle=0}\hfill\psfig{file=fig/fig-KS2y.pdf,height=4cm,angle=0}\hfill\psfig{file=fig/fig-KS2z.pdf,height=4cm,angle=0}}
+\centerline{\includegraphics[height=4cm]{fig/fig-KS2x.pdf}\hfill\includegraphics[height=4cm]{fig/fig-KS2y.pdf}\hfill\includegraphics[height=4cm]{fig/fig-KS2z.pdf}}
 \caption{Vectores de Killing sobre la esfera: 
 $\xi^a_{(1)}$, $\xi^a_{(2)}$ y $\xi^a_{(3)}$ respectivamente.}
 \label{KS2}
@@ -1499,7 +1499,7 @@ de coordenadas $x^i $ a un punto $Q$ de coordenadas $x^i +dx^i$, podemos
 ahora realizar una \textbf{sucesi'on de transportes} para definir el transporte de un vector \textit{a lo largo de una curva dada}. La pregunta natural que surge es si el transporte de un vector sobre una curva depende de la trayectoria usada o, por el contrario depende s'olo de los puntos iniciales y finales. Equivalentemente, podemos preguntarnos si al transportar un vector por una curva \textit{cerrada}, volviendo as'i al punto $P$ de partida, se obtiene o no el vector original.
 \begin{center}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-transporte-curva-cerrada.pdf,height=5cm,angle=0}}
+\centerline{\includegraphics[height=5cm]{fig/fig-transporte-curva-cerrada.pdf}}
 \caption{Transporte paralelo de un vector sobre una curva cerrada.}
 \label{dibujo}
 \end{figure}
@@ -1585,7 +1585,7 @@ En resumen:
 \subsection{Interpretaci'on geom'etrica de la curvatura*}
 \begin{center}
 \begin{figure}[h!]
-\centerline{\psfig{file=fig/fig-transporte-y-curvatura-01.pdf,height=6cm,angle=0}}
+\centerline{\includegraphics[height=6cm]{fig/fig-transporte-y-curvatura-01.pdf}}
 \caption{Transporte de un vector desde $P$ a $R$ por dos trayectorias (infinitesimales) distintas.}
 \label{intgeomcurv}
 \end{figure}
@@ -1663,8 +1663,8 @@ diferencia de las coordenadas entre los puntos $P$ y $S$ (ver figura \ref{fig:to
 Ahora transportamos los vectores contravariantes $dx_1^k $ y $dx_2^k $, ambos definidos en $P$, hasta los puntos $S$ y $Q$, para obtenener as'i $\overline{dx}^i_1$ y $\overline{dx}^i_2$, respectivamente (ver figura \ref{fig:torsion}b). Las componentes de estos nuevos vectores (infinitesimales) est'an dadas entonces por
 \begin{center}
 \begin{figure}[H]
-\centerline{\psfig{file=fig/fig-torsion-01.pdf,height=4cm,angle=0}
-\hspace{1cm}\psfig{file=fig/fig-torsion-02.pdf,height=4cm,angle=0}}
+\centerline{\includegraphics[height=4cm]{fig/fig-torsion-01.pdf}
+\hspace{1cm}\includegraphics[height=4cm]{fig/fig-torsion-02.pdf}}
 \caption{}
 \label{fig:torsion}
 \end{figure}
