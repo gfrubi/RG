@@ -2,7 +2,7 @@
 
 \section{Introducci'on}
 
-En RG toda forma de energ'ia \textit{y mom'entum} contribuye a modificar la geometr'ia del espaciotiempo a su alrededor y con ello a producir lo que llamamos campo gravitacional. As'i, por ejemplo, el Sol al estar rotando, produce un campo gravitacional diferente en el sistema solar, comparado con el caso en que 'este estuviese est'atico. Esto representa una gran diferencia respecto a la teor'ia de Newton de la Gravitaci'on, donde s'olo la densidad de masa de los cuerpos es fuente de campo gravitacional y por lo tanto el campo gravitacional del Sol es independiente de su rotaci'on.
+En RG toda forma de energ'ia \textit{y momentum} contribuye a modificar la geometr'ia del espaciotiempo a su alrededor y con ello a producir lo que llamamos campo gravitacional. As'i, por ejemplo, el Sol al estar rotando, produce un campo gravitacional diferente en el sistema solar, comparado con el caso en que 'este estuviese est'atico. Esto representa una gran diferencia respecto a la teor'ia de Newton de la Gravitaci'on, donde s'olo la densidad de masa de los cuerpos es fuente de campo gravitacional y por lo tanto el campo gravitacional del Sol es independiente de su rotaci'on.
 
 Sin embargo, y como es de esperar, en regiones con campos gravitacionales d'ebiles los efectos predichos por RG debido al movimiento de las fuentes son en general varios 'ordenes de magnitud menores que los causados por su densidad de masa (o densidad de energ'ia).
 
@@ -11,7 +11,7 @@ En este cap'itulo se estudiar'an, \textit{dentro de la aproximaci'on de campo d'
 
 \section{Caso de una distribuci'on de materia no-relativista sin presi'on}\label{sec:CDNR}
 
-En este caso, podemos usar la expresi'on para el tensor de energ'ia-mom'entum de
+En este caso, podemos usar la expresi'on para el tensor de energ'ia-momentum de
 polvo. En el r'egimen no-relativista, donde las velocidades de las part'iculas
 que constituyen el polvo son muy bajas comparadas con la velocidad de la luz,
 tenemos que, a primer orden en $v^i/c$,
@@ -288,11 +288,11 @@ con $\hat{\rho}=\hat{x}\cos\varphi+\hat{y}\sen\varphi$. Adem'as, podemos elegir 
 \end{align}
 donde $\hat{\varphi }=\hat{z}\times\hat{\rho}=-\hat{x}\sen\varphi +\hat{y}\cos\varphi $.
 
-Ahora que ya tenemos una expresi'on general para el campo de velocidades de la distribuci'on, calculemos su mom'entum angular total $\vec{J}$, dado por
+Ahora que ya tenemos una expresi'on general para el campo de velocidades de la distribuci'on, calculemos su momentum angular total $\vec{J}$, dado por
 \begin{equation}
-\vec{J}=\int_V \vec{x}\times(\rho \vec{v})\,d^3x.\label{mom'entumangular}
+\vec{J}=\int_V \vec{x}\times(\rho \vec{v})\,d^3x.\label{momentumangular}
 \end{equation}
-Reemplazando (\ref{campovelocidad}) en (\ref{mom'entumangular}), podemos escribir
+Reemplazando (\ref{campovelocidad}) en (\ref{momentumangular}), podemos escribir
 \begin{align}
 \vec{J}={}&\int_V \rho (r)\omega(r)\sen \theta r^2(\hat{r}\times\hat{\varphi })d^3x\\
  ={}&\int_0^{2\pi}d\varphi \int_0^{\pi}d\theta \int_0^{R}dr\ \rho (r)\omega(r)\sen^2 \theta r^4\left(\sen \theta \hat{z}-\cos \theta \hat{\rho}\right)\\
@@ -321,13 +321,13 @@ Reemplazando (\ref{intangular2}) en (\ref{Aradialangular}), obtenemos
 ={}&\frac{16\pi G}{3cr^3}\ \vec{x}\times\int_0^{R}dr'r'^4\rho (r')\vec{\omega}(r').\label{Acasi}
 \end{align}
 
-La integral en (\ref{Acasi}) es proporcional al mom'entum angular total $\vec{J}$ de la distribuci'on, dado por \eqref{jgeneral}. De este modo encontramos una expresi'on para el potencial gravitomagn'etico $\vec{A}(\vec{x})$ en t'erminos del mom'entum angular $\vec{J}$:
+La integral en (\ref{Acasi}) es proporcional al momentum angular total $\vec{J}$ de la distribuci'on, dado por \eqref{jgeneral}. De este modo encontramos una expresi'on para el potencial gravitomagn'etico $\vec{A}(\vec{x})$ en t'erminos del momentum angular $\vec{J}$:
 \begin{equation}\boxed{
 \vec{A}(\vec{x})=-\frac{2G}{c}\ \frac{\vec{J}\times\vec{x}}{r^3},\qquad r>R.}\label{Afinal}
 \end{equation}
 Note que esta expresi'on tiene la misma forma (salvo factores que involucran las constantes gravitacionales y electromagn'eticas) que el potencial vectorial electromagn'etico producido por un \textit{dipolo magn'etico} (ideal) con momento dipolar magn'etico $\vec{\mu}$.
 
-Calculando el rotor de \eqref{Afinal} obtenemos la expresi'on final para el campo gravitomagn'etico estacionario, producido por la esfera rotante con mom'entum angular constante $\vec{J}$:
+Calculando el rotor de \eqref{Afinal} obtenemos la expresi'on final para el campo gravitomagn'etico estacionario, producido por la esfera rotante con momentum angular constante $\vec{J}$:
 \begin{equation}\boxed{
 \vec{H}(\vec{x})=-\frac{2G}{c}\ \frac{3(\vec{J}\cdot\hat{r})\hat{r}-\vec{J}}{r^3},\qquad r>R.}\label{Hgravito}
 \end{equation}
@@ -348,11 +348,11 @@ Finalmente, el campo gravitoel'ectrico, de acuerdo a \eqref{cge}, es
 
 Pensando en la analog'ia con la electrodin'amica, este resultado es id'entico en forma al campo electroest'atico producido por una distribuci'on de carga esf'ericamente sim'etrica con carga total $Q$.
 
-En la figura \ref{fig:gravitoelectromagnetico} podemos ver un esquema de las l'ineas de campo gravitoel'ectrico y gravitomagn'etico que produce la distribuci'on de masa rotante. Esta fuente de campo se caracteriza completamente por su mom'entum angular total $\vec{J}$ y por su masa total $M$.
+En la figura \ref{fig:gravitoelectromagnetico} podemos ver un esquema de las l'ineas de campo gravitoel'ectrico y gravitomagn'etico que produce la distribuci'on de masa rotante. Esta fuente de campo se caracteriza completamente por su momentum angular total $\vec{J}$ y por su masa total $M$.
 \begin{figure}[H]
 \centering
 \includegraphics[angle=0,width=0.5\textwidth]{fig/fig-gravitoelectromagnetico.pdf}
-\caption{L'ineas de campo gravitoel'ectrico y gravitomagn'etico, producidas por una distribuci'on esf'ericamente sim'etrica de masa total $M$ y que rota con mom'entum angular total constante $\vec{J}$.}
+\caption{L'ineas de campo gravitoel'ectrico y gravitomagn'etico, producidas por una distribuci'on esf'ericamente sim'etrica de masa total $M$ y que rota con momentum angular total constante $\vec{J}$.}
 \label{fig:gravitoelectromagnetico}
 \end{figure}
 
@@ -371,9 +371,9 @@ Vemos que, debido a las velocidades no-relativistas de la fuente, el campo gravi
 
 \subsection{Geometr'ia del espaciotiempo fuera de la distribuci'on de masa esf'erica rotante}
 
-Retornando a la descripci'on geom'etrica de la teor'ia, podemos determinar la m'etrica  y el elemento de l'inea del espaciotiempo fuera de la distribuci'on esf'erica rotante, en t'erminos de los par'ametros que caracterizan a la fuente: su masa total $M$ y su mom'entum angular total $\vec{J}$.
+Retornando a la descripci'on geom'etrica de la teor'ia, podemos determinar la m'etrica  y el elemento de l'inea del espaciotiempo fuera de la distribuci'on esf'erica rotante, en t'erminos de los par'ametros que caracterizan a la fuente: su masa total $M$ y su momentum angular total $\vec{J}$.
 
-El eje fijo de rotaci'on de la distribuci'on rompe la simetr'ia esf'erica que tendr'ia el espaciotiempo si la fuente estuviese est'atica. Sin embargo, persiste una simetr'ia axial remanente  en torno a la direcci'on definida por el eje de rotaci'on del cuerpo. Sin p'erdida de generalidad, podemos elegir un sistema coordenado en que el eje de rotaci'on del cuerpo coincida con el eje $z$, de tal forma que el mom'entum angular de la distribuci'on se pueda expresar en la forma,
+El eje fijo de rotaci'on de la distribuci'on rompe la simetr'ia esf'erica que tendr'ia el espaciotiempo si la fuente estuviese est'atica. Sin embargo, persiste una simetr'ia axial remanente  en torno a la direcci'on definida por el eje de rotaci'on del cuerpo. Sin p'erdida de generalidad, podemos elegir un sistema coordenado en que el eje de rotaci'on del cuerpo coincida con el eje $z$, de tal forma que el momentum angular de la distribuci'on se pueda expresar en la forma,
 \begin{equation}
 \vec{J}=J\hat{z}.
 \end{equation}
@@ -417,12 +417,12 @@ Una de las formas de testear las predicciones de RG respecto al campo gravitomag
 \subsection{Gir'oscopos y 4-vector de spin}
 
 Modelamos un gir'oscopo como un peque\~no cuerpo caracterizado no s'olo por %su masa $m$, 
-su posici'on $\vec{x}(t)$ y su velocidad $\vec{v}(t)$, sino que adem'as por un \textit{vector de mom'entum angular de rotaci'on propia} o \textit{spin} $\vec{S}(t)$, que describe la rotaci'on en torno a su propio eje. En la pr'actica se construyen gir'oscopos mec'anicos y 'opticos (ver \cite{1} para m'as detalles.)
-%El mom'entum lineal del cuerpo se define como es usual:
+su posici'on $\vec{x}(t)$ y su velocidad $\vec{v}(t)$, sino que adem'as por un \textit{vector de momentum angular de rotaci'on propia} o \textit{spin} $\vec{S}(t)$, que describe la rotaci'on en torno a su propio eje. En la pr'actica se construyen gir'oscopos mec'anicos y 'opticos (ver \cite{1} para m'as detalles.)
+%El momentum lineal del cuerpo se define como es usual:
 %\begin{align}
 %\vec{p}:=m\vec{v}
 %\end{align}
-%y su mom'entum angular orbital por
+%y su momentum angular orbital por
 %\begin{align}
 %\vec{L}:=\vec{x}\times\vec{p}.
 %\end{align}
@@ -651,7 +651,7 @@ donde $\hat{h}_{\perp}$ es un vector unitario perpendicular a $\hat{h}$ y $\hat{
 \langle\vec{\Omega}_{\rm LT}\rangle={}&\frac{G}{2c^2}\frac{J_T}{R^3}\hat{J}_T.\label{LT22}
 \end{aligned}}
 \end{equation}
-Las expresiones (\ref{LT22}) son las predicciones de RG para el caso de un gir'oscopo orbitando una masa rotante en una 'orbita circular polar. Para obtener un resultado num'erico, consideramos a la Tierra como una esfera de radio $R_T=6.371\times 10^6\,\rm m$ (***diferencia con tabla en ap'endice!***) y distribuci'on de masa esf'ericamente sim'etrica de masa total $M_T=5.97\cdot 10^{24}\,\rm kg$. Sea la altura de la 'orbita polar circular de $642\,\rm km$ sobre la superficie de la Tierra, es decir, $h=6.42\times 10^5 \,\rm m$, por lo que se tiene $R=R_T+h=7.013\times 10^{6}\,\rm m$. Para calcular el mom'entum angular total de rotaci'on de la Tierra, usamos su definici'on en (\ref{jgeneral}), con lo que obtenemos
+Las expresiones (\ref{LT22}) son las predicciones de RG para el caso de un gir'oscopo orbitando una masa rotante en una 'orbita circular polar. Para obtener un resultado num'erico, consideramos a la Tierra como una esfera de radio $R_T=6.371\times 10^6\,\rm m$ (***diferencia con tabla en ap'endice!***) y distribuci'on de masa esf'ericamente sim'etrica de masa total $M_T=5.97\cdot 10^{24}\,\rm kg$. Sea la altura de la 'orbita polar circular de $642\,\rm km$ sobre la superficie de la Tierra, es decir, $h=6.42\times 10^5 \,\rm m$, por lo que se tiene $R=R_T+h=7.013\times 10^{6}\,\rm m$. Para calcular el momentum angular total de rotaci'on de la Tierra, usamos su definici'on en (\ref{jgeneral}), con lo que obtenemos
 \begin{align}
 J_T=\frac{2}{5}M_TR_T^2\omega,
 \end{align}
