@@ -1179,19 +1179,30 @@ Definimos una coordenada, por ejemplo, $x^1$, a lo largo de las l'ineas integral
 \xi^i\stackrel{*}{=}(\xi^1,0,\cdots,0).
 \end{equation}
 Siempre es posible definir la coordenada $x^1$ (en particular, qu'e tan r'apido var'ia 'esta sobre las curvas integrales de $\xi$) de modo que
-\begin{equation}
+\begin{equation}\label{xi100}
 \xi^i\stackrel{*}{=}(1,0,\cdots,0).
 \end{equation}
 Entonces, si $\xi$ es un vector de Killing, la ecuaci'on \eqref{is8} implica que
-\begin{equation}
+\begin{equation}\label{p1g0}
 \partial_1g_{ij}\stackrel{*}{=}0,
 \end{equation}
 es decir, que en sistema de coordenadas adaptado al vector de Killing $\xi$ la m'etrica no depende de la coordenada adaptada $x^1$.
 
+Note que si bien es posible definir coordenadas adaptadas a cada vector de Killing independiente que existe en una variedad, no necesariamente existe un SC adaptado simult'aneamente a todos los vectores de Killing existentes.
+
+En forma rec'iproca, si en un SC particular (todas) las componentes del tensor m'etrico son independientes de una de las coordenadas (por ejemplo, $x^1$, de modo que se satisface \eqref{p1g0}), entonces campo vectorial tangente a las l'ineas coordenadas correspondientes a $x^1$ define un vector de Killing, con componentes de la forma \eqref{xi100} en ese SC.
+
 \subsection{Vectores de Killing y operadores diferenciales}
 \begin{equation}
-\hat{\xi}:=\xi^i\partial_i
+\hat{\xi}:=\xi^i\partial_i.
 \end{equation}
+
+Estos operadores pueden interpretarse como los generadores de traslaciones en la direcci'on $\xi$, ya que, al actuar sobre un campo escalar $\phi$ satisfacen
+\begin{equation}
+\phi(x+\varepsilon\xi) = \phi(x) + \varepsilon(\hat{\xi}\phi)(x) + \mathcal{O}(\varepsilon^2)
+\end{equation}
+
+Teorema: el conjunto de todos operadores asociados a los vectores de Killing l.i. forman un 'algebra de Lie.
 
 \section{Conexi'on, derivadas covariantes y transporte paralelo}
 
