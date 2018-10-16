@@ -1324,7 +1324,7 @@ x^p}{\partial\bar{x}^j }\frac{\partial x^q}{\partial\bar{x}^k }\,
 \end{itemize}
 A partir de una conexi'on y de un campo vectorial (covariante) es posible definir la siguiente combinaci'on, que es un tensor bajo TGC's:
 \begin{equation}
-\boxed{\nabla_iA_j:=\partial_iA_j-\Gamma_{\ ji}^kA_k.}
+\boxed{\nabla_iA_j:=\partial_iA_j-\Gamma_{\ ij}^kA_k.}
 \label{dinv6}
 \end{equation}
 El tensor $\nabla_iA_j$ es llamado la \textbf{derivada covariante} de $A_j$ \textit{con respecto a la conexi'on} $\Gamma$. Se debe notar que $\Gamma$ est'a definida \textit{sobre} nuestra variedad y puede ser concebida,\textit{ en general}, como un objeto geom'etrico \textit{no necesariamente relacionado con una  m'etrica}.
@@ -1417,16 +1417,16 @@ A_k (\nabla_iB^k)+(\nabla_i A_k)B^k = A_k (\partial_iB^k) +(\partial_iA_k)B^k .
 \end{equation}
 Finalmente, usando \eqref{dinv6} encontramos que
 \begin{equation}
-A_k (\nabla_iB^k) +\left(\partial_iA_k-\Gamma_{\ ki}^jA_j\right) B^k=A_k (\partial_iB^k) +(\partial_iA_k)B^k 
+A_k (\nabla_iB^k) +\left(\partial_iA_k-\Gamma_{\ ik}^jA_j\right) B^k=A_k (\partial_iB^k) +(\partial_iA_k)B^k 
 \end{equation}
 Cancelando t'erminos y renombrando 'indices apropiadamente, podemos
 escribir:
 \begin{equation}
-A_k \left( \nabla_iB^k -\partial_iB^k -\Gamma_{\ ji}^k B^j\right) =0,
+A_k \left( \nabla_iB^k -\partial_iB^k -\Gamma_{\ ij}^k B^j\right) =0,
 \end{equation}
 pero $A_k $ es arbitrario, de modo que el t'ermino entre par'entesis debe anularse para cada valor del 'indice $k$. De aqu'i podemos despejar una expresi'on expl'icita para la derivada covariante de un vector contravariante:
 \begin{equation}
-\boxed{\nabla_iB^k =\partial_iB^k +\Gamma_{\ ji}^kB^j .} \label{dinv15}
+\boxed{\nabla_iB^k =\partial_iB^k +\Gamma_{\ ij}^kB^j .} \label{dinv15}
 \end{equation}
 
 Para un tensor general $T^{kl\cdots }{}_{pq\cdots }$ aplicamos un m'etodo similar. Consideramos la derivada covariante del escalar
@@ -1440,10 +1440,10 @@ una contraci'on entre las componentes de $T^{kl\cdots }{}_{pq\cdots }$ y
 $\Gamma$:
 \begin{align}\marginnote{Derivada Covariante de un Tensor}
 \nabla_iT^{kl\cdots }{}_{pq\cdots} =&\ \partial_iT^{kl\cdots
-}{}_{pq\cdots}+\Gamma_{\ ni}^kT^{nl\cdots}{}_{pq\cdots } +\Gamma_{\
-ni}^lT^{kn\cdots }{}_{pq\cdots} +\cdots \nonumber \\
-&  -\Gamma_{pi}^nT^{kl\cdots}{}_{nq\cdots
-}-\Gamma_{qi}^nT^{kl\cdots }{}_{pn\cdots }-\cdots . \label{dinv17}
+}{}_{pq\cdots}+\Gamma_{\ in}^kT^{nl\cdots}{}_{pq\cdots } +\Gamma_{\
+in}^lT^{kn\cdots }{}_{pq\cdots} +\cdots \nonumber \\
+&  -\Gamma_{ip}^nT^{kl\cdots}{}_{nq\cdots
+}-\Gamma_{iq}^nT^{kl\cdots }{}_{pn\cdots }-\cdots . \label{dinv17}
 \end{align}
 
 Note que, \textit{de acuerdo a nuestras convenciones}, el 'indice de diferenciaci'on es siempre el segundo 'indice covariante de $\Gamma$ y los restantes lugares son llenados de modo de asignar el que falta de $T^{kl\cdots }{}_{pq\cdots }$.
@@ -1462,17 +1462,17 @@ conexi'on es introduciendo la noci'on de \textbf{transporte paralelo}. Hemos vis
 \end{equation}
 An'alogamente, podemos escribir:
 \begin{eqnarray}
-\nabla_jA_i&=&\partial_jA_i-\Gamma_{\ ij}^kA_k \\
-&=& \lim_{\Delta x^j\rightarrow0}\frac{A_i(x+\Delta x)-A_i(x)}{\Delta x^j }-\Gamma_{\ ij}^kA_k \\
+\nabla_jA_i&=&\partial_jA_i-\Gamma_{\ ji}^kA_k \\
+&=& \lim_{\Delta x^j\rightarrow0}\frac{A_i(x+\Delta x)-A_i(x)}{\Delta x^j }-\Gamma_{\ ji}^kA_k \\
 &=& \lim_{\Delta x^j\rightarrow0}\frac{A_i(x+\Delta x)-A_i(x)-\Gamma_{\
-il}^k(x)A_k(x)\Delta x^l}{\Delta x^j }\\
+li}^k(x)A_k(x)\Delta x^l}{\Delta x^j }\\
 &=& \lim_{\Delta x^j\rightarrow0}\frac{A_i(x+\Delta x)-\left[A_i(x)+\Gamma_{\
-il}^k(x)A_k(x)\Delta x^l\right]}{\Delta x^j }\\
+li}^k(x)A_k(x)\Delta x^l\right]}{\Delta x^j }\\
 &=& \lim_{\Delta x^j\rightarrow0}\frac{A_i(x+\Delta x)-A^T_i(x+\Delta x)}{\Delta x^j }.
 \end{eqnarray}
 Basados en esto, definimos (en el punto con coordenadas $x+dx$) el vector $A^T_i(x+dx)$ por:
 \begin{equation}\marginnote{transporte vector covariante}
- \boxed{A^T_i(x+dx):=A_i(x)+\Gamma_{\ il}^k(x)A_k(x)dx^l=A_i(x)+\delta A_i(x),} \label{tranAcov}
+ \boxed{A^T_i(x+dx):=A_i(x)+\Gamma_{\ li}^k(x)dx^lA_k(x)=A_i(x)+\delta A_i(x),} \label{tranAcov}
 \end{equation}
 que interpretaremos geom'etricamente como el vector resultante de \textit{transportar}
 (``\textit{paralelamente}'') el vector $A_i(x)$ desde el punto con coordenadas $x$ hasta el punto con coordenadas $x+dx$. De esta forma, la derivada covariante de $A_i$ puede
@@ -1483,7 +1483,7 @@ ser interpretada como el l'imite de la diferencia del vector $A^i(x+dx)$ y el
 vector $A_T^i(x+dx)$ resultante de transportar $A^i(x)$ desde $x$ hasta $x+dx$,
 con
 \begin{equation}\marginnote{transporte vector contravariante}
- \boxed{A_T^i(x+dx):=A^i(x)-\Gamma_{\ jk}^i(x)A^j(x)dx^k=A^i(x)+\delta
+ \boxed{A_T^i(x+dx):=A^i(x)-\Gamma_{\ kj}^i(x)dx^kA^j(x)=A^i(x)+\delta
 A^i(x).}\label{tranAcontr}
 \end{equation}
 
@@ -1529,7 +1529,7 @@ A^i(x+dx)=A^i_T(x+dx) . \label{condint}
 Usando $A^i(x+dx)=A^i(x)+(\partial_j A^i)dx^j $ y (\ref{tranAcontr}) obtenemos que
 la condici'on (\ref{condint}) es equivalente a
 \begin{equation}
-\nabla_j A^k=\partial_j A^k+\Gamma_{\ ij}^k A^i =0.
+\nabla_i A^k=\partial_i A^k+\Gamma_{\ ij}^k A^j =0.
 \label{ecdeintegr}%
 \end{equation}
 \begin{quotation}
@@ -1545,21 +1545,18 @@ conexi'on sea integrable.
 Las segundas derivadas covariantes de un tensor \textit{no conmutan}.
 Por ejemplo, usando (\ref{dinv15}) y (\ref{dinv17}) podemos calcular la segunda derivada covariante de un vector arbitrario $A^i$:
 \begin{equation}
-\nabla_i \nabla_jA^k =\partial_i \partial_jA^{k
-}+\partial_i A^l\Gamma_{\ lj}^k +A^l\partial
-_i \Gamma_{\ lj}^k +\partial_jA^l\Gamma_{\ li}^k
-+A^l\Gamma_{\ lj}^{m}\Gamma_{\ mi}^k -\partial_{l}A^k \Gamma_{\
-ji}^l-A^l\Gamma_{\ lm}^k \Gamma_{\ ji}^{m}. \label{segder1}
+\nabla_i \nabla_jA^k =\partial_i \partial_jA^k +\partial_i A^l\Gamma_{\ jl}^k +A^l\partial_i \Gamma_{\ jl}^k +\partial_jA^l\Gamma_{\ il}^k
++A^l\Gamma_{\ jl}^m\Gamma_{\ im}^k -\partial_{l}A^k \Gamma_{\ ij}^l-A^l\Gamma_{\ ml}^k \Gamma_{\ ij}^m. \label{segder1}
 \end{equation}
-A partir de aqu'i, encontramos la siguiente identidad\footnote{Existen identidades similares para cada tipo de tensor. Por ejemplo: $\left[\nabla_i \nabla_j -\nabla_j\nabla_i\right]\phi\equiv T_{\ ij}^{k} \nabla_k\phi$,  $\left[\nabla_i \nabla_j -\nabla_j\nabla_i\right]A_k\equiv -R_{\ kij}^lA_l+T_{\ ij}^{l} \nabla_lA_k$. Es un buen ejercicio demostrar estas identidades ...}
+A partir de aqu'i, encontramos la siguiente identidad\footnote{Existen identidades similares para cada tipo de tensor. Por ejemplo: $\left[\nabla_i \nabla_j -\nabla_j\nabla_i\right]\phi\equiv -T_{\ ij}^{k} \nabla_k\phi$,  $\left[\nabla_i \nabla_j -\nabla_j\nabla_i\right]A_k\equiv -R_{\ kij}^lA_l - T_{\ ij}^{l} \nabla_lA_k$. Es un buen ejercicio demostrar estas identidades ...}
 \begin{equation}
 \boxed{\nabla_i \nabla_jA^k -\nabla_j\nabla_i A^{k}\equiv R_{\ lij}^k
-A^l+T_{\ ij}^{m} \nabla_mA^k ,} \label{cdc}
+A^l - T_{\ \ ij}^l \nabla_l A^k ,} \label{cdc}
 \end{equation}
 donde hemos definido el \textbf{tensor de curvatura} como:
 \begin{equation}\marginnote{Curvatura}
-\boxed{R_{\ lij}^k :=\partial_i\Gamma_{\ lj}^k -\partial_j\Gamma_{\ li}^k 
-+\Gamma_{\ mi}^k \Gamma_{\ lj}^m -\Gamma_{\ mj}^k \Gamma_{\ li}^m .}
+\boxed{R_{\ lij}^k :=\partial_i\Gamma_{\ jl}^k -\partial_j\Gamma_{\ il}^k 
++\Gamma_{\ im}^k \Gamma_{\ jl}^m -\Gamma_{\ jm}^k \Gamma_{\ il}^m .}
 \label{curvatura}
 \end{equation}
 Adem'as, definimos el \textbf{tensor de torsi'on} como:
@@ -1606,54 +1603,28 @@ Sean $A^i (P)$ las componentes de un vector contravariante definido en el punto 
 
 Transportamos primero $A^i$ de $P$ a $Q$, obteniendo el vector $A_{T}^i(Q)$:
 \begin{equation}
-A_{T}^i(Q)=A^i(P) -\Gamma_{\ jk}^i(P)A^j(P)\, dx_1^k .
+A_{T}^i(Q)=A^i(P) -\Gamma_{\ kj}^i(P)A^j(P)\, dx_1^k .
 \label{AT1}%
 \end{equation}
 
 Transportamos ahora $A_{T}^i $ desde $Q$ hasta $R$, obteniendo as'i el vector denotado por $A_{PQR}^i (R)$:
 \begin{equation}
-A_{PQR}^i (R) = A_{T}^i (Q) -\Gamma_{\ jk}^i(Q)A_{T}^j (Q)\,dx_2^k. \label{AT2}%
+A_{PQR}^i (R) = A_{T}^i (Q) -\Gamma_{\ kj}^i(Q)A_{T}^j (Q)\,dx_2^k. \label{AT2}%
 \end{equation}
  La conexi'on en el lado derecho de (\ref{AT2}) est'a evaluada en el punto $Q$, de coordenadas $x^i +dx_1^i$, y por lo tanto podemos escribir
 \begin{equation}
-\Gamma_{\ jk}^i(Q)=\Gamma_{\ jk}^i (x+dx_1)=\Gamma_{\ jk}^i(x)+dx_1^l(\partial_l\Gamma_{\ jk}^i) (x) . \label{expGam}
+\Gamma_{\ kj}^i(Q)=\Gamma_{\ kj}^i (x+dx_1)=\Gamma_{\ kj}^i(x)+dx_1^l(\partial_l\Gamma_{\ kj}^i) (x) . \label{expGam}
 \end{equation}
 Reemplazando \eqref{expGam} en \eqref{AT2} y utilizando (\ref{AT1}) obtenemos:%
 \begin{align}
-A_{PQR}^i (R) &= A^i -\Gamma_{\ jk}^i A^j\,dx_1^k-\Gamma_{\ jk}^i A^j\,dx_2^k \nonumber\\
-& \quad  +\Gamma_{\ jk}^i \Gamma_{\ lm}^jA^l\, dx_1^m\,dx_2^k -(\partial_l\Gamma_{\ jk}^i) A^j dx_1^l dx_2^k. \label{AT22}
+A_{PQR}^i (R) &= A^i -\Gamma_{\ kj}^i A^j\,dx_1^k-\Gamma_{\ kj}^i A^j\,dx_2^k \nonumber\\
+& \quad  +\Gamma_{\ kj}^i \Gamma_{\ ml}^jA^l\, dx_1^m\,dx_2^k -(\partial_l\Gamma_{\ kj}^i) A^j dx_1^l dx_2^k. \label{AT22}
 \end{align}
 El c'alculo del vector $A_{\rm PSR}^i(R)$ es an'alogo, con la 'unica diferencia que primero se realiza el desplazamiento coordenado $dx_2^i$ hasta el punto $S$ y luego el desplazamiento en $dx_1^i$ hasta el punto $R$. Por lo tanto, el vector buscado tiene la misma forma que \eqref{AT22}, pero intercambiando $dx_1^i$ con $dx_2^i$, es decir,
 \begin{align}
-A_{PSR}^i (R) &= A^i -\Gamma_{\ jk}^i A^j\,dx_2^k-\Gamma_{\ jk}^i A^j\,dx_1^k \nonumber\\
-& \quad  +\Gamma_{\ jk}^i \Gamma_{\ lm}^jA^l\, dx_2^m\,dx_1^k -(\partial_l\Gamma_{\ jk}^i) A^j dx_2^l dx_1^k. \label{APSR}
+A_{PSR}^i (R) &= A^i -\Gamma_{\ kj}^i A^j\,dx_2^k-\Gamma_{\ kj}^i A^j\,dx_1^k \nonumber\\
+& \quad  +\Gamma_{\ kj}^i \Gamma_{\ ml}^jA^l\, dx_2^m\,dx_1^k -(\partial_l\Gamma_{\ kj}^i) A^j dx_2^l dx_1^k. \label{APSR}
 \end{align}
-
-%Desplazamos ahora $A_{T2}^i $ desde $R$ hasta $S$, obteniendo $A_{T3}^i (S)$:
-%\begin{equation}
-%A_{T3}^i (S) = A_{T2}^i(R) -\Gamma_{\ jk}^i(R)A_{T2}^j (R)(-dx_1^k). \label{AT3}%
-%\end{equation}
-%Aqu'i hemos tomado en cuenta que la diferencia de coordenadas entre los puntos involucrados es $x^i(S)-x^i(R)=-dx_1^k$. Adem'as,
-%\begin{equation}
-%\Gamma_{\ jk}^i(R)=\Gamma_{\ jk}^i (x+dx_1+dx_2)=\Gamma_{\ jk}^i(x)+(dx_1^l+dx_2^l)(\partial_l\Gamma_{\ jk}^i) (x) . \label{expGam2}
-%\end{equation}
-%Reemplazando (\ref{expGam2}) en (\ref{AT3}) y utilizando (\ref{AT2}) obtenemos:%
-%\begin{equation}
-%A_{T3}^i (S) = A^i-\Gamma_{\ jk}^i A^j\,dx_2^k +\left(\partial_k\Gamma_{\ jl}^i-\partial_l\Gamma_{\ jk}^i+\Gamma_{\ mk}^i \Gamma_{\ jl}^m-\Gamma_{\ ml}^i \Gamma_{\ jk}^m\right) A^j\,dx_2^k\,dx_1^l. \label{AT32}
-%\end{equation}
-%
-% Finalmente, trasladamos el vector $A_{T3}^i (S)$ hasta el punto inicial $P$:
-%\begin{equation}
-%A_{T4}^i(P) = A_{T3}^i(S) -\Gamma_{\ jk}^i(S)A_{T3}^j (S)(-dx_2^k). \label{AT4}%
-%\end{equation}
-%Usamos $\Gamma_{\ jk}^i(S)=\Gamma_{\ jk}^i(x+dx_2)=\Gamma_{\ jk}^i(x)+dx_2^l(\partial_l\Gamma_{\ jk}^i) (x)$ y nuestro resultado anterior (\ref{AT32}) y finalmente encontramos
-%\begin{equation}
-%A_{T4}^i(P) =A^i+\left(\partial_k\Gamma_{\ jl}^i-\partial_l\Gamma_{\ jk}^i+\Gamma_{\ mk}^i \Gamma_{\ jl}^m-\Gamma_{\ ml}^i \Gamma_{\ jk}^m\right) A^j\,dx_2^k\,dx_1^l.
-%\end{equation}
-%Vemos que el segundo t'ermino del lado derecho es precisamente el tensor de curvatura (\ref{curvatura}). As'i obtenemos:
-%\begin{equation}
-%\boxed{(A_{T4}^i -A^i)(x) =R_{\ jkl}^i(x)\, A^j(x)\,dx_2^k\,dx_1^l.} \label{19}%
-%\end{equation}
 
 Comparamos ambos vectores transportado calculando la diferencia de sus componentes. Restando \eqref{AT22} y \eqref{APSR} obtenemos (luego de renombrar algunos 'indices) que el resultado es proporcional al tensor de curvatura \eqref{curvatura},
 \begin{equation}
@@ -1680,25 +1651,25 @@ Ahora transportamos los vectores contravariantes $dx_1^k $ y $dx_2^k $, ambos de
 \end{figure}
 \end{center}
 \begin{equation}
-\overline{dx}_2^i (Q)=dx_2^i -\Gamma_{\ jk}^i(x)\, dx_2^j dx_1^k ,
+\overline{dx}_2^i (Q)=dx_2^i -\Gamma_{\ kj}^i(x)\, dx_2^j dx_1^k ,
 \end{equation}
 \begin{equation}
-\overline{dx}_1^i (S)=dx_2^i -\Gamma_{\ jk}^i(x)\, dx_1^j dx_2^k .
+\overline{dx}_1^i (S)=dx_2^i -\Gamma_{\ kj}^i(x)\, dx_1^j dx_2^k .
 \end{equation}
 
 Los nuevos vectores $\overline{dx}_2^i (Q)$ y $\overline{dx}_1^i (S)$ permiten definir nuevos puntos $R_1$ y $R_2$, cuyas coordenadas son
 \begin{equation}
-x^i(R_1):=x^i(Q)+\overline{dx}_2^i (Q)=x^i+dx_1^i+dx_2^i -\Gamma_{\ jk}^i(x)\, dx_2^j dx_1^k, 
+x^i(R_1):=x^i(Q)+\overline{dx}_2^i (Q)=x^i+dx_1^i+dx_2^i -\Gamma_{\ kj}^i(x)\, dx_2^j dx_1^k, 
 \end{equation}
 \begin{equation}
 x^i(R_2):=x^i(S)+\overline{dx}_1^i (S)=x^i +dx_2^i +dx_1^i
- -\Gamma_{\ jk}^i(x)\, dx_1^j dx_2^k .
+ -\Gamma_{\ kj}^i(x)\, dx_1^j dx_2^k .
 \end{equation}
 En general, los puntos $R_1$ y $R_2$ \textit{no coinciden}: la diferencia entre sus coordenadas est'a dada por
 \begin{align}
-x^i(R_2)-x^i(R_1) &= -\Gamma_{\ jk}^i(x)\, dx_1^j dx_2^k+ \Gamma_{\ jk}^i(x)\, dx_2^j dx_1^k \\
-&=  \left[-\Gamma_{\ jk}^i(x)+ \Gamma_{\ kj}^i(x)\right] dx_1^j dx_2^k \\
-&=  -T_{\ jk}^i(x)\, dx_1^j dx_2^k .
+x^i(R_2)-x^i(R_1) &= -\Gamma_{\ kj}^i(x)\, dx_1^j dx_2^k+ \Gamma_{\ kj}^i(x)\, dx_2^j dx_1^k \\
+&=  \left[-\Gamma_{\ kj}^i(x)+ \Gamma_{\ jk}^i(x)\right] dx_1^j dx_2^k \\
+&=  T_{\ jk}^i(x)\, dx_1^j dx_2^k .
 \end{align}
 Vemos entonces que en la construcci'on geom'etrica discutida de un ``paralel'ogramo infinitesiamal'' los puntos finales no coinciden (el ``paralel'ogramo no se cierra'') si el tensor de torsi'on en no nulo. Debido a esto a menudo se dice que la torsi'on describe (posibles) ``fallas en el cierre local de paralel'ogramos infinitesimales''.
 
