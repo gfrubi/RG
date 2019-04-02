@@ -397,58 +397,65 @@ As\'i, Lane-Emden \eqref{laneemden} en t'erminos de la nueva variable $\xi$ es:
 \xi^2(-\xi^2)\frac{d}{d\xi}\left(\frac{1}{\xi^2}(-\xi^2\frac{d\Theta}{d\xi})\right)&=-\Theta^n, \\
 \xi^4\frac{d^2\Theta}{d\xi^2}=-\Theta^n.\label{transkelvin}
 \end{align}
-Supongamos que la ecuaci'on anterior tiene una soluci'on de la forma:
-\begin{equation}\label{lane5sol1}
- \Theta(\xi)=a\xi^{\omega}.
-\end{equation}
-con $a$ y $\omega$ las variables a encontrar. Reemplazando en \eqref{transkelvin}, tenemos
-\begin{align}
- \xi^4\omega(\omega-1)a \xi^{\omega-2}&=-a^n \xi^{n\omega},\\
-\omega(\omega-1)\xi^{\omega+2}&=-a^{n-1} \xi^{n\omega}.
-\end{align}
-Igualando el factor y el exponente de la igualdad anterior, obtenemos el sistema de ecuaciones:
-\begin{align}
- \omega(\omega-1)&=-a^{n-1},\label{lane5a}\\
-\omega+2&=n\omega.
-\end{align}
-De la segunda ecuaci'on, se puede despejar $\omega$ directamente, y reemplazando en la primera, obtenemos el coeficiente $a$ en t'erminos de $n$:
-\begin{align}
- \omega&=\frac{2}{n-1} \label{lane5omega},\\
-a&=\left[2\frac{(n-3)}{(n-1)^2}\right]^{1/(n-1)}\label{lane5a2}.
-\end{align}
-Ahora bien, como $\Theta$ es una densidad normalizada, debe ser una cantidad definida positiva, por lo que $a>0$. Luego, la soluci'on propuesta \eqref{lane5sol1} en la variable original $x$,
-\begin{equation}
- \Theta=\left[2\frac{n-3}{(n-1)^2}\right]^{1/(n-1)}\left(\frac{1}{x}\right)^{2/(n-1)},
-\end{equation}
-es v'alida s'olo para $n>3$, que equivale por \eqref{ngamma} a $\gamma<\frac{4}{3}$, y por \eqref{lane5omega} a $\omega<1$. Debemos notar que esta soluci'on es singular en el origen. Por esta raz'on, conviene postular, para este caso particular, una soluci'on general de \eqref{transkelvin} en la forma:
+%Supongamos que la ecuaci'on anterior tiene una soluci'on de la forma:
+%\begin{equation}\label{lane5sol1}
+% \Theta(\xi)=a\xi^{\omega}.
+%\end{equation}
+%con $a$ y $\omega$ las variables a encontrar. Reemplazando en \eqref{transkelvin}, tenemos
+%\begin{align}
+% \xi^4\omega(\omega-1)a \xi^{\omega-2}&=-a^n \xi^{n\omega},\\
+%\omega(\omega-1)\xi^{\omega+2}&=-a^{n-1} \xi^{n\omega}.
+%\end{align}
+%Igualando el factor y el exponente de la igualdad anterior, obtenemos el sistema de ecuaciones:
+%\begin{align}
+% \omega(\omega-1)&=-a^{n-1},\label{lane5a}\\
+%\omega+2&=n\omega.
+%\end{align}
+%De la segunda ecuaci'on, se puede despejar $\omega$ directamente, y reemplazando en la primera, obtenemos el coeficiente $a$ en t'erminos de $n$:
+%\begin{align}
+% \omega&=\frac{2}{n-1} \label{lane5omega},\\
+%a&=\left[2\frac{(n-3)}{(n-1)^2}\right]^{1/(n-1)}\label{lane5a2}.
+%\end{align}
+%Ahora bien, como $\Theta$ es una densidad normalizada, debe ser una cantidad definida positiva, por lo que $a>0$. Luego, la soluci'on propuesta \eqref{lane5sol1} en la variable original $x$,
+%\begin{equation}
+% \Theta=\left[2\frac{n-3}{(n-1)^2}\right]^{1/(n-1)}\left(\frac{1}{x}\right)^{2/(n-1)},
+%\end{equation}
+%es v'alida s'olo para $n>3$, que equivale por \eqref{ngamma} a $\gamma<\frac{4}{3}$, y por \eqref{lane5omega} a $\omega<1$. Debemos notar que esta soluci'on es singular en el origen. 
+Escribimos la solución en la forma siguiente:
 \begin{equation}\label{lane5solgeneral}
- \Theta(\xi)=a\xi^{\omega}z(\xi).
+ \Theta(\xi)=a\xi^{\omega}z(\xi),
 \end{equation}
-Luego, reemplazando la soluci'on anterior en \eqref{transkelvin}, obtendremos una ecuaci'on  para $z$, m'as simple de resolver:
-\begin{align}
+donde $a$ y $\omega$ son constantes a elegir convenientemente. Reemplazando \eqref{lane5solgeneral} en \eqref{transkelvin}, obtendremos una ecuaci'on  para $z$, m'as simple de resolver:
+\begin{align}\label{lane5eqgen}
  \xi^4\left[a\xi^{\omega}\frac{d^2 z}{d\xi^2}+2a\omega\xi^{\omega-1}\frac{dz}{d\xi}+a\omega(\omega-1)\xi^{\omega-2}z\right]&=-a^{n}\xi^{n\omega}z^n
  \end{align}
-Pero de \eqref{lane5omega}, $n\omega=\omega+2$, y as'i
+ Para simplicar esta ecuación elegimos las constantes $a$ y $\omega$ de modo que
+\begin{align}
+\omega(\omega-1)&=-a^{n-1},\label{lane5a}\\
+\omega+2&=n\omega,
+\end{align}
+de donde obtenemos:
+\begin{align}
+\omega&=\frac{2}{n-1} \label{lane5omega},\\
+a&=\left[2\frac{(n-3)}{(n-1)^2}\right]^{1/(n-1)}\label{lane5a2}.
+\end{align}
+Con esto, \eqref{lane5eqgen} se reduce a 
 \begin{align}
 \xi^2\frac{d^2 z}{d\xi^2}+2\omega\xi\frac{dz}{d\xi}+\omega(\omega-1)z&=-a^{n-1}z^n,
 \end{align}
 que es una ecuaci'on tipo Euler-Cauchy, por lo que usando la sustituci'on est'andar:
 \begin{equation}\label{euler-sust}
- \xi=e^{t}\quad\Rightarrow\quad \frac{dt}{d\xi}=e^{-t},
+ \xi=e^{t}\quad\Rightarrow\quad \frac{dt}{d\xi}=e^{-t}.
 \end{equation}
-la ecuaci'on en $z$ toma la forma:
+La ecuaci'on en $z$ toma la forma:
 \begin{equation}
  \frac{d^2 z}{dt^2}+(2\omega-1)\frac{dz}{dt}+\omega(\omega-1)z+a^{n-1}z^n=0.
 \end{equation}
-Pero de \eqref{lane5a}, se puede reescribir el 'ultimo t'ermino as\'i:
-\begin{equation}
- \frac{d^2 z}{dt^2}+(2\omega-1)\frac{dz}{dt}-\omega(1-\omega)z(1-z^{n-1})=0.
-\end{equation}
-Expresando la ecuaci'on anterior en t'erminos de $n$ mediante \eqref{lane5omega}, obtenemos:
+Usando \eqref{lane5a} y \eqref{lane5omega} podemos escribir esta ecuación en términos de $n$, obteniendo
 \begin{equation}\label{translane5}
  \frac{d^2 z}{dt^2}+\frac{5-n}{n-1}\frac{dz}{dt}+2\frac{3-n}{(n-1)^2}z(1-z^{n-1})=0.
 \end{equation}
-Ahora, podemos reemplazar el caso analizado $n=5$ (que es consistente con la restricci'on $n>3$), de donde vemos que el segundo t'ermino de la ecuaci'on de Lane-Emden transformada en $z$ \eqref{translane5} se anula, por lo que 'esta toma la forma:
+En el caso $n=5$ vemos que el segundo t'ermino de la ecuaci'on \eqref{translane5} se anula, por lo que 'esta toma la forma:
 \begin{equation}\label{translane5b}
  \frac{d^2 z}{dt^2}=\frac{z}{4}(1-z^4).
 \end{equation}
