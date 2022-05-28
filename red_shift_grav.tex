@@ -1,0 +1,147 @@
+
+\documentclass[notitlepage,11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage[margin=0.9in]{geometry}
+\usepackage[spanish]{babel}
+
+\setcounter{MaxMatrixCols}{10}
+%TCIDATA{OutputFilter=LATEX.DLL}
+%TCIDATA{Version=5.50.0.2953}
+%TCIDATA{<META NAME="SaveForMode" CONTENT="1">}
+%TCIDATA{BibliographyScheme=Manual}
+%TCIDATA{Created=Sunday, June 14, 2020 21:55:14}
+%TCIDATA{LastRevised=Friday, November 13, 2020 11:31:56}
+%TCIDATA{<META NAME="GraphicsSave" CONTENT="32">}
+%TCIDATA{<META NAME="DocumentShell" CONTENT="Standard LaTeX\Blank - Standard LaTeX Article">}
+%TCIDATA{Language=American English}
+%TCIDATA{CSTFile=40 LaTeX article.cst}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{acknowledgement}[theorem]{Acknowledgement}
+\newtheorem{algorithm}[theorem]{Algorithm}
+\newtheorem{axiom}[theorem]{Axiom}
+\newtheorem{case}[theorem]{Case}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+\newtheorem{condition}[theorem]{Condition}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{criterion}[theorem]{Criterion}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{problem}[theorem]{Problem}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{solution}[theorem]{Solution}
+\newtheorem{summary}[theorem]{Summary}
+\newenvironment{proof}[1][Proof]{\noindent\textbf{#1.} }{\ \rule{0.5em}{0.5em}}
+
+\begin{document}
+
+
+\section{Redshift gravitacional}
+
+Consideremos que estamos cerca de la superficie de la tierra donde hay un
+campo gravitacional constante $\vec{g}$. Adem\'{a}s consideremos una caja de
+altura $h$, en la tapa m\'{a}s cercana al suelo hay un emisor $D^{\prime }$
+que env\'{\i}a un rayo de luz con frecuencia $\nu _{e}$. En la tapa superior
+hay un detector $D$ que mide el rayo enviado por $D^{\prime }$. La pregunta
+es \textquestiondown Qu\'{e} frecuencia $\nu _{d}$ mide $D$? Desde el punto
+de vista Newtoniano deber\'{\i}an ser iguales, ya que $D$ y $D^{\prime }$ est%
+\'{a}n en reposo uno respecto del otro. Pero a la luz de el principio de
+equivalencia fuerte $\nu _{e}\neq \nu _{d}$.
+
+\begin{center}
+\begin{tabular}{cc}
+\FRAME{itbpF}{2.0937in}{2.0539in}{0pt}{}{}{Figure}{\special{language
+"Scientific Word";type "GRAPHIC";maintain-aspect-ratio TRUE;display
+"USEDEF";valid_file "T";width 2.0937in;height 2.0539in;depth
+0pt;original-width 3.4497in;original-height 3.384in;cropleft "0";croptop
+"1";cropright "1";cropbottom "0";tempfilename
+'QJQN4P03.wmf';tempfile-properties "XPR";}} & \FRAME{itbpF}{1.6501in}{%
+2.0522in}{0in}{}{}{Figure}{\special{language "Scientific Word";type
+"GRAPHIC";maintain-aspect-ratio TRUE;display "USEDEF";valid_file "T";width
+1.6501in;height 2.0522in;depth 0in;original-width 3.966in;original-height
+4.9493in;cropleft "0";croptop "1";cropright "1";cropbottom "0";tempfilename
+'QJQN3Z02.wmf';tempfile-properties "XPR";}} \\ 
+Sistema $K$ & SRLI $K^{\prime }$%
+\end{tabular}
+\end{center}
+
+Consideremos ahora un sistema de referencia localmente inercial $K^{\prime }$
+que cae a la tierra. En este sistema de referencia ambos detectores aceleran
+hacia arriba. En este sistema el fot\'{o}n sube con velocidad $c$. Sin
+embargo, cuando el fot\'{o}n sube el detector $D$ se aleja. Digamos que en $%
+t^{\prime }=0$ el fot\'{o}n es emitido y en $t_{d}^{\prime }$ el foton es
+detectado por $D$.
+
+En el sistema $K^{\prime }$ la ecuaci\'{o}n del fot\'{o}n que sube es 
+\begin{equation}
+y_{f}^{\prime }\left( t^{\prime }\right) =ct^{\prime }
+\end{equation}
+
+y la ecuaci\'{o}n del detector $D$ es 
+\begin{equation}
+y_{D}^{\prime }\left( t^{\prime }\right) =h+\frac{g}{2}t^{\prime 2}.
+\end{equation}
+
+Entonces al imponer $y_{f}^{\prime }\left( t_{d}^{\prime }\right)
+=y_{D}^{\prime }\left( t_{d}^{\prime }\right) $ podemos obtener cuando llega
+el fot\'{o}n a $D$, cuya soluci\'{o}n es 
+\begin{equation*}
+t_{D}^{\prime }=\frac{c\pm \sqrt{c^{2}-2gh}}{g}
+\end{equation*}
+
+debemos elegir el signo menos ya que en este caso cuando hacemos $h=0$
+entonces el $t_{D}^{\prime }=0$. Luego, la soluci\'{o}n para nuestro caso es 
+\begin{equation}
+t_{D}^{\prime }=\frac{c-\sqrt{c^{2}-2gh}}{g}.
+\end{equation}
+
+La pregunta es \textquestiondown Cu\'{a}l es la frecuencia $\nu _{d}$? El
+cambio en la frecuencia estar\'{a} relacionado con el hecho que el detector $%
+D$ viaja con una velocidad no nula al detectar el fot\'{o}n. Por lo tanto es
+necesario calcular la velocidad del dector en $t_{D}^{\prime }$, la cual es
+dada por 
+\begin{eqnarray*}
+V_{d}^{\prime } &=&gt_{D}^{\prime }, \\
+&=&c-\sqrt{c^{2}-2gh}.
+\end{eqnarray*}
+
+El redshift es por definici\'{o}n 
+\begin{equation}
+Z=\frac{\Delta \lambda }{\lambda _{e}}=\frac{\Delta \nu }{\nu _{e}},
+\label{miau}
+\end{equation}%
+Si tenemos dos observadores $B$ y $B^{\prime }$ que se alejan con velocidad $%
+\vec{V}$ con $\vec{V}/c\ll 1$ el efecto Doppler debido a una onda que env%
+\'{\i}a $B$ a $B^{\prime }$ es dado por 
+\begin{equation*}
+\nu _{B^{\prime }}\approx \left( 1+\frac{\left\vert \vec{V}\right\vert }{c}%
+\right) \nu _{B}
+\end{equation*}%
+reemplazando en (\ref{miau}) tenemos%
+\begin{equation*}
+Z\approx \frac{v}{c}
+\end{equation*}
+
+por lo que el redshift gravitacional es dado por, 
+\begin{eqnarray*}
+Z &\approx &1-\sqrt{1-\frac{2gh}{c^{2}}}, \\
+&=&\frac{gh}{c^{2}}+\mathcal{O}\left( \left( \frac{gh}{c^{2}}\right)
+^{2}\right) \approx \frac{\Delta \phi }{c^{2}}
+\end{eqnarray*}%
+Ejemplo: $h\approx 100\left[ m\right] $, $g=9.8\left[ m/s^{2}\right] \approx
+10\left[ m/s^{2}\right] $ entonces 
+\begin{equation*}
+Z\approx 10^{-14}
+\end{equation*}%
+muy chico! pero se midi\'{o} :)
+
+\end{document}
