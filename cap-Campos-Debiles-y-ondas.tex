@@ -435,10 +435,10 @@ Lo anterior implica que una part'icula de prueba ubicada en $\vec{x}=\vec{x}_0$ 
 
 Consideremos un conjunto de part'iculas de prueba ubicadas inicialmente en un c'irculo en el plano $xy$, de radio $R$ en coordenadas cuasi-inerciales, y el movimiento de ida y regreso de fotones desde el centro, $\vec{x}=\vec{0}$, hasta un punto sobre la circunsferencia, ubicado en un 'angulo $\varphi$ respecto al eje $x$.
 
-Parametrizamos la curva desde el origen hasta el punto de retorno sobre la circunsferencia por $\vec{x}(t)=(r(t)\cos\varphi,r(t)\sen\varphi,0)$. El movimiento de un fot'on satisface $ds^2=0$ de modo que, en el caso de una onda polarizada tal que el elemento de l'inea sea (\ref{pol1}), podemos escribir
+Parametrizamos la curva desde el origen hasta el punto de retorno sobre la circunsferencia por $\vec{x}(t)=(r(t)\cos\varphi,r(t)\sin\varphi,0)$. El movimiento de un fot'on satisface $ds^2=0$ de modo que, en el caso de una onda polarizada tal que el elemento de l'inea sea (\ref{pol1}), podemos escribir
  \begin{eqnarray}
  cdt&=&\sqrt{dx^2+dy^2-h_+\cos(\omega t-kz-\varphi_+)(dx^2-dy^2)}\\
- &=&\sqrt{dr^2-h_+\cos(\omega t-kz-\varphi_+)(\cos^2\varphi-\sen^2\varphi)dr^2}\\
+ &=&\sqrt{dr^2-h_+\cos(\omega t-kz-\varphi_+)(\cos^2\varphi-\sin^2\varphi)dr^2}\\
  &=&dr\sqrt{1-h_+\cos(\omega t-kz-\varphi_+)\cos(2\varphi)}\\
  &=&dr\left[1-\frac{1}{2}h_+\cos(\omega t-kz-\varphi_+)\cos(2\varphi)\right]+\mathcal{O}(G^2). \label{dr}
  \end{eqnarray}
@@ -450,25 +450,25 @@ dr&=&\frac{cdt}{1-\frac{1}{2}h_+\cos(\omega t-kz-\varphi_+)\cos(2\varphi)}+\math
 Si $t_0$ es (la coordenada temporal correspondiente a) el instante en que el fot\'on sale del origen y $t_{\rm i}$ al de llegada del fot'on a la posici'on de la part\'icula ubicada en la circunsferencia de radio $R$, entonces (a primer orden en $G$):
 \begin{eqnarray}
 \int_{0}^{R}dr&=&\int_{t_0}^{t_{\rm i}}\left[1+\frac{1}{2}h_+\cos(\omega t-kz-\varphi_+)\cos(2\varphi) \right]cdt\\
-R&=&c\left[t_{\rm i}-t_{0}+\frac{h_+}{2\omega}\left[\sen(\omega t_{\rm i}-kz-\varphi_+)-\sen(\omega t_0-kz-\varphi_+)\right]\cos(2\varphi) \right].
+R&=&c\left[t_{\rm i}-t_{0}+\frac{h_+}{2\omega}\left[\sin(\omega t_{\rm i}-kz-\varphi_+)-\sin(\omega t_0-kz-\varphi_+)\right]\cos(2\varphi) \right].
 \end{eqnarray}
 A partir de esta expresi'on, obtenemos
 \begin{eqnarray}
-t_{\rm i}&=&t_0+\frac{R}{c}-\frac{h_+}{2\omega}\left[\sen(\omega t_{\rm i}-kz-\varphi_+)-\sen(\omega t_0-kz-\varphi_+)\right]\cos(2\varphi) \label{ti1}\\
+t_{\rm i}&=&t_0+\frac{R}{c}-\frac{h_+}{2\omega}\left[\sin(\omega t_{\rm i}-kz-\varphi_+)-\sin(\omega t_0-kz-\varphi_+)\right]\cos(2\varphi) \label{ti1}\\
 &=&t_0+\frac{R}{c}+\mathcal{O}(G). \label{ti2}
 \end{eqnarray}
 Note que \eqref{ti1} define una ecuaci'on trascendental para $t_{\rm i}$. Afortunadamente, debido a que estamos usando un esquema perturbativo, es posible encontrar una soluci'on anal'itica, a primer orden en $G$. Para esto usamos \eqref{ti2} e ``iteramos'', es decir, reemplazamos esta expresi'on en el lado derecho de \eqref{ti1}. Entonces, podemos escribir
 \begin{eqnarray}
-\sen(\omega t_{\rm i}-kz-\varphi_+)&=&\sen(\omega t_0+\frac{Rw}{c}-\varphi_++\mathcal{O}(G))\\
-&= &\sen(\omega t_0+\frac{Rw}{c}-\varphi_+)+\mathcal{O}(G) .
+\sin(\omega t_{\rm i}-kz-\varphi_+)&=&\sin(\omega t_0+\frac{R\omega}{c}-\varphi_++\mathcal{O}(G))\\
+&= &\sin(\omega t_0+\frac{R\omega}{c}-\varphi_+)+\mathcal{O}(G) .
 \end{eqnarray}
 Por lo tanto, una expresi'on para $t_{\rm i}$ (instante de llegada del fot\'on a la circunsferencia en funci\'on el tiempo de partida $t_0$ y $\varphi$), correcta a primer orden en $G$ es dada por
 \begin{equation}
-t_{\rm i}=t_0+\frac{R}{c}-\frac{h_+}{2\omega}\left[\sen(\omega t_0+\frac{R\omega}{c}-kz-\varphi_+)-\sen(\omega t_0-kz-\varphi_+)\right]\cos(2\varphi)+\mathcal{O}(G^2). \label{ti3}
+t_{\rm i}=t_0+\frac{R}{c}-\frac{h_+}{2\omega}\left[\sin(\omega t_0+\frac{R\omega}{c}-kz-\varphi_+)-\sin(\omega t_0-kz-\varphi_+)\right]\cos(2\varphi)+\mathcal{O}(G^2). \label{ti3}
 \end{equation}
 Si el tama\~no de la circunsferencia es suficientemente peque\~no, espec\'ificamente si $R\ll 2\pi c/\omega=\lambda$, entonces podemos aproximar \eqref{ti3} realizando una expansi\'on de la siguiente forma:
 \begin{equation}
-\sen\left(\omega t_0+\frac{R\omega}{c}-kz-\varphi_+\right)\approx \sen(\omega t_0-kz-\varphi_+)+\frac{R\omega}{c}\cos\left(\omega t_0-kz-\varphi_+ \right)+\mathcal{O}(\frac{R^2 w^2}{c^2}) .\label{sin}
+\sin\left(\omega t_0+\frac{R\omega}{c}-kz-\varphi_+\right)\approx \sin(\omega t_0-kz-\varphi_+)+\frac{R\omega}{c}\cos\left(\omega t_0-kz-\varphi_+ \right)+\mathcal{O}(\frac{R^2 \omega^2}{c^2}) .\label{sin}
 \end{equation}
 
 Reemplazando (\ref{sin}) en (\ref{ti3}) se obtiene la siguiente relaci\'on
@@ -578,12 +578,12 @@ es el \textit{tensor momento de inercia} (con traza) de la fuente.
 Note que $\bar{h}_{\rm rad}^{ij}$ (b'asicamente, el potencial gravitacional de la onda generada) decae con $1/r$ y que la primera contribuci'on no nula corresponde a \textit{radiaci'on cuadrupolar}. Esta diferencia con el caso de ondas electromagn'eticas se debe a que la derivada temporal del \textit{momento dipolar gravitacional} $\int \rho x^i\,d^3x$ es proporcional al momentum lineal del sistema, que es conservado (constante) a primer orden, por lo que no aporta a la energ'ia radiada (que depende de la derivada de $\bar{h}_{\rm rad}^{ij}$).
 
 \subsection{Ejemplo}
-Consideremos un ejemplo sencillo, en el que dos cuerpos, cada uno de masa $M$, con una separaci'on $2R$, rotan con velocidad angular $\omega$ en un movimiento no-relativista en torno al centro de masa del sistema. Si modelamos las posiciones de ambas masas por $\vec{x}=\pm(R\cos(\omega t),R\sen(\omega t),0)$, es decir en el plano $xy$ y con posiciones iniciales en el eje $x$, tendremos que (la segunda derivada d)el tensor momento de inercia ser'a
+Consideremos un ejemplo sencillo, en el que dos cuerpos, cada uno de masa $M$, con una separaci'on $2R$, rotan con velocidad angular $\omega$ en un movimiento no-relativista en torno al centro de masa del sistema. Si modelamos las posiciones de ambas masas por $\vec{x}=\pm(R\cos(\omega t),R\sin(\omega t),0)$, es decir en el plano $xy$ y con posiciones iniciales en el eje $x$, tendremos que (la segunda derivada d)el tensor momento de inercia ser'a
 \begin{equation}
  \ddot{M}^{ij}=-4MR^2\omega^2\left(
 \begin{array}{ccc}
- \cos(2\omega t) & \sen(2\omega t) &0 \\
-\sen(2\omega t) & -\cos(2\omega t) &0 \\
+ \cos(2\omega t) & \sin(2\omega t) &0 \\
+\sin(2\omega t) & -\cos(2\omega t) &0 \\
 0&0&0
 \end{array}\right).
 \end{equation}
@@ -591,13 +591,13 @@ Con esto, (\ref{hrad}) implica que
 \begin{eqnarray}
 \bar{h}_{\rm rad}^{ij}(\vec{x},t)&=&\frac{8GMR^2\omega^2}{c^4r}\left(
 \begin{array}{ccc}
- \cos\left[2\omega(t-r/c)\right] & \sen\left[2\omega(t-r/c)\right] &0\\
-\sen\left[2\omega(t-r/c)\right] & -\cos\left[2\omega(t-r/c)\right] &0\\
+ \cos\left[2\omega(t-r/c)\right] & \sin\left[2\omega(t-r/c)\right] &0\\
+\sin\left[2\omega(t-r/c)\right] & -\cos\left[2\omega(t-r/c)\right] &0\\
 0&0&0
 \end{array}\right)\\
 &=&\frac{8GMR^2\omega^2}{c^4r}\left[
 \left(\begin{array}{ccc} 1 & 0 & 0\\ 0 & -1 &0 \\ 0&0&0\end{array}\right) \cos\left[2\omega(t-r/c)\right]
-+\left(\begin{array}{ccc} 0 & 1 &0 \\ 1 & 0&0\\ 0&0&0\end{array}\right) \sen\left[2\omega(t-r/c)\right]
++\left(\begin{array}{ccc} 0 & 1 &0 \\ 1 & 0&0\\ 0&0&0\end{array}\right) \sin\left[2\omega(t-r/c)\right]
 \right] \nonumber\\
 &=&\frac{8GMR^2\omega^2}{c^4r}\Re\left[
 \left(\begin{array}{ccc} 1 & 0 &0 \\ 0 & -1 &0 \\ 0&0&0\end{array}\right) e^{i\left[2\omega(t-\frac{r}{c})\right]} +\left(\begin{array}{ccc} 0 & 1 &0 \\ 1 & 0 &0 \\ 0&0&0\end{array}\right) e^{i\left[2\omega(t-\frac{r}{c})-\frac{\pi}{2}\right]}
