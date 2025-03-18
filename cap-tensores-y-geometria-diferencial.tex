@@ -1093,8 +1093,8 @@ Consideremos como segundo ejemplo la métrica que el espacio euclidiano
 tridimensional $E_{3}$ induce sobre la esfera unitaria. Sabemos que en
 coordenadas cartesianas la métrica de $E_{3}$ es $g_{ij}=\delta_{ij}$ y la restricción a los puntos de la esfera es:
 \begin{align}
-x^1  &  =\sen\theta\cos\varphi,\\
-x^2  &  =\sen\theta\sen\varphi,\\
+x^1  &  =\sin\theta\cos\varphi,\\
+x^2  &  =\sin\theta\sin\varphi,\\
 x^{3}  &  =\cos\theta,
 \end{align}
 de modo que las coordenadas sobre la esfera son $\theta$ y $\varphi$. Usando
@@ -1103,19 +1103,19 @@ de modo que las coordenadas sobre la esfera son $\theta$ y $\varphi$. Usando
 g_{ab}=\left(
 \begin{array}[c]{cc}
 1 & 0\\
-0 & \sen^2\theta
+0 & \sin^2\theta
 \end{array}\right) ,  \label{ind7}
 \end{equation}
 donde $a,b=\theta,\varphi$. Usando (\ref{gm6}) obtenemos que las componentes no
 nulas del símbolo de Christoffel son:
 \begin{align}
-\left\{  _{\varphi\varphi}^{\ \theta}\right\}  &  =-\sen\theta\cos\theta,\label{ind8}\\
+\left\{  _{\varphi\varphi}^{\ \theta}\right\}  &  =-\sin\theta\cos\theta,\label{ind8}\\
 \left\{  _{\theta\varphi}^{\, \varphi}\right\}   &  =\left\{  _{\varphi\theta}^{\,\varphi}\right\}  =\cot\theta.
 \end{align}
 %De este modo, se obtiene directamente que las ecuaciones para las
 %geodésicas sobre la esfera son:%
 %\begin{align}
-%\frac{d^2\theta}{d\ell^2}-\sen\theta\cos\theta\left(\frac{d\varphi}{d\ell}\right)^2  &  =0,\label{ind9}\\
+%\frac{d^2\theta}{d\ell^2}-\sin\theta\cos\theta\left(\frac{d\varphi}{d\ell}\right)^2  &  =0,\label{ind9}\\
 %\frac{d^2\varphi}{d\ell^2}+2\cot\theta\frac{d\theta}{d\ell}\frac{d\varphi}{d\ell}  &  =0.
 %\end{align}
 %También, mediante un cálculo directo, encontramos que las componentes
@@ -1137,15 +1137,15 @@ g_{\varphi\varphi}\partial_\varphi\xi^\varphi+g_{\varphi\varphi}\partial_\varphi
 Luego:
 \begin{align}
 \partial_\theta\xi^\theta  &  =0,\label{isej13}\\
-\partial_\varphi\xi^\theta+\sen^2\theta\,\partial_\theta\xi^\varphi  &  =0, \\
-2\sen^2\theta\,\partial_\varphi\xi^\varphi+\xi^\theta\partial_\theta(\sen^2\theta)  & =0.
+\partial_\varphi\xi^\theta+\sin^2\theta\,\partial_\theta\xi^\varphi  &  =0, \\
+2\sin^2\theta\,\partial_\varphi\xi^\varphi+\xi^\theta\partial_\theta(\sin^2\theta)  & =0.
 \end{align}
 La primera ecuación nos dice que $\xi^\theta=\xi^\theta(\varphi)$, de modo que la
 segunda y tercera ecuación nos queda:
 \begin{align}
-\partial_\varphi\xi^\theta+\sen^2\theta\,\partial_\theta\xi^\varphi  &
+\partial_\varphi\xi^\theta+\sin^2\theta\,\partial_\theta\xi^\varphi  &
 =0,\label{isej14}\\
-\sen\theta\,\partial_\varphi\xi^\varphi+\xi^\theta\cos\theta  &  =0.
+\sin\theta\,\partial_\varphi\xi^\varphi+\xi^\theta\cos\theta  &  =0.
 \end{align}
 Se puede verificar, reemplazando directamente en estas ecuaciones, que el
 sistema tiene por solución:
@@ -1155,8 +1155,8 @@ sistema tiene por solución:
 \end{equation}
 con
 \begin{eqnarray}
-\xi^a_{(1)} &=&(\sen\varphi, \cot\theta\cos\varphi ), \\
-\xi^a_{(2)} &=&(\cos\varphi,-\cot\theta\sen\varphi) , \\
+\xi^a_{(1)} &=&(\sin\varphi, \cot\theta\cos\varphi ), \\
+\xi^a_{(2)} &=&(\cos\varphi,-\cot\theta\sin\varphi) , \\
 \xi^a_{(3)} &=&(0,1).
 \end{eqnarray}
 

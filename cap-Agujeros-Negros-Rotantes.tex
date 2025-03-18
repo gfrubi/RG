@@ -10,7 +10,7 @@ Existen tres cantidades que en teor\'ia describen completamente a un agujero neg
 \section{Soluci\'on de Kerr}
 La soluci\'on de Kerr en la \textit{forma de Boyer-Lindquist} es dada por el siguiente elemento de l\'inea:
  \begin{equation}
-ds^2=\frac{\Delta}{\rho^2}(cdt-a\sen^2\theta d\varphi)^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)d\varphi-acdt \right]^2-\frac{\rho^2}{\Delta}dr^2-\rho^2d\theta^2, \label{BL}
+ds^2=\frac{\Delta}{\rho^2}(cdt-a\sin^2\theta d\varphi)^2-\frac{\sin^2\theta}{\rho^2}\left[(r^2+a^2)d\varphi-acdt \right]^2-\frac{\rho^2}{\Delta}dr^2-\rho^2d\theta^2, \label{BL}
  \end{equation}
 donde
 \begin{equation}
@@ -20,8 +20,8 @@ Al realizar la transformaci\'on de coordenadas definida por
 \begin{equation}
 \begin{aligned}
 cd\bar{t}&=cdt+\frac{2mr}{\Delta}dr,\\
-x&=r\sen\theta\cos\varphi+a\sen\theta\sen\varphi, \\
-y&=r\sen\theta\sen\varphi-a\sen\theta\cos\varphi, \\
+x&=r\sin\theta\cos\varphi+a\sin\theta\sin\varphi, \\
+y&=r\sin\theta\sin\varphi-a\sin\theta\cos\varphi, \\
 z&=r\cos\theta,   \label{zrt}
 \end{aligned}
 \end{equation}
@@ -43,8 +43,8 @@ t\rightarrow -t, \qquad a\rightarrow -a.
 Para interpretar las constantes $m$ y $a$ podemos reordenan los t\'erminos de \eqref{BL} de la siguiente manera:
 \begin{equation}
 \begin{aligned}\label{BL2}
-ds^2&=\left(1-\frac{2mr}{\rho^2}\right)c^2dt^2-\frac{\rho^2}{\Delta}dr^2-\rho^2d\theta^2-\left(r^2+a^2+\frac{2mra^2\sen^2 \theta}{\rho^2}\right)\sen^2\theta\,d\varphi^2\\
-&\qquad+\frac{4amr\sen^2\theta}{\rho^2}d\varphi(cdt) .
+ds^2&=\left(1-\frac{2mr}{\rho^2}\right)c^2dt^2-\frac{\rho^2}{\Delta}dr^2-\rho^2d\theta^2-\left(r^2+a^2+\frac{2mra^2\sin^2 \theta}{\rho^2}\right)\sin^2\theta\,d\varphi^2\\
+&\qquad+\frac{4amr\sin^2\theta}{\rho^2}d\varphi(cdt) .
 \end{aligned}
 \end{equation}
 Utilizando coordenadas isotr\'opicas, dadas por la transformaci\'on de coordenadas
@@ -53,7 +53,7 @@ r=\bar{r}\left(1+\frac{m}{2\bar{r}}\right)^2,
 \end{equation}
 y considerando s\'olo t\'erminos de primer orden en $m/\bar{r}$ y $a/\bar{r}$, encontramos
 \begin{equation}
-ds^2 =\left(1-\frac{2m}{\bar{r}} \right)c^2dt^2-\left(1+\frac{2m}{\bar{r}} \right)\left[d\bar{r}^2+\bar{r}^2d\Omega^2\right]+\frac{4am}{\bar{r}}\sen^2\theta d\varphi(cdt)+\mathcal{O}(G^2) .\label{BL3}
+ds^2 =\left(1-\frac{2m}{\bar{r}} \right)c^2dt^2-\left(1+\frac{2m}{\bar{r}} \right)\left[d\bar{r}^2+\bar{r}^2d\Omega^2\right]+\frac{4am}{\bar{r}}\sin^2\theta d\varphi(cdt)+\mathcal{O}(G^2) .\label{BL3}
 \end{equation}
 
 Al comparar \eqref{BL3} con \eqref{dssss2}, que describe la geometr\'ia del espacio-tiempo de una masa esf\'erica que rota con momentum angular constante $J$, vemos que esta soluci'on tiene momento angular no nulo, proporcional al par\'ametro $a$, que ser\'a llamado \textbf{par\'ametro de rotaci'on}. M'as espec'ificamente, obtenemos que el momento angular de la soluci'on es
@@ -64,7 +64,7 @@ $M=mc^2/G$ es la masa del agujero negro.
 %
 %Resumiendo, la m\'etrica de Kerr en coordenadas de Boyer-Lindquist viene dada por la expresi\'on
 %\begin{equation}
-%\boxed{ds^2=\frac{\Delta}{\rho^2}(cdt-a\sen^2\theta d\varphi)^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)d\varphi-acdt \right]^2-\frac{\rho^2}{\Delta}dr^2-\rho^2d\theta^2}, 
+%\boxed{ds^2=\frac{\Delta}{\rho^2}(cdt-a\sin^2\theta d\varphi)^2-\frac{\sin^2\theta}{\rho^2}\left[(r^2+a^2)d\varphi-acdt \right]^2-\frac{\rho^2}{\Delta}dr^2-\rho^2d\theta^2}, 
 %\end{equation}
 %donde,
 %\begin{equation*}
@@ -222,7 +222,7 @@ $M=mc^2/G$ es la masa del agujero negro.
 %
 %Reescribimos el elemento de l\'inea de Schwarzschild en coordenadas avanzadas de Eddington-Finkelstein tiene la siguiente forma
 %\begin{equation}
-%\boxed{ds^2=\left(1-\frac{2m}{r}\right)dv^2-2dvdr-r^2d\theta^2-r^2\sen^
+%\boxed{ds^2=\left(1-\frac{2m}{r}\right)dv^2-2dvdr-r^2d\theta^2-r^2\sin^
 %2\theta d\varphi^2} \label{ds2ef}
 %\end{equation}
 %
@@ -233,7 +233,7 @@ $M=mc^2/G$ es la masa del agujero negro.
 %1-\frac{2m}{r} & -1 & 0 & 0\\
 %-1 &0 & 0 & 0\\
 %0 & 0 & -r^2 & 0\\
-%0 & 0 & 0& -r^2\sen^2 \theta
+%0 & 0 & 0& -r^2\sin^2 \theta
 %\end{pmatrix}.
 %\end{equation}
 %
@@ -244,7 +244,7 @@ $M=mc^2/G$ es la masa del agujero negro.
 %0 & -1 & 0 & 0\\
 %-1 &- \left(1-\frac{2m}{r}\right) & 0 & 0\\
 %0 & 0 & -\frac{1}{r^2} & 0\\
-%0 & 0 & 0 & -\frac{1}{r^2\sen^2\theta}
+%0 & 0 & 0 & -\frac{1}{r^2\sin^2\theta}
 %\end{pmatrix}.
 %\end{equation}
 %
@@ -253,7 +253,7 @@ $M=mc^2/G$ es la masa del agujero negro.
 %\begin{aligned}
 %l^{\mu}&=(0,1,0,0),\\
 %n^{\mu}&=\left(-1,-\frac{1}{2}\left(1-\frac{2m}{r}\right),0,0 \right),\\
-%m^{\mu}&=\left(0,0,\frac{1}{r\sqrt{2}},\frac{i}{r\sqrt{2}\sen \theta} \right).\\
+%m^{\mu}&=\left(0,0,\frac{1}{r\sqrt{2}},\frac{i}{r\sqrt{2}\sin \theta} \right).\\
 %\end{aligned}
 %\end{equation}
 %
@@ -267,7 +267,7 @@ $M=mc^2/G$ es la masa del agujero negro.
 %\begin{aligned}
 %l^{\mu}&=(0,1,0,0),\\
 %n^{\mu}&=\left(-1,-\frac{1}{2}\left(1-m\left(\frac{1}{r}+\frac{1}{\bar{r}} \right) \right),0,0 \right),\\
-%m^{\mu}&=\left(0,0,\frac{1}{r\sqrt{2}},\frac{i}{r\sqrt{2}\sen \theta} \right).\\
+%m^{\mu}&=\left(0,0,\frac{1}{r\sqrt{2}},\frac{i}{r\sqrt{2}\sin \theta} \right).\\
 %\end{aligned}
 %\end{equation}
 %
@@ -289,7 +289,7 @@ $M=mc^2/G$ es la masa del agujero negro.
 %\begin{aligned}
 %l'^{\mu}&=(0,1,0,0),\\
 %n^{\mu}&=\left(-1,-\frac{1}{2}\left(1-\frac{2mr'}{r'^2+a^2\cos^2\theta}\right),0,0 \right),\\
-%m^{\mu}&=\frac{1}{\sqrt{2}(r'+ia\cos \theta)}\left(-ia\sen \theta,-ia\sen \theta,1,\frac{i}{\sen \theta} \right).\\
+%m^{\mu}&=\frac{1}{\sqrt{2}(r'+ia\cos \theta)}\left(-ia\sin \theta,-ia\sin \theta,1,\frac{i}{\sin \theta} \right).\\
 %\end{aligned}
 %\end{equation}
 %
@@ -297,10 +297,10 @@ $M=mc^2/G$ es la masa del agujero negro.
 %\begin{equation}\label{delta}
 %g'^{\mu \nu}=%
 %\begin{pmatrix}
-%-\frac{a^2\sen^2\theta}{r'^2+a^2\cos^2\theta} & -1-\frac{a^2\sen^2\theta}{r'^2+a^2\cos^2\theta}  & 0 & \frac{a}{r'^2+a^2\cos^2\theta} \\
-%-1 -\frac{a^2\sen^2\theta}{r'^2+a^2\cos^2\theta} &- 1+\frac{2mr'-a^2\sen^2\theta}{r'^2+a^2\cos^2\theta}  & 0 &\frac{a}{r'^2+a^2\cos^2\theta} \\
+%-\frac{a^2\sin^2\theta}{r'^2+a^2\cos^2\theta} & -1-\frac{a^2\sin^2\theta}{r'^2+a^2\cos^2\theta}  & 0 & \frac{a}{r'^2+a^2\cos^2\theta} \\
+%-1 -\frac{a^2\sin^2\theta}{r'^2+a^2\cos^2\theta} &- 1+\frac{2mr'-a^2\sin^2\theta}{r'^2+a^2\cos^2\theta}  & 0 &\frac{a}{r'^2+a^2\cos^2\theta} \\
 %0 & 0 & -\frac{1}{r'^2+a^2\cos^2\theta} & 0\\
-%\frac{a}{r'^2+a^2\cos^2\theta} & \frac{a}{r'^2+a^2\cos^2\theta} & 0 & -\frac{1}{\sen^2\theta(r'^2+a^2\cos^2\theta)}
+%\frac{a}{r'^2+a^2\cos^2\theta} & \frac{a}{r'^2+a^2\cos^2\theta} & 0 & -\frac{1}{\sin^2\theta(r'^2+a^2\cos^2\theta)}
 %\end{pmatrix}.
 %\end{equation}
 %
@@ -308,16 +308,16 @@ $M=mc^2/G$ es la masa del agujero negro.
 %\begin{equation}
 %g'_{\mu \nu}=%
 %\begin{pmatrix}
-%1-\frac{2mr}{\rho^2} & -1 & 0 & -\frac{2mr}{\rho^2}a\sen^2\theta\\
-%-1 &0 & 0 & -a\sen^2\theta\\
+%1-\frac{2mr}{\rho^2} & -1 & 0 & -\frac{2mr}{\rho^2}a\sin^2\theta\\
+%-1 &0 & 0 & -a\sin^2\theta\\
 %0 & 0 & -\rho^2 & 0\\
-%-\frac{2mr}{\rho^2}a\sen^2\theta & -a\sen^2\theta& 0 & -\left((r^2+a^2)\sen^2\theta+\frac{2mr}{\rho^2}a^2\sen^4\theta \right)
+%-\frac{2mr}{\rho^2}a\sin^2\theta & -a\sin^2\theta& 0 & -\left((r^2+a^2)\sin^2\theta+\frac{2mr}{\rho^2}a^2\sin^4\theta \right)
 %\end{pmatrix}. \label{mkerr}
 %\end{equation}
 %
 %Aqu\'i \eqref{mkerr} representa a la m\'etrica de la soluci\'on de Kerr en la \textit{forma de las coordenadas avanzadas de Eddington-Finkelstein}, donde el elemento de l\'inea viene dado por
 %\begin{equation}
-%ds^2=\left(1-\frac{2mr}{\rho^2} \right)dv^2+\frac{4mr}{\rho^2}a\sen^2\theta dvd\bar{\varphi}+2a\sen^2\theta drd\bar{\varphi}-\rho^2d\theta^2-\left((r^2+a^2)\sen^2\theta+\frac{2mr}{\rho^2}a^2\sen^4\theta \right)d\bar{\varphi}^2. \label{EF}
+%ds^2=\left(1-\frac{2mr}{\rho^2} \right)dv^2+\frac{4mr}{\rho^2}a\sin^2\theta dvd\bar{\varphi}+2a\sin^2\theta drd\bar{\varphi}-\rho^2d\theta^2-\left((r^2+a^2)\sin^2\theta+\frac{2mr}{\rho^2}a^2\sin^4\theta \right)d\bar{\varphi}^2. \label{EF}
 %\end{equation}
 %
 %Esta m\'etrica es una soluci\'on de las ecuaciones de Einstein en el vac\'io, ya que, como puede verificarse\footnote{Por ejemplo, usando el programa (wx)maxima, ver \url{http://maxima.sourceforge.net/es/}.}  anula el tensor de Einstein:
@@ -340,15 +340,15 @@ $M=mc^2/G$ es la masa del agujero negro.
 % 
 % Se obtiene la soluci\'on de Kerr en la \textit{forma de Boyer-Lindquist}, cuyo elemento de l\'inea es
 % \begin{equation}
-%ds^2=\frac{\Delta}{\rho^2}(cdt-a\sen^2\theta d\varphi)^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)d\varphi-acdt \right]^2-\frac{\rho^2}{\Delta}dr^2-\rho^2d\theta^2 . \label{BL}
+%ds^2=\frac{\Delta}{\rho^2}(cdt-a\sin^2\theta d\varphi)^2-\frac{\sin^2\theta}{\rho^2}\left[(r^2+a^2)d\varphi-acdt \right]^2-\frac{\rho^2}{\Delta}dr^2-\rho^2d\theta^2 . \label{BL}
 % \end{equation}
 %
 %Por \'ultimo, al hacer la transformaci\'on de coordenadas
 %\begin{equation}
 %\begin{aligned}
 %c\bar{t}&=v-r ,\\
-%x&=r\sen\theta\cos\varphi+a\sen\theta\sen\varphi ,\\
-%y&=r\sen\theta\sen\varphi-a\sen\theta\cos\varphi ,\\
+%x&=r\sin\theta\cos\varphi+a\sin\theta\sin\varphi ,\\
+%y&=r\sin\theta\sin\varphi-a\sin\theta\cos\varphi ,\\
 %z&=r\cos\theta  .   \label{tck}
 %\end{aligned}
 %\end{equation}
@@ -379,13 +379,13 @@ $M=mc^2/G$ es la masa del agujero negro.
 %Y reemplazando en \eqref{BL}, se obtiene m\'etrica de Schwarzschild exterior en coordenadas de curvatura. En efecto
 %\begin{equation}
 %\begin{aligned}
-%ds^2&=\frac{r^2-2mr}{r^2}c^2dt^2-\frac{\sen^2\theta}{r^2}(r^2d\varphi)^2-\frac{r^2}{r^2-2mr}dr^2-r^2d\theta^2\\
-%&=\left(1-\frac{2m}{r} \right)c^2dt^2-\frac{dr^2}{1-\frac{2m}{r}}-r^2(d\theta^2+\sen^2\theta d\varphi^2)\\
+%ds^2&=\frac{r^2-2mr}{r^2}c^2dt^2-\frac{\sin^2\theta}{r^2}(r^2d\varphi)^2-\frac{r^2}{r^2-2mr}dr^2-r^2d\theta^2\\
+%&=\left(1-\frac{2m}{r} \right)c^2dt^2-\frac{dr^2}{1-\frac{2m}{r}}-r^2(d\theta^2+\sin^2\theta d\varphi^2)\\
 %&=\left(1-\frac{2m}{r} \right)c^2dt^2-\frac{dr^2}{1-\frac{2m}{r}}-r^2d\Omega^2 .
 %\end{aligned}
 %\end{equation}
 %
-%Si se define la coordenada esf\'erica radial como $R^2:=x^2+y^2+z^2=r^2+a^2\sen^2\theta$ y haciendo $R\rightarrow \infty$ con $r\gg a$, entonces elemento de l\'inea \eqref{BL} coincide con el de un espacio tiempo plano, esto es
+%Si se define la coordenada esf\'erica radial como $R^2:=x^2+y^2+z^2=r^2+a^2\sin^2\theta$ y haciendo $R\rightarrow \infty$ con $r\gg a$, entonces elemento de l\'inea \eqref{BL} coincide con el de un espacio tiempo plano, esto es
 %\begin{equation}
 %ds^2=\eta_{\mu \nu}dx^{\mu}dx^{\nu} .
 %\end{equation}
@@ -400,8 +400,8 @@ $M=mc^2/G$ es la masa del agujero negro.
 %Otro punto a analizar es el rol que juega la constante $a$ en esta m\'etrica, para ello se reordenan los t\'erminos de \eqref{BL} de la siguiente manera
 %\begin{equation}
 %\begin{aligned}
-%ds^2&=\left(1-\frac{2mr}{\rho^2}\right)c^2dt^2-\frac{\rho^2}{\Delta}dr^2-\rho^2d\theta^2-\left(r^2+a^2+\frac{2mra^2\sen^2 \theta}{\rho^2}\right)\sen^2\theta\,d\varphi^2\\
-%&\qquad+\frac{4amr\sen^2\theta}{\rho^2}d\varphi(cdt) .\label{BL2}
+%ds^2&=\left(1-\frac{2mr}{\rho^2}\right)c^2dt^2-\frac{\rho^2}{\Delta}dr^2-\rho^2d\theta^2-\left(r^2+a^2+\frac{2mra^2\sin^2 \theta}{\rho^2}\right)\sin^2\theta\,d\varphi^2\\
+%&\qquad+\frac{4amr\sin^2\theta}{\rho^2}d\varphi(cdt) .\label{BL2}
 %\end{aligned}
 %\end{equation}
 %
@@ -412,7 +412,7 @@ $M=mc^2/G$ es la masa del agujero negro.
 %
 %y considerando s\'olo t\'erminos de primer orden en $G$ con $\bar{r} \gg a$, entonces \eqref{BL2} tiene la siguiente forma
 %\begin{equation}
-%ds^2 =\left(1-\frac{2m}{\bar{r}} \right)c^2dt^2-\left(1+\frac{2m}{\bar{r}} \right)\left[d\bar{r}^2+\bar{r}^2d\Omega^2\right]+\frac{4am}{\bar{r}}\sen^2\theta d\varphi(cdt)+\mathcal{O}(G^2) .\label{BL3}
+%ds^2 =\left(1-\frac{2m}{\bar{r}} \right)c^2dt^2-\left(1+\frac{2m}{\bar{r}} \right)\left[d\bar{r}^2+\bar{r}^2d\Omega^2\right]+\frac{4am}{\bar{r}}\sin^2\theta d\varphi(cdt)+\mathcal{O}(G^2) .\label{BL3}
 %\end{equation}
 %
 %Al comparar \eqref{BL3} con \eqref{dssss2} que describe la geometr\'ia del espacio-tiempo de una masa esf\'erica que rota con momentum angular constante $J$, devela la naturaleza de la soluci\'on de Kerr, que describe entonces un agujero negro rotante, con momento angular proporcional al par\'ametro $a$, que ser\'a llamado par\'ametro de giro. Al hacer el l\'imite de campo d\'ebil, en efecto, se despeja esta cantidad cuyo valor es
@@ -423,7 +423,7 @@ $M=mc^2/G$ es la masa del agujero negro.
 %
 %Resumiendo, la m\'etrica de Kerr en coordenadas de Boyer-Lindquist viene dada por la expresi\'on
 %\begin{equation}
-%\boxed{ds^2=\frac{\Delta}{\rho^2}(cdt-a\sen^2\theta d\varphi)^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)d\varphi-acdt \right]^2-\frac{\rho^2}{\Delta}dr^2-\rho^2d\theta^2}, 
+%\boxed{ds^2=\frac{\Delta}{\rho^2}(cdt-a\sin^2\theta d\varphi)^2-\frac{\sin^2\theta}{\rho^2}\left[(r^2+a^2)d\varphi-acdt \right]^2-\frac{\rho^2}{\Delta}dr^2-\rho^2d\theta^2}, 
 %\end{equation}
 %donde,
 %\begin{equation*}
@@ -520,7 +520,7 @@ donde la $\dot{x}^{\mu}=dx^\mu/d\lambda$ y $\lambda$ es alg'un par'ametro. Si bi
  
 En el caso de la soluci'on de Kerr, este lagrangiano adopta la forma
 \begin{equation}\label{lagrangeano1}
-2\bar{L}=\frac{\Delta}{\rho^2}(c\dot{t}-a\sen^2\theta \dot{\varphi})^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]^2-\frac{\rho^2}{\Delta}\dot{r}^2.
+2\bar{L}=\frac{\Delta}{\rho^2}(c\dot{t}-a\sin^2\theta \dot{\varphi})^2-\frac{\sin^2\theta}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]^2-\frac{\rho^2}{\Delta}\dot{r}^2.
 \end{equation}
 Las ecuaciones de Euler-Lagrange vienen entonces dadas por
 \begin{equation}\label{el}
@@ -534,7 +534,7 @@ Utilizando $x^0=ct$ en \eqref{el}, se obtiene la primera ecuaci\'on de movimient
  
 Donde $l$ es una constante de integraci\'on. Desarrollando \eqref{elt}, se tiene lo siguiente:
 \begin{equation}\label{11}
-\frac{\Delta}{\rho^2}\left(c\dot{t}-a\sen^2 \theta \dot{\varphi}\right)+\frac{a\sen^2 \theta}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]=l.
+\frac{\Delta}{\rho^2}\left(c\dot{t}-a\sin^2 \theta \dot{\varphi}\right)+\frac{a\sin^2 \theta}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]=l.
 \end{equation} 
  
  Ahora se buscar\'a la ecuaci\'on de movimiento correspondiente a $x^3=\varphi$, nuevamente de \eqref{el} se obtiene la siguiente ecuaci\'on de movimiento
@@ -546,12 +546,12 @@ donde $n$ tambi\'en es una constante de movimiento.\\
 
 De \eqref{elp} se tiene que
 \begin{equation}\label{22}
-\frac{a\Delta \sen^2 \theta}{\rho^2}\left(c\dot{t}-a\sen^2 \theta \dot{\varphi}\right)+\frac{(r^2+a^2)\sen^2 \theta}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]=n.
+\frac{a\Delta \sin^2 \theta}{\rho^2}\left(c\dot{t}-a\sin^2 \theta \dot{\varphi}\right)+\frac{(r^2+a^2)\sin^2 \theta}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]=n.
 \end{equation}
  
 Usando el hecho que $ds^2=0$ y la expresi\'on \eqref{BL}, se tiene lo siguiente:
 \begin{equation}\label{33}
-\frac{\Delta}{\rho^2}(c\dot{t}-a\sen^2\theta \dot{\varphi})^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]^2-\frac{\rho^2}{\Delta}\dot{r}^2=0.
+\frac{\Delta}{\rho^2}(c\dot{t}-a\sin^2\theta \dot{\varphi})^2-\frac{\sin^2\theta}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]^2-\frac{\rho^2}{\Delta}\dot{r}^2=0.
 \end{equation} 
  
 Por \'ultimo utilizando $x^2=\theta$ y de \eqref{el}, se tiene que la ecuaci\'on de movimiento asociada a esta coordenada es
@@ -561,35 +561,35 @@ Por \'ultimo utilizando $x^2=\theta$ y de \eqref{el}, se tiene que la ecuaci\'on
 
 Desarrollando esta \'ultima expresi\'on se obtiene que
 \begin{equation}\label{44}
-\frac{a^2\Delta}{\rho^4}\left(c\dot{t}-a\sen^2 \theta \dot{\varphi} \right)^2-\frac{2a\Delta \dot{\varphi}}{\rho^2}\left(c\dot{t}-a\sen^2 \theta \dot{\varphi} \right)-\frac{(r^2+a^2)}{\rho^4}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]^2+\frac{a^2\dot{r}^2}{\Delta}=0.
+\frac{a^2\Delta}{\rho^4}\left(c\dot{t}-a\sin^2 \theta \dot{\varphi} \right)^2-\frac{2a\Delta \dot{\varphi}}{\rho^2}\left(c\dot{t}-a\sin^2 \theta \dot{\varphi} \right)-\frac{(r^2+a^2)}{\rho^4}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]^2+\frac{a^2\dot{r}^2}{\Delta}=0.
 \end{equation}
  
 Se obseva que s\'olo existen 3 inc\'ognitas ($\dot{t}$, $\dot{r}$ y $\dot{\varphi}$) y 4 ecuaciones, a saber, \eqref{11}, \eqref{22}, \eqref{33} y \eqref{44}. Por lo tanto, debe existir una expresi\'on que relacione los t\'erminos constantes $l$ y $n$. De \eqref{11} y \eqref{22} se obtienen las siguientes relaciones:
 \begin{equation}\label{55}
-\sen^2\theta \left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]=(n-al\sen^2\theta),
+\sin^2\theta \left[(r^2+a^2)\dot{\varphi}-ac\dot{t} \right]=(n-al\sin^2\theta),
 \end{equation}
  
 \begin{equation}\label{66}
-\Delta(c\dot{t}-a\sen^2\theta\dot{\varphi})=\left[(r^2+a^2)l-an\right].
+\Delta(c\dot{t}-a\sin^2\theta\dot{\varphi})=\left[(r^2+a^2)l-an\right].
 \end{equation}
  
 De estas \'ultimas se puede despejar $\dot{\varphi}$, que viene dado por
 \begin{equation}\label{77}
-\dot{\varphi}=\frac{1}{\rho^2\sen^2\theta}(n-al\sen^2\theta)+\frac{a}{\rho^2\Delta}\left[(r^2+a^2)l-an\right].
+\dot{\varphi}=\frac{1}{\rho^2\sin^2\theta}(n-al\sin^2\theta)+\frac{a}{\rho^2\Delta}\left[(r^2+a^2)l-an\right].
 \end{equation}
  
  Por otro lado, de \eqref{33} y \eqref{44} se tiene que
 \begin{equation}\label{88}
- \frac{2a^2\Delta}{\rho^2}(c\dot{t}-a\sen^2\theta\dot{\varphi})^2 
- -2a\Delta \dot{\varphi}(c\dot{t}-a\sen^2\theta\dot{\varphi})-\frac{(r^2+a^2+a^2\sen^2\theta)}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t}\right]^2=0.
+ \frac{2a^2\Delta}{\rho^2}(c\dot{t}-a\sin^2\theta\dot{\varphi})^2 
+ -2a\Delta \dot{\varphi}(c\dot{t}-a\sin^2\theta\dot{\varphi})-\frac{(r^2+a^2+a^2\sin^2\theta)}{\rho^2}\left[(r^2+a^2)\dot{\varphi}-ac\dot{t}\right]^2=0.
 \end{equation}
  
  Reemplazando \eqref{55}, \eqref{66} y \eqref{77} en \eqref{88} se obtiene la ecuaci\'on que relaciona a $l$ y $n$:
  \begin{equation}
- (n+al\sen^2 \theta)(n-al\sen^2 \theta)=0.
+ (n+al\sin^2 \theta)(n-al\sin^2 \theta)=0.
  \end{equation}
  
-Se escoger\'a la condici\'on $n-al\sen^2\theta=0$, que si es utilizada en \eqref{55} se tiene que
+Se escoger\'a la condici\'on $n-al\sin^2\theta=0$, que si es utilizada en \eqref{55} se tiene que
 \begin{equation}\label{dott}
 c\dot{t}=\frac{(r^2+a^2)}{a}\dot{\varphi}.
 \end{equation}
@@ -803,31 +803,31 @@ As\'i, los observadores estacionarios existen s\'olo cuando $r>r_+$ que viene a 
 %
 %Se consideran ahora curvas de part\'iculas tipo luz que tienen las coordenadas $r$ y $\theta$ fijas $(dr=d\theta=0)$ (no son geod\'esicas), es decir, part\'iculas que inicialmente estaban obligadas a orbitar la fuente con esta condici\'on de \eqref{BL} se obtiene que
 %\begin{equation}
-%\frac{\Delta}{\rho^2}(cdt-a\sen^2\theta d\varphi)^2-\frac{\sen^2\theta}{\rho^2}\left[(r^2+a^2)d\varphi-acdt \right]^2=0,
+%\frac{\Delta}{\rho^2}(cdt-a\sin^2\theta d\varphi)^2-\frac{\sin^2\theta}{\rho^2}\left[(r^2+a^2)d\varphi-acdt \right]^2=0,
 %\end{equation}
 %
 %de donde se tiene que 
 %\begin{equation}\label{dphidt}
-%\left( \frac{d\varphi}{dt} \right) _{\pm}=\frac{ac\sen \theta \pm c\sqrt{\Delta}}{(r^2+a^2)\sen\theta \pm a\sqrt{\Delta}\sen^2\theta}.
+%\left( \frac{d\varphi}{dt} \right) _{\pm}=\frac{ac\sin \theta \pm c\sqrt{\Delta}}{(r^2+a^2)\sin\theta \pm a\sqrt{\Delta}\sin^2\theta}.
 %\end{equation}
 %
 %En el caso de elegir la soluci\'on positiva en \eqref{dphidt} entonces  $d\varphi/dt >0$, con lo cual la part\'icula gira en el mismo sentido de la fuente. Ahora la pregunta es, para qu\'e caso  $d\varphi/dt \leqslant 0$, es decir, que la part\'icula gira en sentido contrario o parece estacionaria en estas coordenadas.\\
 %
 %Si se parte con la condici\'on $r> r_{+}$ en la soluci\'on negativa de \eqref{dphidt} se puede concluir f\'acilmente que el denominador de \eqref{dphidt} es positivo
 %\begin{equation}
-%(r^2+a^2)\sen\theta - a\sqrt{\Delta}\sen^2\theta >0.
+%(r^2+a^2)\sin\theta - a\sqrt{\Delta}\sin^2\theta >0.
 %\end{equation}
 %
 %Luego, el sentido de rotaci\'on queda inmediatamente ligado al numerador de \eqref{dphidt}
 %\begin{equation} \label{numerador}
-%\frac{d\varphi}{dt}  \leqslant   0 \quad  \Leftrightarrow \quad  a\sen \theta - \sqrt{\Delta} \leqslant 0.
+%\frac{d\varphi}{dt}  \leqslant   0 \quad  \Leftrightarrow \quad  a\sin \theta - \sqrt{\Delta} \leqslant 0.
 %\end{equation} 
 %
 %Desarrollando en \eqref{numerador} la condici\'on impuesta en el numerador, podemos escribir
 %\begin{equation}
 %\begin{aligned}
-%a^2\sen^2 \theta &\leqslant \Delta ,\\
-% a^2\sen^2 \theta &\leqslant r^2-2mr+a^2 , \\
+%a^2\sin^2 \theta &\leqslant \Delta ,\\
+% a^2\sin^2 \theta &\leqslant r^2-2mr+a^2 , \\
 % 0 &\leqslant r^2-2mr+a^2\cos^2 \theta ,\\
 % 0 &\leqslant (r-r_{s_{+}})(r-r_{s_{-}}).\\
 %\end{aligned}

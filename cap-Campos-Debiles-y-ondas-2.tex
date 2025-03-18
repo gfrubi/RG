@@ -403,13 +403,13 @@ M_{11} & = \mu\, x^2\\
 y, similarmente,
 \begin{align}
 M_{12} & = \mu\, xy \\
-& = \mu r^2\cos\varphi\sen\varphi \\
-& = \mu a^2(1-e^2)^2\frac{\sen\varphi\cos\varphi}{\left[1+e\cos(\varphi-\varphi_0)\right]^2},
+& = \mu r^2\cos\varphi\sin\varphi \\
+& = \mu a^2(1-e^2)^2\frac{\sin\varphi\cos\varphi}{\left[1+e\cos(\varphi-\varphi_0)\right]^2},
 \end{align}
 \begin{align}
 M_{22} & = \mu\, y^2 \\
-& = \mu r^2\sen^2\varphi \\
-& = \mu a^2(1-e^2)^2\frac{\sen^2\varphi}{\left[1+e\cos(\varphi-\varphi_0)\right]^2}.
+& = \mu r^2\sin^2\varphi \\
+& = \mu a^2(1-e^2)^2\frac{\sin^2\varphi}{\left[1+e\cos(\varphi-\varphi_0)\right]^2}.
 \end{align}
 A continuaci'on requerimos determinar las terceras derivadas $\dddot{I}_{ij}$. Para esto, introducimos la coordenada angular $\varphi$ y usamos (\ref{Ln}) y (\ref{rphi}), de modo que podamos escribir
 \begin{align}
@@ -420,10 +420,10 @@ A continuaci'on requerimos determinar las terceras derivadas $\dddot{I}_{ij}$. P
 \end{align}
 Luego de algo de 'algebra encontramos que
 \begin{equation}
-\dot{M}_{11}=(-2)\mu a^2\omega_0\left(1-e^2\right)^{1/2}\frac{\cos\varphi(\sen\varphi+e\sen\varphi_0)}{1+e\cos(\varphi-\varphi_0)},
+\dot{M}_{11}=(-2)\mu a^2\omega_0\left(1-e^2\right)^{1/2}\frac{\cos\varphi(\sin\varphi+e\sin\varphi_0)}{1+e\cos(\varphi-\varphi_0)},
 \end{equation}
 \begin{equation}
-\dot{M}_{22}=(+2)\mu a^2\omega_0\left(1-e^2\right)^{1/2}\frac{\sen\varphi(\cos\varphi+e\cos\varphi_0)}{1+e\cos(\varphi-\varphi_0)},
+\dot{M}_{22}=(+2)\mu a^2\omega_0\left(1-e^2\right)^{1/2}\frac{\sin\varphi(\cos\varphi+e\cos\varphi_0)}{1+e\cos(\varphi-\varphi_0)},
 \end{equation}
 \begin{equation}
 \dot{M}_{12}=\mu a^2\omega_0\left(1-e^2\right)^{1/2}\frac{(\cos2\varphi+e\cos(\varphi+\varphi_0))}{1+e\cos(\varphi-\varphi_0)}.
@@ -431,12 +431,12 @@ Luego de algo de 'algebra encontramos que
 
 An'alogamente, encontramos que
 \begin{equation}\label{I11}
-\dddot{M}_{11}=\alpha\left[1+e\cos(\varphi-\varphi_0)\right]^2 \left[4\sen(2\varphi)+3e\sen(2\varphi)\cos(\varphi-\varphi_0)
-+2e\cos\varphi\sen\varphi_0\right],
+\dddot{M}_{11}=\alpha\left[1+e\cos(\varphi-\varphi_0)\right]^2 \left[4\sin(2\varphi)+3e\sin(2\varphi)\cos(\varphi-\varphi_0)
++2e\cos\varphi\sin\varphi_0\right],
 \end{equation}
 \begin{equation}\label{I22}
-\dddot{M}_{22}=\alpha\left[1+e\cos(\varphi-\varphi_0)\right]^2 \left[-4\sen(2\varphi)-3e\sen(2\varphi)\cos(\varphi-\varphi_0)
--2e\sen\varphi\cos\varphi_0\right],
+\dddot{M}_{22}=\alpha\left[1+e\cos(\varphi-\varphi_0)\right]^2 \left[-4\sin(2\varphi)-3e\sin(2\varphi)\cos(\varphi-\varphi_0)
+-2e\sin\varphi\cos\varphi_0\right],
 \end{equation}
 \begin{equation}\label{I12}
 \dddot{M}_{12}=\alpha\left[1+e\cos(\varphi-\varphi_0)\right]^2 \left[-4\cos(2\varphi)-3e\cos(2\varphi)\cos(\varphi-\varphi_0)
@@ -798,7 +798,7 @@ g(e):= \frac{e^{12/19}}{1-e^2}\left(1+\frac{121}{304} \right)^{870/2299}.
 % \end{equation}
 %
 % In the orbit plane, one can use cylindrical coordinates $(r,\varphi)$
-% \footnote{As usual $x=r\cos(\varphi)$, $y=r\sen(\varphi)$} and
+% \footnote{As usual $x=r\cos(\varphi)$, $y=r\sin(\varphi)$} and
 % find the equation giving the dependence of the angle $\varphi$ in terms of
 % $r$. Using the expressions for the conserved quantities in cylindrical
 % coordinates, namely

@@ -278,15 +278,15 @@ El campo de velocidades $\vec{v}(\vec{x})$ es entonces
 \end{align}
 donde $\vec{\omega}=\omega(r)\hat{\omega}$ es la velocidad angular de la distribuci'on con respecto a la direcci'on fija $\hat{\omega}$. Suponemos que la rapidez angular $\omega(r)$ s'olo depende de la distancia radial $r$. El vector $\vec{x}$ puede ser escrito como
 \begin{equation}
-\vec{x}=r\, \hat{r}=r\left(\hat{\rho}\sen\theta +\hat{z}\cos\theta\right),
+\vec{x}=r\, \hat{r}=r\left(\hat{\rho}\sin\theta +\hat{z}\cos\theta\right),
 \end{equation}
-con $\hat{\rho}=\hat{x}\cos\varphi+\hat{y}\sen\varphi$. Adem'as, podemos elegir la orientaci'on del sistema coordenado de modo que el eje de rotaci'on sea el eje $z$, es decir, $\hat{\omega}=\hat{z}$, con lo que $\vec{v}(\vec{x})$ se reduce a
+con $\hat{\rho}=\hat{x}\cos\varphi+\hat{y}\sin\varphi$. Adem'as, podemos elegir la orientaci'on del sistema coordenado de modo que el eje de rotaci'on sea el eje $z$, es decir, $\hat{\omega}=\hat{z}$, con lo que $\vec{v}(\vec{x})$ se reduce a
 \begin{align}
 \vec{v}(\vec{x})={}&\omega(r)r(\hat{z}\times\hat{r})\\
- ={}&\omega(r)r\sen \theta (\hat{z}\times\hat{\rho})\\
- ={}&\omega(r)r\sen \theta\, \hat{\varphi} ,\label{campovelocidad}
+ ={}&\omega(r)r\sin \theta (\hat{z}\times\hat{\rho})\\
+ ={}&\omega(r)r\sin \theta\, \hat{\varphi} ,\label{campovelocidad}
 \end{align}
-donde $\hat{\varphi }=\hat{z}\times\hat{\rho}=-\hat{x}\sen\varphi +\hat{y}\cos\varphi $.
+donde $\hat{\varphi }=\hat{z}\times\hat{\rho}=-\hat{x}\sin\varphi +\hat{y}\cos\varphi $.
 
 Ahora que ya tenemos una expresi'on general para el campo de velocidades de la distribuci'on, calculemos su momentum angular total $\vec{J}$, dado por
 \begin{equation}
@@ -294,12 +294,12 @@ Ahora que ya tenemos una expresi'on general para el campo de velocidades de la d
 \end{equation}
 Reemplazando (\ref{campovelocidad}) en (\ref{momentumangular}), podemos escribir
 \begin{align}
-\vec{J}={}&\int_V \rho (r)\omega(r)\sen \theta r^2(\hat{r}\times\hat{\varphi })d^3x\\
- ={}&\int_0^{2\pi}d\varphi \int_0^{\pi}d\theta \int_0^{R}dr\ \rho (r)\omega(r)\sen^2 \theta r^4\left(\sen \theta \hat{z}-\cos \theta \hat{\rho}\right)\\
- ={}&\hat{z}\int_0^{2\pi}d\varphi \int_0^{\pi}d\theta \sen^3 \theta  \int_0^{R}dr\ \rho (r)\omega(r)r^4\nonumber\\
- {}&-\int_0^{2\pi}d\varphi \ \hat{\rho}\int_0^{\pi}d\theta \sen^2 \theta \cos \theta  \int_0^{R}dr\ \rho (r)\omega(r)r^4.\label{j2}
+\vec{J}={}&\int_V \rho (r)\omega(r)\sin \theta r^2(\hat{r}\times\hat{\varphi })d^3x\\
+ ={}&\int_0^{2\pi}d\varphi \int_0^{\pi}d\theta \int_0^{R}dr\ \rho (r)\omega(r)\sin^2 \theta r^4\left(\sin \theta \hat{z}-\cos \theta \hat{\rho}\right)\\
+ ={}&\hat{z}\int_0^{2\pi}d\varphi \int_0^{\pi}d\theta \sin^3 \theta  \int_0^{R}dr\ \rho (r)\omega(r)r^4\nonumber\\
+ {}&-\int_0^{2\pi}d\varphi \ \hat{\rho}\int_0^{\pi}d\theta \sin^2 \theta \cos \theta  \int_0^{R}dr\ \rho (r)\omega(r)r^4.\label{j2}
 \end{align}
-Si adem'as reemplazamos las integrales $\int_0^{2\pi}\hat{\rho}\,d\varphi =\vec{0}$, $\int_0^{\pi}\sen^3\theta\,d\theta  ={4}/{3}$ en (\ref{j2}), obtenemos
+Si adem'as reemplazamos las integrales $\int_0^{2\pi}\hat{\rho}\,d\varphi =\vec{0}$, $\int_0^{\pi}\sin^3\theta\,d\theta  ={4}/{3}$ en (\ref{j2}), obtenemos
 \begin{equation}\boxed{
 \vec{J}=\frac{8\pi}{3}\int_0^{R}\rho (r)\vec{\omega}(r)r^4\, dr.}\label{jgeneral}
 \end{equation}
@@ -383,7 +383,7 @@ En este caso, se tiene que los potenciales $\phi$ y $\vec{A}$ toman una forma m'
 \end{equation}
 \begin{equation}
 \vec{A}(r,\theta,\varphi ) = -\frac{2GJ}{c}\frac{\hat{z}\times\hat{r}}{r^2}
-=-\frac{2GJ}{c}\frac{\sen \theta }{r^2}\hat{\varphi}%=-\frac{2GJ}{c}\frac{\sen \theta }{r^2}\left[-\hat{x}\sen\varphi +\hat{y}\cos\varphi\right]
+=-\frac{2GJ}{c}\frac{\sin \theta }{r^2}\hat{\varphi}%=-\frac{2GJ}{c}\frac{\sin \theta }{r^2}\left[-\hat{x}\sin\varphi +\hat{y}\cos\varphi\right]
 .\label{aphii}
 \end{equation}
 Si reemplazamos ahora \eqref{aphii} en \eqref{ds2phiA}, obtenemos el elemento de l'inea:
@@ -391,20 +391,20 @@ Si reemplazamos ahora \eqref{aphii} en \eqref{ds2phiA}, obtenemos el elemento de
 %g_{\mu\nu}(x):=
 %\left( \begin{array}{cccc}
 %\vspace{4mm}
-%1-\frac{2GM}{c^2r} & -\frac{2GJ}{c^3r^2}\sen \theta \sen\varphi & \frac{2GJ}{c^3r^2}\sen \theta \cos\varphi & 0 \\
+%1-\frac{2GM}{c^2r} & -\frac{2GJ}{c^3r^2}\sin \theta \sin\varphi & \frac{2GJ}{c^3r^2}\sin \theta \cos\varphi & 0 \\
 %\vspace{4mm}
-%-\frac{2GJ}{c^3r^2}\sen \theta \sen\varphi &-1-\frac{2GM}{c^2r} & 0 & 0 \\
+%-\frac{2GJ}{c^3r^2}\sin \theta \sin\varphi &-1-\frac{2GM}{c^2r} & 0 & 0 \\
 %\vspace{4mm}
-%\frac{2GJ}{c^3r^2}\sen \theta \cos\varphi & 0 &-1-\frac{2GM}{c^2r} & 0 \\
+%\frac{2GJ}{c^3r^2}\sin \theta \cos\varphi & 0 &-1-\frac{2GM}{c^2r} & 0 \\
 %0 & 0 & 0 &-1-\frac{2GM}{c^2r} \\
 %\end{array} \right)+\mathcal{O}(G^2).\label{grafica2}
 %\end{equation}
 \begin{equation}
-ds^2=\left(1-\frac{2GM}{c^2r}\right)c^2dt^2-\left(1+\frac{2GM}{c^2r}\right)d\vec{x}^2+\frac{4GJ}{c^3r^2}\sen\theta (\hat\varphi\cdot d\vec{x})cdt+\mathcal{O}(G^2).\label{ds22}
+ds^2=\left(1-\frac{2GM}{c^2r}\right)c^2dt^2-\left(1+\frac{2GM}{c^2r}\right)d\vec{x}^2+\frac{4GJ}{c^3r^2}\sin\theta (\hat\varphi\cdot d\vec{x})cdt+\mathcal{O}(G^2).\label{ds22}
 \end{equation}
-En coodenadas esf'ericas, sabemos que $\hat\varphi\cdot d\vec{x}=r\sen\theta\,d\varphi$, y por lo tanto la expresi'on a primer orden en $G$ para el elemento de l'inea fuera de la distribuci'on esf'erica rotante, en coordenadas esf'ericas y en t'erminos de $M$ y $J$, resulta ser
+En coodenadas esf'ericas, sabemos que $\hat\varphi\cdot d\vec{x}=r\sin\theta\,d\varphi$, y por lo tanto la expresi'on a primer orden en $G$ para el elemento de l'inea fuera de la distribuci'on esf'erica rotante, en coordenadas esf'ericas y en t'erminos de $M$ y $J$, resulta ser
 \begin{equation}\boxed{
-ds^2=\left(1-\frac{2GM}{c^2r}\right)c^2dt^2-\left(1+\frac{2GM}{c^2r}\right)\left[dr^2+r^2d\Omega^2\right]+\frac{4GJ}{c^3r}\sen^2 \theta d\varphi (cdt)+\mathcal{O}(G^2).}\label{dssss2}
+ds^2=\left(1-\frac{2GM}{c^2r}\right)c^2dt^2-\left(1+\frac{2GM}{c^2r}\right)\left[dr^2+r^2d\Omega^2\right]+\frac{4GJ}{c^3r}\sin^2 \theta d\varphi (cdt)+\mathcal{O}(G^2).}\label{dssss2}
 \end{equation}
 Es posible verificar que la soluci'on exacta del agujero negro rotante de Kerr en coordenadas isotr'opicas, se reduce a (\ref{dssss2}) en el l'imite de campo debil. Si adicionalmente hacemos $J=0$ recobramos la soluci'on de Schwarzschild, a primer orden en $G$, tambi'en en coordenadas isotr'opicas.
 
@@ -642,7 +642,7 @@ como se muestra en la figura \ref{orbitaGPB}.
 \end{figure}
 De la figura vemos que podemos parametrizar la 'orbita por
 \begin{align}
-\hat{r}(\phi)=\hat{J}_T\cos\phi-\hat{h}_{\perp}\sen\phi,\label{parametrizacionorbita}
+\hat{r}(\phi)=\hat{J}_T\cos\phi-\hat{h}_{\perp}\sin\phi,\label{parametrizacionorbita}
 \end{align}
 donde $\hat{h}_{\perp}$ es un vector unitario perpendicular a $\hat{h}$ y $\hat{J}_T$. Si reemplazamos (\ref{parametrizacionorbita}) en (\ref{geo11}) y (\ref{LT11}), y luego promediamos a lo largo de una 'orbita completa del gir'oscopo, es decir, $\phi\in[0,2)$, entonces las \emph{velocidades angulares promedio} de precesi'on por revoluci'on, quedan dadas finalmente por
 \begin{equation}\boxed{

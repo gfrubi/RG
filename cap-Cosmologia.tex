@@ -92,13 +92,13 @@ ds^{2}= c^2dt^2 - a^{2}(t)\left[ d\vec{x}^{2} + k\frac{(\vec{x}\cdot d\vec{x})^{
 \end{equation}
 Otra foma com'un de expresar el intervalo es usando coordenadas esf'ericas:
 \begin{equation}\marginnote{M'etrica de FRW}
- ds^2=c^2dt^2-a^2(t)\left[\frac{dr^2}{1-kr^2}+r^2\,d\theta^2+r^2\sen^2\theta\,d\varphi^2\right].\label{dsFRW}
+ ds^2=c^2dt^2-a^2(t)\left[\frac{dr^2}{1-kr^2}+r^2\,d\theta^2+r^2\sin^2\theta\,d\varphi^2\right].\label{dsFRW}
 \end{equation}
 La constante $k$ puede adoptar, al igual que en (\ref{61j}), los valores $0$, $1$ 'o $-1$, y est'a relacionada con la curvatura nula, positiva o
 negativa, de la secci'on espacial ($t=$ cte.), respectivamente.\\
 En efecto, la geometr'ia espacial est'a determinada por el elemento de l'inea
 \begin{equation}
- d\ell^2=a^2(t)\left[\frac{dr^2}{1-kr^2}+r^2\,d\theta^2+r^2\sen^2\theta\,d\varphi^2\right],
+ d\ell^2=a^2(t)\left[\frac{dr^2}{1-kr^2}+r^2\,d\theta^2+r^2\sin^2\theta\,d\varphi^2\right],
 \end{equation}
 cuyo escalar de curvatura es constante (su valor es independiente de $r$, $\theta$ y $\varphi$) e igual a $6k/a^2$.
 Claramente, si $k=0$ la geometr'ia espacial es plana. Si $k=-1$ entonces el escalar de curvatura es negativo. En ambos 
@@ -111,9 +111,9 @@ entonces el espacio es \textit{cerrado}, ya que $r$ puede variar entre $0$ y $+1
 %Coordenadas hyperesf'ericas $(\chi,\theta,\varphi)$
 %\begin{equation}
 %r=S_k(\chi):=\left\{\begin{array}{ll}
-%\frac{1}{\sqrt{k}}\sen(\sqrt{k}\chi),& k>0\\
+%\frac{1}{\sqrt{k}}\sin(\sqrt{k}\chi),& k>0\\
 %r, & k=0\\
-%\frac{1}{\sqrt{|k|}}\senh(\sqrt{|k|}\chi), & k<0
+%\frac{1}{\sqrt{|k|}}\sinh(\sqrt{|k|}\chi), & k<0
 %\end{array}\right.
 %\end{equation}
 %\begin{equation}
@@ -136,12 +136,12 @@ entonces el espacio es \textit{cerrado}, ya que $r$ puede variar entre $0$ y $+1
 Las componentes no nulas de la conexi'on en las coordenadas en las que el elemento de l'inea es dado por (\ref{dsFRW}) son
 \begin{eqnarray} 
  \Gamma^0_{11}&=&\frac{1}{c}\frac{a\dot{a}}{1-kr^2}, \qquad \Gamma^0_{22}=\frac{1}{c}a\dot{a}r^{2}, \qquad 
-\Gamma^0_{33}=\frac{1}{c}a\dot{a}r^2\sen^2\theta ,\\
+\Gamma^0_{33}=\frac{1}{c}a\dot{a}r^2\sin^2\theta ,\\
 \Gamma^1_{01}&=&\frac{1}{c}\frac{\dot{a}}{a}, \qquad \Gamma^1_{11}=\frac{kr}{1-kr^2}, \qquad
 \Gamma^1_{22}=-r(1-kr^2),\\
- \Gamma^1_{33}&=&-r(1-kr^2)\sen^2\theta, \qquad \Gamma^2_{02}=\frac{1}{c}\frac{\dot{a}}{a}, \qquad
+ \Gamma^1_{33}&=&-r(1-kr^2)\sin^2\theta, \qquad \Gamma^2_{02}=\frac{1}{c}\frac{\dot{a}}{a}, \qquad
 \Gamma^2_{12}=\frac{1}{r}, \\
-\Gamma^2_{33}&=&-\sen\theta\cos\theta, \qquad \Gamma^3_{03}=\frac{1}{c}\frac{\dot{a}}{a}, \qquad
+\Gamma^2_{33}&=&-\sin\theta\cos\theta, \qquad \Gamma^3_{03}=\frac{1}{c}\frac{\dot{a}}{a}, \qquad
 \Gamma^3_{13}=\frac{1}{r}, \qquad
 \Gamma^3_{23}=\cot\theta .
 \end{eqnarray}
@@ -371,7 +371,7 @@ Imaginemos una estrella con coordenadas $\vec{x}_{1}=(ct_{1},r_{1},0,0)$ (en coo
 se encuentra en las coordenadas $\vec{x}_{0}=(ct_{0},0,0,0)$, considerando (\ref{dsFRW}), la m'etrica inducida por una esfera centrada
 (para un tiempo fijo) en $\vec{x}_{1}$ y que pasa por $\vec{x}_{0}$ ser'a 
 \begin{equation}
- dl^2=a_{0}^2 r_{1}^2(d\theta^2  +\sen^2\theta d\varphi^2),\hspace{0.5cm} \mbox{con} \hspace{0.5cm}  a_{0}= a(t_{0}),
+ dl^2=a_{0}^2 r_{1}^2(d\theta^2  +\sin^2\theta d\varphi^2),\hspace{0.5cm} \mbox{con} \hspace{0.5cm}  a_{0}= a(t_{0}),
 \end{equation}
 cuya 'area es
 \begin{equation}
@@ -735,7 +735,7 @@ En particular para el caso $k=0$ tenemos que $\Omega_k=0$ y por lo tanto
 %G_{rr} &=-\frac{1}{c^2(1-kr^2)}\left(2R\ddot{a}+\dot{a}^2+kc^2\right) = \frac{g_{rr}}{c^2}\left(2a\ddot{a}+\dot{a}^2+kc^2\right), \\
 %G_{\theta\theta} &= -\frac{r^2}{c^2}\left(2a\ddot{a}+\dot{a}^2+kc^2\right) 
 %=\frac{g_{\theta\theta}}{c^2}\left(2a\ddot{a}+\dot{a}^2+kc^2\right) , \\
-%G_{\varphi\varphi} &= G_{\theta\theta}\sen^2\theta
+%G_{\varphi\varphi} &= G_{\theta\theta}\sin^2\theta
 %=\frac{g_{\varphi\varphi}}{c^2}\left(2a\ddot{R}+\dot{a}^2+kc^2\right).
 %\end{align}
 

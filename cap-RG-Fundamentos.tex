@@ -350,7 +350,7 @@ simetría esférica significa que existen tres vectores de Killing tipo espacio 
 siempre es posible definir coordenadas\footnote{Con los rangos de variación usuales para coordenadas angulares: $0\le\theta<\pi$ y $0\le\varphi <2\pi$.} $x^\mu=(ct,r,\theta,\varphi)$ tal
 que el elemento de línea asuma la forma
 \begin{equation}\label{dsoriginal}
-ds^2=A(r,t)(dx^0)^2-B(r,t)dr^2-r^2\left[ d\theta^2+\sen^2\theta
+ds^2=A(r,t)(dx^0)^2-B(r,t)dr^2-r^2\left[ d\theta^2+\sin^2\theta
 \,d\varphi^2\right],
 \end{equation}
 donde $A(r,t)$ y $B(r,t)$ son funciones de la coordenada radial $r$ y,
@@ -365,7 +365,7 @@ A(r,t) =e^{\alpha(r,t)}, \qquad B(r,t) =e^{\beta(r,t)},
 de modo que
 \begin{equation}\label{ds2_rt}
 ds^2=e^{\alpha(r,t)} (dx^0)^2-e^{\beta(r,t)} dr^2-r^2\left[
-d\theta^2+\sen^2\theta\, d\varphi^2\right],
+d\theta^2+\sin^2\theta\, d\varphi^2\right],
 \end{equation}
 de donde vemos que el tensor métrico, en estas coordenadas, es diagonal y puede
 ser escrito como
@@ -375,7 +375,7 @@ g_{\mu\nu}=%
 e^\alpha& 0 & 0 & 0\\
 0 & -e^\beta & 0 & 0\\
 0 & 0 & -r^2 & 0\\
-0 & 0 & 0 & -r^2\sen^2\theta
+0 & 0 & 0 & -r^2\sin^2\theta
 \end{pmatrix}.
 \end{equation}
 La métrica inversa es entonces:
@@ -385,7 +385,7 @@ g^{\mu\nu}=%
 e^{-\alpha} & 0 & 0 & 0\\
 0 & -e^{-\beta} & 0 & 0\\
 0 & 0 & -r^{-2} & 0\\
-0 & 0 & 0 & -r^{-2}\sen^{-2}\theta
+0 & 0 & 0 & -r^{-2}\sin^{-2}\theta
 \end{pmatrix}.
 \end{equation}
 Las componentes no nulas (y linealmente independientes) de la conexión, en las
@@ -397,12 +397,12 @@ coordenadas usadas, son:
 \Gamma_{\ 11}^1 =\frac{\beta'}{2}, \qquad
 \Gamma_{\ 22}^1 =-re^{-\beta}, \label{gammas1_sch}\\
 \Gamma_{\ 11}^0 & =\frac{\dot{\beta}}{2c}e^{(\beta-\alpha)}, \qquad
-\Gamma_{\ 33}^1 =-r\sen^2\theta e^{-\beta}, \qquad
+\Gamma_{\ 33}^1 =-r\sin^2\theta e^{-\beta}, \qquad
 \Gamma_{\ 12}^2 =\frac{1}{r},\label{gammas2_sch}\\
 \Gamma_{\ 00}^1 & =\frac{\alpha'}{2} e^{(\alpha-\beta)}, \qquad
 \Gamma_{\ 13}^3 =\frac{1}{r}, \qquad
 \Gamma_{\ 23}^3 =\cot\theta, \qquad
-\Gamma_{\ 33}^2 =-\sen\theta\cos\theta .\label{gammas3_sch}
+\Gamma_{\ 33}^2 =-\sin\theta\cos\theta .\label{gammas3_sch}
 \end{align}
 
 De igual forma, se tiene que las componentes no nulas del tensor de Ricci son:
@@ -417,7 +417,7 @@ R_{11} & =\frac{1}{4c^2}e^{(\beta-\alpha)} \left[ 2\ddot{\beta}%
 }{r}+\frac{\alpha^{\prime2}}2\right] ,\label{ricci11}\\
 R_{22} & =1-e^{-\beta} \left[ 1-\frac{1}2r\beta
 '+\frac{1}2r\alpha'\right] ,\label{ricci22}\\
-R_{33} & =\sen^2\theta\, R_{22} ,\label{ricci33}\\
+R_{33} & =\sin^2\theta\, R_{22} ,\label{ricci33}\\
 R_{01} &= \frac{\dot{\beta}}{cr}.\label{ricci01}
 \end{align}
 Con esto, el escalar de curvatura es:
@@ -437,7 +437,7 @@ G_{11} &=\frac{\alpha'}{r}+\frac{1}{r^2}-\frac{1}{r^2}e^{\beta} ,\label{g11}\\
 G_{22} & =-e^{-\beta} \left[ \frac{r^2}{4}\alpha^{\prime
 }\beta'-\frac{r^2}{4}\alpha^{\prime2}-\alpha^{\prime\prime}\frac{r^2}{2}-\frac{r}{2}\left( \alpha^{\prime}-\beta'\right) \right] -\frac{r^2}{4c^2}e^{-\alpha}\left[2\ddot{\beta}-\dot{\beta}\dot{\alpha}
 +\dot{\beta}^2\right] \\
-G_{33} & =\sen^2\theta\, G_{22}.
+G_{33} & =\sin^2\theta\, G_{22}.
 \end{align}
 % Por conveniencia es útil obtener $G_\mu ^\nu $%
 % \begin{align}
@@ -525,7 +525,7 @@ podemos reconstruir la solución completa. El elemento de línea correspondiente
 a la solución de las ecuaciones en el vacío es
 \begin{equation}\marginnote{Schwarzschild coord. de curvatura}
 \boxed{ds^2=\left( 1-\frac{2m}{r}\right) (cdt)^2-\frac{dr^2}{\left( 1-\frac
-{2m}{r}\right) }-r^2\left[ d\theta^2+\sen^2\theta d\varphi^2\right].}
+{2m}{r}\right) }-r^2\left[ d\theta^2+\sin^2\theta d\varphi^2\right].}
 \label{Sch}
 \end{equation}
 Equivalentemente,
@@ -533,7 +533,7 @@ Equivalentemente,
 g_{00} & =1-\frac{2m}{r},\\
 g_{11} & =-\left( 1-\frac{2m}{r}\right) ^{-1},\\
 g_{22} & =-r^2,\\
-g_{33} & =-r^2\sen^2\theta.
+g_{33} & =-r^2\sin^2\theta.
 \end{align}
 \begin{quotation}
 \textbf{Teorema de Birkhoff\footnote{George David Birkhoff: 1884-1944, Matemático Estadounidense. Ver \url{http://en.wikipedia.org/wiki/G._D._Birkhoff}.}}: \textit{Toda solución esféricamente simétrica de las ecuaciones de campo de Einstein en el vacío es necesariamente estática, es decir, independiente del tiempo, y asintoticamente plana}.
@@ -570,7 +570,7 @@ La solución de Schwarzschild posee las siguientes propiedades:
 \begin{itemize}
 \item Es esféricamente simétrica.
 \item Es estática (describe el campo gravitacional estacionario generado por \textit{fuentes estáticas}).
-\item Es asintóticamente plana: $ds^2\to c^2dt^2-dr^2-r^2(d\theta^2+\sen^2\theta\,d\varphi^2)$ para $r\to\infty$. Más precisamente $R^\mu_{\ \nu\lambda\rho}\to 0$ para $r\to\infty$.
+\item Es asintóticamente plana: $ds^2\to c^2dt^2-dr^2-r^2(d\theta^2+\sin^2\theta\,d\varphi^2)$ para $r\to\infty$. Más precisamente $R^\mu_{\ \nu\lambda\rho}\to 0$ para $r\to\infty$.
 \end{itemize}
 
 
@@ -585,11 +585,11 @@ buena razón para buscar un conjunto alternativo de coordenadas para el espaciot
 ds^2=\tilde{A}\,(cdt)^2-\tilde{B}\,d\ell^2_{R^3} ,
 \end{equation}
 donde $d\ell^2_{R^3}=dx^2+dy^2+dz^2$ en coordenadas ``cuasi''-cartesianas, o
-$d\ell^2_{R^3}=d\rho^2+\rho^2(d\theta^2+\sen^2\theta\,d\varphi^2)$ en coordenadas
-``cuasi''-esféricas, con $x=\rho\sen\theta\cos\varphi$, $y=\rho\sen\theta\sen\varphi$ y $z=\rho\cos\theta$.
+$d\ell^2_{R^3}=d\rho^2+\rho^2(d\theta^2+\sin^2\theta\,d\varphi^2)$ en coordenadas
+``cuasi''-esféricas, con $x=\rho\sin\theta\cos\varphi$, $y=\rho\sin\theta\sin\varphi$ y $z=\rho\cos\theta$.
 Entonces, las coordenadas isotrópicas que buscamos deben ser tales que el elemento de línea adopte la forma
 \begin{equation}
-ds^2=\tilde{A}(\rho)\,(cdt)^2-\tilde{B}(\rho)\left[d\rho^2+\rho^2(d\theta^2+\sen^2\theta\,d\varphi^2)\right] .\label{dsisot}
+ds^2=\tilde{A}(\rho)\,(cdt)^2-\tilde{B}(\rho)\left[d\rho^2+\rho^2(d\theta^2+\sin^2\theta\,d\varphi^2)\right] .\label{dsisot}
 \end{equation}
 Comparando (\ref{dsisot}) con (\ref{Sch}) encontramos las siguientes condiciones:
 \begin{equation}
@@ -629,7 +629,7 @@ Finalmente, reemplazando (\ref{riso}) en (\ref{ci1}) encontramos la otra funció
 Resumiendo, el elemento de línea de la solución de Schwarzschild exterior en coordenadas isotrópicas tiene la forma:
 \begin{equation}\marginnote{Schwarzschild coord. isotrópicas}
 \boxed{ds^2=\frac{\left(1-\frac{m}{2\rho}\right)^2}{\left(1+\frac
-{m}{2\rho}\right)^2}\,(cdt)^2-\left(1+\frac{m}{2\rho}\right)^{4}\left[ d\rho^2+\rho^2\left( d\theta^2+\sen^2\theta d\varphi
+{m}{2\rho}\right)^2}\,(cdt)^2-\left(1+\frac{m}{2\rho}\right)^{4}\left[ d\rho^2+\rho^2\left( d\theta^2+\sin^2\theta d\varphi
 ^2\right) \right], \qquad \rho>\frac{m}{2},} \label{schiso}
 \end{equation}
 o, alternativamente,
@@ -678,9 +678,9 @@ símbolos de Christoffel para la métrica de Schwarzschild, en coordenadas de cu
 00}^1=\frac{(r-2m) m}{r^3},\qquad \Gamma_{\ 11}^1=-\frac{m}{r\left(
 r-2m\right) }, \nonumber \\
 \Gamma_{\ 22}^1 &=&-(r-2m) ,\qquad \Gamma_{\ 33}^1=-\left(
-r-2m\right) \sen ^2\theta ,\qquad \Gamma_{\ 12}^2=\frac{1}{r}, \nonumber \\
-\Gamma_{\ 33}^2 &=&-\sen \theta \cos \theta ,\qquad
-\Gamma_{\ 13}^3=\frac{1}{r},\qquad \Gamma_{\ 23}^3=\frac{\cos\theta}{\sen
+r-2m\right) \sin ^2\theta ,\qquad \Gamma_{\ 12}^2=\frac{1}{r}, \nonumber \\
+\Gamma_{\ 33}^2 &=&-\sin \theta \cos \theta ,\qquad
+\Gamma_{\ 13}^3=\frac{1}{r},\qquad \Gamma_{\ 23}^3=\frac{\cos\theta}{\sin
 \theta}.
 \end{eqnarray}
 
@@ -689,11 +689,11 @@ En este caso, parametrizamos las geodésicas usando el tiempo propio $\tau$ sobr
 \begin{eqnarray}
 \ddot{t}+\frac{2m}{r(r-2m) }\,\dot{t}\,\dot{r}&=&0, \label{egS0}\\
 \ddot{r}+\frac{mc^2(r-2m)}{r^3}\,\dot{t}^2-\frac{m}{r\left(
-r-2m\right) }\,\dot{r}^2-(r-2m) \left[ \dot{\theta}^2+\sen
+r-2m\right) }\,\dot{r}^2-(r-2m) \left[ \dot{\theta}^2+\sin
 ^2\theta \dot{\varphi}^2\right] &=&0, \label{egS1}\\
-\ddot{\theta}+\frac{2}{r}\dot{r}\dot{\theta}-\sen \theta \cos \theta
+\ddot{\theta}+\frac{2}{r}\dot{r}\dot{\theta}-\sin \theta \cos \theta
 \dot{\varphi}^2 &=&0, \label{egS2}\\
-\ddot{\varphi}+\frac2{r}\dot{r}\dot{\varphi}+2\frac{\cos\theta}{\sen\theta}
+\ddot{\varphi}+\frac2{r}\dot{r}\dot{\varphi}+2\frac{\cos\theta}{\sin\theta}
 \dot{\theta}\dot{\varphi}&=&0,\label{egS3}
 \end{eqnarray}%
 donde hemos denotado $\dot{f}:={df}/{d\tau}$.
@@ -701,11 +701,11 @@ donde hemos denotado $\dot{f}:={df}/{d\tau}$.
 Las ecuaciones (\ref{egS0}) y (\ref{egS3}) son equivalentes a
 \begin{eqnarray}
 \frac{1}{\left(1-\frac{2m}{r}\right)} \frac{d\ }{d\tau}\left[\left(1-\frac{2m}{r}\right)\dot{t}\right]&=&0,\\
-\frac{1}{r^2\sen^2\theta} \frac{d\ }{d\tau}\left[r^2\sen^2\theta\dot{\varphi}\right]&=&0.
+\frac{1}{r^2\sin^2\theta} \frac{d\ }{d\tau}\left[r^2\sin^2\theta\dot{\varphi}\right]&=&0.
 \end{eqnarray}
 En esta forma, es claro que ambas ecuaciones implican la existencia de \textit{dos constantes del movimiento} (es decir, cantidades que asumen el mismo valor en todos los puntos de la línea de mundo asociada a la geodésica considerada). Por simplicidad introduciremos dos constantes adimensionales, $k$ y $h$, definidas por
 \begin{equation}\marginnote{cantidades conservadas}
- k:=\left(1-\frac{2m}{r}\right)\dot{t}, \qquad hmc:=r^2\sen^2\theta\dot{\varphi},
+ k:=\left(1-\frac{2m}{r}\right)\dot{t}, \qquad hmc:=r^2\sin^2\theta\dot{\varphi},
 \label{kh}
 \end{equation}
 cuyos valores quedan determinados por las condiciones iniciales del movimiento.
@@ -903,7 +903,7 @@ y donde $w_1$, $w_2$ se suponen de orden de magnitud 1. Reemplazando la expansi�
 \end{eqnarray}
 Esta es una ecuación tipo oscilador armónico forzado, donde el término forzante es la superposición de un término constante, un \textit{término resonante}, y un término periódico no resonante. Su solución es del tipo
 \begin{equation}
- w_1(\varphi)=A+B\varphi\sen\varphi+C\cos(2\varphi).
+ w_1(\varphi)=A+B\varphi\sin\varphi+C\cos(2\varphi).
 \end{equation}
 Reemplazando esta solución general en (\ref{ecw1}) podemos determinar las constantes involucradas:
 \begin{equation}
@@ -913,18 +913,18 @@ Con esto, la solución de la ecuación (\ref{ecuGR}) a primer orden en $\epsilon
 \begin{equation}\label{solucasi}
  u(\varphi)=\frac{1}{mh^2}\left[1+e\cos\varphi+\epsilon\left[\underbrace{
 (1+\frac { e^2 } { 2 } )}_\text{pert.
-constante}+\underbrace{e\varphi\sen\varphi}_\text{pert. ``secular''}
+constante}+\underbrace{e\varphi\sin\varphi}_\text{pert. ``secular''}
 -\underbrace{\frac{e^2 }{6} \cos(2\varphi)}_\text{pert. periódica}\right ]
 \right ] +\mathcal{O}(\epsilon^2).
 \end{equation}
 Usando ahora
 \begin{equation}
  \cos(\epsilon\varphi) =1+\mathcal{O}(\epsilon^2), \qquad
-\sen(\epsilon\varphi) =\epsilon\varphi+\mathcal{O}(\epsilon^3),
+\sin(\epsilon\varphi) =\epsilon\varphi+\mathcal{O}(\epsilon^3),
 \end{equation}
 podemos escribir los términos newtonianos y de perturbación secular como
 \begin{equation}
- \cos\varphi+\epsilon\varphi\sen\varphi=\cos\left[(1-\epsilon)\varphi\right]
+ \cos\varphi+\epsilon\varphi\sin\varphi=\cos\left[(1-\epsilon)\varphi\right]
 +\mathcal{O}(\epsilon^2).
 \end{equation}
 Análogamente, para la perturbación periódica podemos usar
@@ -980,11 +980,11 @@ De este modo las ecuaciones de movimiento toman la forma (aquí denotamos $\dot{
 \begin{eqnarray}
 \frac{1}{\left(1-\frac{2m}{r}\right)}\frac{d\ }{d\lambda}\left[\left(1-\frac{2m}{r}\right)\dot{t}\right]&=&f\,\dot{t}, \label{egSl0}\\
 \ddot{r}+\frac{mc^2(r-2m)}{r^3}\,\dot{t}^2-\frac{m}{r\left(
-r-2m\right) }\,\dot{r}^2-(r-2m) \left[ \dot{\theta}^2+\sen
+r-2m\right) }\,\dot{r}^2-(r-2m) \left[ \dot{\theta}^2+\sin
 ^2\theta \dot{\varphi}^2\right] &=&f\,\dot{r}, \label{egSl1}\\
-\ddot{\theta}+\frac{2}{r}\dot{r}\dot{\theta}-\sen \theta \cos \theta
+\ddot{\theta}+\frac{2}{r}\dot{r}\dot{\theta}-\sin \theta \cos \theta
 \dot{\varphi}^2 &=&f\,\dot{\theta}, \label{egSl2}\\
-\frac{1}{r^2\sen^2\theta}\frac{d\ }{d\lambda}\left[r^2\sen^2\theta\dot{\varphi}\right] &=&f\,\dot{\varphi}.\label{egSl3}
+\frac{1}{r^2\sin^2\theta}\frac{d\ }{d\lambda}\left[r^2\sin^2\theta\dot{\varphi}\right] &=&f\,\dot{\varphi}.\label{egSl3}
 \end{eqnarray}%
 Note que hemos factorizado los términos al lado izquierdo de (\ref{egSl0}) y (\ref{egSl3}). Nuevamente, el movimiento está confinado a un plano, que podemos elegir como el plano ecuatorial, es decir, con $\theta(\lambda)=\pi/2$. Verificamos que esta solución para $\theta$ satisface (\ref{egSl2}). Tal como en el caso tipo tiempo, finalmente nos concentraremos en la forma de la trayectoria. Por esto, elegiremos como parámetro al ángulo $\varphi$, es decir, $\lambda:=\varphi$. Con esto, $\dot{\varphi}=1$ y podemos determinar la función $f$ correspondiente a partir de (\ref{egSl3}):
 \begin{equation}
@@ -1029,12 +1029,12 @@ Esta ecuación es la análoga a (\ref{ecuGR}). Tal como en el caso anterior, el 
 \end{equation}
 y que \textit{sus soluciones son líneas rectas}. En efecto, una solución general de (\ref{ecuGR}) puede expresarse en la forma siguiente:
 \begin{equation}
- u_0(\varphi)=\frac{1}{D}\sen(\varphi-\varphi_0),
+ u_0(\varphi)=\frac{1}{D}\sin(\varphi-\varphi_0),
 \end{equation}
 donde $D$ es una constante con dimensiones de longitud y $\varphi_0$ una constante angular. Entonces tendremos que
 \begin{equation}
-x=r\cos\varphi=D\frac{\cos\varphi}{\sen(\varphi-\varphi_0)}, \qquad
-y=r\sen\varphi=D\frac{\sen\varphi}{\sen(\varphi-\varphi_0)}.
+x=r\cos\varphi=D\frac{\cos\varphi}{\sin(\varphi-\varphi_0)}, \qquad
+y=r\sin\varphi=D\frac{\sin\varphi}{\sin(\varphi-\varphi_0)}.
 \end{equation}
 Una simple álgebra permite entonces relacionar $x$ con $y$, obteniendo
 \begin{equation}
@@ -1055,7 +1055,7 @@ Determinaremos nuevamente una solución aproximada de (\ref{ecglrg}). Primero de
 \end{equation}
 que tiene como solución ``sin perturbar'' a
 \begin{equation}
- w_0(\varphi)=\sen(\varphi-\varphi_0). \label{w0l}
+ w_0(\varphi)=\sin(\varphi-\varphi_0). \label{w0l}
 \end{equation}
 La constante $\epsilon$ tiene el valor
 \begin{equation}
@@ -1063,7 +1063,7 @@ La constante $\epsilon$ tiene el valor
 \end{equation}
 que es mucho menor que 1, ya que suponemos que el rayo de luz pasa suficientemente lejos del centro de fuerzas de modo que $D\gg m$. Suponemos además que $w\approx 1$. Con estos ingredientes determinaremos una solución perturbativa de la forma (\ref{expw}), con $w_0$ dado por (\ref{w0l}). Introduciendo la expansión (\ref{expw}) y usando (\ref{w0l}) encontramos la ecuación para la primera perturbación $w_1$:
 \begin{equation}
- w_1''+w_1=\sen^2(\varphi-\varphi_0). \label{ecw1l}
+ w_1''+w_1=\sin^2(\varphi-\varphi_0). \label{ecw1l}
 \end{equation}
 La solución general de esta ecuación es de la forma
 \begin{equation}
@@ -1071,17 +1071,17 @@ La solución general de esta ecuación es de la forma
 \end{equation}
 Substituyendo esta expresión en (\ref{ecw1l}) encontramos que $A=C=1/3$, mientras que las constantes $B$ y $\beta$ pueden adoptar valores arbitrarios. Sin embargo, sin pérdida de generalidad es posible elegir\footnote{En efecto, si $B\neq 0$ y $\beta\neq 0$, la solución puede reescribirse, \textit{a primer orden en} $\epsilon$ como
 \begin{equation*}
-u(\varphi)=\frac{1}{\tilde{D}}\left[\sen(\varphi-\tilde{\varphi}_0)+\frac{m}{\tilde{D}}\left(1+\cos^2(\varphi-\tilde{\varphi_0})\right)\right]+\mathcal{O}(\epsilon^2),
+u(\varphi)=\frac{1}{\tilde{D}}\left[\sin(\varphi-\tilde{\varphi}_0)+\frac{m}{\tilde{D}}\left(1+\cos^2(\varphi-\tilde{\varphi_0})\right)\right]+\mathcal{O}(\epsilon^2),
 \end{equation*}
-con $\tilde{D}:=D/(1-\epsilon B\sen\beta)$ y $\tilde{\varphi}_0:=\varphi_0-\epsilon B\cos\beta$. Esta expresión es equivalente a (\ref{solw1l}).} $B=\beta=0$. Así, nuestra solución a primer orden adopta la forma siguiente:
+con $\tilde{D}:=D/(1-\epsilon B\sin\beta)$ y $\tilde{\varphi}_0:=\varphi_0-\epsilon B\cos\beta$. Esta expresión es equivalente a (\ref{solw1l}).} $B=\beta=0$. Así, nuestra solución a primer orden adopta la forma siguiente:
 \begin{equation}\marginnote{Solución pertubada rayo de luz}
- \boxed{u(\varphi)=\frac{1}{D}\left[\sen(\varphi-\varphi_0)+\frac{m}{D}\left[1+\cos^2(\varphi-\varphi_0)\right]\right]+\mathcal{O}(\epsilon^2).} \label{solw1l}
+ \boxed{u(\varphi)=\frac{1}{D}\left[\sin(\varphi-\varphi_0)+\frac{m}{D}\left[1+\cos^2(\varphi-\varphi_0)\right]\right]+\mathcal{O}(\epsilon^2).} \label{solw1l}
 \end{equation}
 Para calcular el \textit{ángulo de desvío} de la luz, $\delta$, necesitamos los ángulos $\delta_1$ y $\delta_2$ en que la trayectoria se desvía de la recta no perturbada, para $t\to -\infty$ y $t\to +\infty$, respectivamene. Estos ángulos corresponden a un ángulo inicial $\varphi_{\rm i}=\varphi_0+\pi+\delta_1$ y final $\varphi_{\rm f}=\varphi_0-\delta_2$, y pueden ser determinados por la condición que en cada caso $r\to\infty$ o, equivalentemente $u=0$. El ángulo total de desvío es entonces $\delta=\delta_1+\delta_2$. Reemplazamos por tanto $\varphi=\varphi_{\rm i}=\varphi_0+\pi+\delta_1$ en la condición $u(\varphi_{\rm i})$ obtenemos, a primer orden en $\delta_1$:
 \begin{eqnarray}
  0&=&u(\varphi_{\rm i})\\
-&=&\frac{1}{D}\left[\sen(\pi+\delta_1)+\frac{m}{D}\left(1+\cos^2(\pi+\delta_1)\right)\right] \\
-&=&\frac{1}{D}\left[-\sen\delta_1+\frac{m}{D}\left(1+\cos^2\delta_1)\right)\right] \\
+&=&\frac{1}{D}\left[\sin(\pi+\delta_1)+\frac{m}{D}\left(1+\cos^2(\pi+\delta_1)\right)\right] \\
+&=&\frac{1}{D}\left[-\sin\delta_1+\frac{m}{D}\left(1+\cos^2\delta_1)\right)\right] \\
 &=&\frac{1}{D}\left[-\delta_1+\frac{m}{D}\left(1+1\right)\right]+\mathcal{O}(\delta_1^2).
 \end{eqnarray}
 Por lo tanto, obtenemos,
@@ -1091,7 +1091,7 @@ Por lo tanto, obtenemos,
 Similarmente, para $\varphi_{\rm f}=\varphi_0-\delta_2$ encontramos:
 \begin{eqnarray}
  0&=&u(\varphi_{\rm f})\\
-&=&\frac{1}{D}\left[-\sen\delta_2+\frac{m}{D}\left(1+\cos^2\delta_2\right)\right] \\
+&=&\frac{1}{D}\left[-\sin\delta_2+\frac{m}{D}\left(1+\cos^2\delta_2\right)\right] \\
 &=&\frac{1}{D}\left[-\delta_2+\frac{m}{D}\left(1+1\right)\right]+\mathcal{O}(\delta_2^2),
 \end{eqnarray}
 de modo que

@@ -380,9 +380,9 @@ en donde, para este caso, $k=1$ y $n=0$. Luego, la solución general de \eqref{b
 \begin{equation}
  \Theta=Aj_0(x)+Bn_0(x),
 \end{equation}
-en donde $j_0(x)=\sen x/x$ es la función esférica de Bessel del primer tipo de orden $n=0$, y $n_0(x)=-\cos x/x$ es la función esférica de Bessel del segundo tipo de orden $n=0$. Pero, para respetar la condición de borde \eqref{bcs_laneemden2}, se requiere que  $B=0$ pues $n_0(x)$ diverge en el origen. Aplicando la otra condición de borde \eqref{bcs_laneemden1}, encontramos directamente que $A=1$, por lo que usando la forma conocida de $j_0(x)$, tenemos que la solución de Lane-Emden para $n=1$ es:
+en donde $j_0(x)=\sin x/x$ es la función esférica de Bessel del primer tipo de orden $n=0$, y $n_0(x)=-\cos x/x$ es la función esférica de Bessel del segundo tipo de orden $n=0$. Pero, para respetar la condición de borde \eqref{bcs_laneemden2}, se requiere que  $B=0$ pues $n_0(x)$ diverge en el origen. Aplicando la otra condición de borde \eqref{bcs_laneemden1}, encontramos directamente que $A=1$, por lo que usando la forma conocida de $j_0(x)$, tenemos que la solución de Lane-Emden para $n=1$ es:
 \begin{equation}\label{lane1}
- \boxed{\Theta_1=\frac{\sen x}{x}}
+ \boxed{\Theta_1=\frac{\sin x}{x}}
 \end{equation}
 Esta función también es monótonamente decreciente en el intervalo $[0,\pi]$, y su primera raíz es $x_1=\pi$. Tal cual se había comentado después de \eqref{lane0}, se verifica la desigualdad $x_{1,n=0}=\sqrt{6}<\pi=x_{1,n=1}.$ (mínimo radio estelar para $n=0$)
 
@@ -455,7 +455,7 @@ Si $D\neq0$, la integración es complicada al involucrar integrales elípticas. 
 \end{equation}
 integral soluble analíticamente en forma simple. En efecto, mediante la sustitución trigonométrica:
 \begin{equation}\label{lane5sustitucion}
-\frac{1}{3}z^4=\sen^2 \zeta,
+\frac{1}{3}z^4=\sin^2 \zeta,
 \end{equation}
 encontramos que \eqref{lane5integral} equivale a:
 \begin{equation}
@@ -467,7 +467,7 @@ es decir, considerando $C'$ como la constante de integración y $C=e^{C'}$,
 \end{equation}
 Entonces, volviendo a la variable original $z$, dada por \eqref{lane5sustitucion} y teniendo presente que:
 \begin{equation}
-\frac{z^4}{3}= \sen^2 \zeta=\frac{1}{1+\dfrac{1}
+\frac{z^4}{3}= \sin^2 \zeta=\frac{1}{1+\dfrac{1}
 {\tan^2\zeta}}=\frac{1}{1+\left(\dfrac{1-\tan^2(\zeta/2)}
 {2\tan(\zeta/2)}\right)^2}=\frac{4\tan^2(\zeta/2)}{\left(1+\tan^2(\zeta/2)\right)^2},
 \end{equation}
@@ -732,7 +732,7 @@ Un caso mucho más realista que los tratados anteriormente para resolver el sist
 \end{align}
 en donde $x$ es un parámetro adimensional expresado en función del momentum de Fermi por \eqref{xrelativo}, en términos del cual se define:
 \begin{equation}\label{ec-fermi-fx}
- f(x)=x\sqrt{1+x^2}\left(2x^2-3\right)+3\senh^{-1}x.
+ f(x)=x\sqrt{1+x^2}\left(2x^2-3\right)+3\sinh^{-1}x.
 \end{equation}
 Además, $A$ es una constante dada por:
 \begin{align}\label{ec-fermi-A}
