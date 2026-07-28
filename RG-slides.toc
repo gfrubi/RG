@@ -1,0 +1,237 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {chapter}{Prefacio}{\es@scroman {i}}{chapter*.1}%
+\contentsline {chapter}{\numberline {1}Motivaciones para RG: Relatividad Especial y Gravitación newtoniana}{2}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Distribución de energía y momentum de la materia: tensor de energía-momentum}{4}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Campo electromagnético}{7}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Fluido perfecto}{8}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Fluido simple (polvo)}{14}{subsection.1.1.3}%
+\contentsline {section}{\numberline {1.2}Ley de Gravitación universal}{16}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Masa inercial y masa gravitacional}{21}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Universalidad de la interacción gravitacional, Principio de Equivalencia Débil}{23}{subsection.1.3.1}%
+\contentsline {section}{\numberline {1.4}Fuerzas de marea}{29}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Observadores acelerados y gravedad: Versión no-rela\-ti\-vis\-ta}{32}{section.1.5}%
+\contentsline {section}{\numberline {1.6}Principio de Equivalencia de Einstein y Sistemas de Referencia Localmente inerciales}{37}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Desvío de la luz*}{45}{subsection.1.6.1}%
+\contentsline {subsection}{\numberline {1.6.2}Redshift gravitacional*}{46}{subsection.1.6.2}%
+\contentsline {section}{\numberline {1.7}Observadores acelerados y gravedad: Versión relativista}{48}{section.1.7}%
+\contentsline {chapter}{\numberline {2}Análisis tensorial y geometría diferencial}{55}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Variedades diferenciables}{56}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Escalares, vectores y tensores}{61}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Escalares}{62}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Vectores contravariantes}{62}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}Representación pictórica de vectores contravariantes}{66}{subsubsection.2.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.3}Vectores covariantes}{67}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Tensores}{69}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}Algebra tensorial sobre variedades diferenciables}{73}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Multiplicación}{73}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Adición}{75}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Contracción}{76}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}Permutación y (Anti-)Simetrización}{78}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}Invariancia de las ecuaciones tensoriales}{82}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}Densidades tensoriales*}{84}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Densidades tensoriales de Levi-Civita*}{89}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}Tensores antisimétricos y densidades tensoriales duales*}{92}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Métrica}{95}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Longitud, producto interior, ángulos}{96}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Métrica Inversa}{98}{subsection.2.6.2}%
+\contentsline {subsection}{\numberline {2.6.3}Métrica inducida}{102}{subsection.2.6.3}%
+\contentsline {subsection}{\numberline {2.6.4}Curvas geodésicas}{104}{subsection.2.6.4}%
+\contentsline {subsection}{\numberline {2.6.5}Isometrías (simetrías de la métrica)}{111}{subsection.2.6.5}%
+\contentsline {subsubsection}{\numberline {2.6.5.1}Plano euclideano}{115}{subsubsection.2.6.5.1}%
+\contentsline {subsubsection}{\numberline {2.6.5.2}Esfera unitaria}{119}{subsubsection.2.6.5.2}%
+\contentsline {paragraph}{\numberline {2.6.5.2.1}Teorema:}{123}{paragraph.2.6.5.2.1}%
+\contentsline {subsection}{\numberline {2.6.6}Coodenadas adaptadas a una isometría}{124}{subsection.2.6.6}%
+\contentsline {subsection}{\numberline {2.6.7}Vectores de Killing y operadores diferenciales}{125}{subsection.2.6.7}%
+\contentsline {section}{\numberline {2.7}Conexión, derivadas covariantes y transporte paralelo}{127}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Derivada parcial de campos tensoriales}{127}{subsection.2.7.1}%
+\contentsline {subsubsection}{\numberline {2.7.1.1}Excepciones*}{129}{subsubsection.2.7.1.1}%
+\contentsline {subsection}{\numberline {2.7.2}Conexión y derivada covariante de tensores}{131}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Transporte paralelo*}{137}{subsection.2.7.3}%
+\contentsline {subsection}{\numberline {2.7.4}Integrabilidad*}{140}{subsection.2.7.4}%
+\contentsline {subsection}{\numberline {2.7.5}No-conmutatividad de las derivadas covariantes, curvatura y torsión}{143}{subsection.2.7.5}%
+\contentsline {subsection}{\numberline {2.7.6}Interpretación geométrica de la curvatura*}{146}{subsection.2.7.6}%
+\contentsline {subsection}{\numberline {2.7.7}Interpretación geométrica de la torsión*}{149}{subsection.2.7.7}%
+\contentsline {subsection}{\numberline {2.7.8}Curvas autoparalelas*}{152}{subsection.2.7.8}%
+\contentsline {section}{\numberline {2.8}Geometría riemanniana}{155}{section.2.8}%
+\contentsline {subsection}{\numberline {2.8.1}Propiedades de los símbolos de Christoffel}{156}{subsection.2.8.1}%
+\contentsline {subsection}{\numberline {2.8.2}Espacios planos}{157}{subsection.2.8.2}%
+\contentsline {subsection}{\numberline {2.8.3}Coordenadas geodésicas}{159}{subsection.2.8.3}%
+\contentsline {subsubsection}{\numberline {2.8.3.1}Prueba de existencia de coordenadas geodésicas}{162}{subsubsection.2.8.3.1}%
+\contentsline {subsection}{\numberline {2.8.4}Propiedades del tensor de Riemann}{165}{subsection.2.8.4}%
+\contentsline {subsection}{\numberline {2.8.5}Tensor de Ricci, y escalar de curvatura}{167}{subsection.2.8.5}%
+\contentsline {subsection}{\numberline {2.8.6}Identidades de Bianchi}{169}{subsection.2.8.6}%
+\contentsline {chapter}{\numberline {3}La teoría de Einstein de la gravitación}{172}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Gravitación como curvatura del espaciotiempo}{173}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Métrica, trayectorias, tiempo propio y coordenadas}{176}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Sobre coordenadas tipo espacio, tipo tiempo y tipo luz}{178}{subsection.3.2.1}%
+\contentsline {section}{\numberline {3.3}Límite Newtoniano}{180}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Redshift gravitacional en el límite newtoniano}{185}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Ecuaciones de campo de Einstein}{190}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Fluido perfecto sin presión y geodésicas*}{197}{subsection.3.4.1}%
+\contentsline {section}{\numberline {3.5}La solución de Schwarzschild}{200}{section.3.5}%
+\contentsline {subsection}{\numberline {3.5.1}Solución de Schwarzschild Exterior}{205}{subsection.3.5.1}%
+\contentsline {subsection}{\numberline {3.5.2}Solución de Schwarzschild en coordenadas isotrópicas}{212}{subsection.3.5.2}%
+\contentsline {subsection}{\numberline {3.5.3}Geodésicas en la geometría de Schwarzschild}{217}{subsection.3.5.3}%
+\contentsline {subsection}{\numberline {3.5.4}Geodésicas tipo tiempo}{218}{subsection.3.5.4}%
+\contentsline {subsubsection}{\numberline {3.5.4.1}Potencial Efectivo}{222}{subsubsection.3.5.4.1}%
+\contentsline {subsubsection}{\numberline {3.5.4.2}órbitas circulares}{227}{subsubsection.3.5.4.2}%
+\contentsline {subsubsection}{\numberline {3.5.4.3}órbitas ligadas no-circulares}{229}{subsubsection.3.5.4.3}%
+\contentsline {subsubsection}{\numberline {3.5.4.4}El Avance del Perihelio de Mercurio}{235}{subsubsection.3.5.4.4}%
+\contentsline {subsection}{\numberline {3.5.5}Desvío de la luz}{240}{subsection.3.5.5}%
+\contentsline {subsection}{\numberline {3.5.6}Redshift Gravitacional}{253}{subsection.3.5.6}%
+\contentsline {subsection}{\numberline {3.5.7}Tiempo de Vuelo (Efecto Shapiro)*}{257}{subsection.3.5.7}%
+\contentsline {chapter}{\numberline {4}Agujeros Negros ***PRELIMINAR***}{266}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Singularidades y radio de Schwarzschild}{267}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Diagrama Espacio-Temporal en Coordenadas de Schwarzschild}{272}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Coordenadas de Eddington-Finkelstein}{278}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}Partículas cayendo radialmente}{282}{subsection.4.1.3}%
+\contentsline {section}{\numberline {4.2}Colapso gravitacional}{286}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Agujeros Negros Rotantes ***PRELIMINAR***}{289}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Solución de Kerr}{292}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Singularidades y Horizontes de la Solución de Kerr}{295}{subsection.5.1.1}%
+\contentsline {subsection}{\numberline {5.1.2}Geodésicas tipo luz}{304}{subsection.5.1.2}%
+\contentsline {subsection}{\numberline {5.1.3}Diagrama Espacio-Temporal}{316}{subsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.3.1}Coordenadas de Eddington-Finkelstein}{318}{subsubsection.5.1.3.1}%
+\contentsline {subsection}{\numberline {5.1.4}Límite Estacionario y Observadores Estacionarios}{322}{subsection.5.1.4}%
+\contentsline {section}{\numberline {5.2}Extracción de energía de un Agujero Negro Rotante}{326}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Geodésicas tipo tiempo}{326}{subsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.1.1}Estabilidad de las órbitas}{334}{subsubsection.5.2.1.1}%
+\contentsline {subsection}{\numberline {5.2.2}Región de Energía Negativa}{339}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Mecanismo de Penrose}{340}{subsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.3.1}Límite Inferior de la Velocidad Relativa}{342}{subsubsection.5.2.3.1}%
+\contentsline {chapter}{\numberline {6}Campos gravitacionales débiles y ondas gravitacionales}{350}{chapter.6}%
+\contentsline {section}{\numberline {6.1}Expansión en potencias de $G$}{351}{section.6.1}%
+\contentsline {subsection}{\numberline {6.1.1}Expansión a primer orden}{355}{subsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1.1}Métrica}{355}{subsubsection.6.1.1.1}%
+\contentsline {subsubsection}{\numberline {6.1.1.2}Conexión}{356}{subsubsection.6.1.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.1.3}Tensor de curvatura de Riemann}{356}{subsubsection.6.1.1.3}%
+\contentsline {subsubsection}{\numberline {6.1.1.4}Tensor de Ricci}{357}{subsubsection.6.1.1.4}%
+\contentsline {subsubsection}{\numberline {6.1.1.5}Escalar de Curvatura}{357}{subsubsection.6.1.1.5}%
+\contentsline {subsubsection}{\numberline {6.1.1.6}Tensor de Einstein}{358}{subsubsection.6.1.1.6}%
+\contentsline {section}{\numberline {6.2}Ecuaciones de Einstein linealizadas}{360}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Transformaciones de gauge}{361}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Invariancia de gauge}{364}{subsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.3.2}Gauge de Lorenz}{364}{subsection.6.3.2}%
+\contentsline {subsubsection}{\numberline {6.3.2.1}Gauges adicionales en el vacío}{368}{subsubsection.6.3.2.1}%
+\contentsline {section}{\numberline {6.4}Ondas gravitacionales planas: dos polarizaciones}{371}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Efectos de una onda gravitacional: principio de un detector de ondas gravitacionales}{378}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Generación de ondas gravitacionales}{388}{section.6.6}%
+\contentsline {subsection}{\numberline {6.6.1}Ejemplo}{392}{subsection.6.6.1}%
+\contentsline {section}{\numberline {6.7}Expansi'on hasta orden cuadr'atico en $G$}{395}{section.6.7}%
+\contentsline {subsubsection}{\numberline {6.7.0.1}M'etrica}{395}{subsubsection.6.7.0.1}%
+\contentsline {subsubsection}{\numberline {6.7.0.2}Conexi'on}{396}{subsubsection.6.7.0.2}%
+\contentsline {subsubsection}{\numberline {6.7.0.3}Tensor de Ricci}{397}{subsubsection.6.7.0.3}%
+\contentsline {subsubsection}{\numberline {6.7.0.4}Escalar de Curvatura}{399}{subsubsection.6.7.0.4}%
+\contentsline {subsubsection}{\numberline {6.7.0.5}Tensor de Einstein}{400}{subsubsection.6.7.0.5}%
+\contentsline {section}{\numberline {6.8}Ecuaciones de Einstein a segundo orden}{402}{section.6.8}%
+\contentsline {subsection}{\numberline {6.8.1}Gauges}{404}{subsection.6.8.1}%
+\contentsline {subsection}{\numberline {6.8.2}Tensor de energ'ia-momentum del campo gravitacional: con gauges, en el vac'io}{406}{subsection.6.8.2}%
+\contentsline {subsubsection}{\numberline {6.8.2.1}Potencia Radiada: gauge de TT en zona de radiaci'on}{408}{subsubsection.6.8.2.1}%
+\contentsline {section}{\numberline {6.9}F'ormula cuadrupolar para la potencia radiada}{412}{section.6.9}%
+\contentsline {subsection}{\numberline {6.9.1}Transformaci'on de una onda plana}{413}{subsection.6.9.1}%
+\contentsline {subsection}{\numberline {6.9.2}Transformaci'on de ondas esf'ericas en la zona de radiaci'on}{417}{subsection.6.9.2}%
+\contentsline {subsection}{\numberline {6.9.3}Ejemplo: Potencia radiada por un sistema binario}{423}{subsection.6.9.3}%
+\contentsline {chapter}{\numberline {7}Elementos de Cosmolog'ia ***PRELIMINAR***}{436}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Espacios de Curvatura constante}{440}{section.7.1}%
+\contentsline {section}{\numberline {7.2}La m'etrica de Friedman-Lema\^itre-Robertson-Walker}{444}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Observadores com'oviles}{448}{section.7.3}%
+\contentsline {section}{\numberline {7.4}Redshift Cosmol'ogico}{450}{section.7.4}%
+\contentsline {section}{\numberline {7.5}Definiciones de Distancia}{457}{section.7.5}%
+\contentsline {subsection}{\numberline {7.5.1}Paralaje Trigonom'etrico}{457}{subsection.7.5.1}%
+\contentsline {subsection}{\numberline {7.5.2}Movimiento Propio}{459}{subsection.7.5.2}%
+\contentsline {subsection}{\numberline {7.5.3}Luminosidad Aparente}{460}{subsection.7.5.3}%
+\contentsline {subsection}{\numberline {7.5.4}Velas Estandar}{463}{subsection.7.5.4}%
+\contentsline {paragraph}{\numberline {7.5.4.0.1}Cefeidas Variables:}{463}{paragraph.7.5.4.0.1}%
+\contentsline {paragraph}{\numberline {7.5.4.0.2}Supernova Ia:}{466}{paragraph.7.5.4.0.2}%
+\contentsline {subsection}{\numberline {7.5.5}Distancia de Luminosidad}{466}{subsection.7.5.5}%
+\contentsline {subsection}{\numberline {7.5.6}Distancia Angular}{473}{subsection.7.5.6}%
+\contentsline {section}{\numberline {7.6}Ecuaciones de Einstein}{476}{section.7.6}%
+\contentsline {section}{\numberline {7.7}Datos experimentales, Modelos y Ajustes}{491}{section.7.7}%
+\contentsline {chapter}{\numberline {8}Campo Gravitomagn\'etico ***PRELIMINAR***}{512}{chapter.8}%
+\contentsline {section}{\numberline {8.1}Introducci'on}{513}{section.8.1}%
+\contentsline {section}{\numberline {8.2}Caso de una distribuci'on de materia no-relativista sin presi'on}{515}{section.8.2}%
+\contentsline {section}{\numberline {8.3}Ecuaci'on de la geod'esica para un cuerpo masivo en t'erminos de los potenciales gravitomagn'eticos.}{519}{section.8.3}%
+\contentsline {subsection}{\numberline {8.3.1}Ecuaci'on del movimiento de una part'icula ligada no-relativista y definici'on de los campos gravitomagn'eticos}{523}{subsection.8.3.1}%
+\contentsline {subsection}{\numberline {8.3.2}Forma de Maxwell de las Ecuaciones del campo gravitacional*}{529}{subsection.8.3.2}%
+\contentsline {section}{\numberline {8.4}Campo gravitomagn'etico producido por una distribuci'on de masa esf'ericamente sim'etrica y estacionaria que rota lentamente en torno a un eje fijo.}{535}{section.8.4}%
+\contentsline {subsection}{\numberline {8.4.1}Geometr'ia del espaciotiempo fuera de la distribuci'on de masa esf'erica rotante}{545}{subsection.8.4.1}%
+\contentsline {section}{\numberline {8.5}Estudio de 'orbitas y resoluci'on perturbativa de la ecuaci'on del movimiento para una part'icula ligada y no-relativista en el espaciotiempo fuera de una esfera rotante.}{548}{section.8.5}%
+\contentsline {section}{\numberline {8.6}Precesi'on Relativista de Gir'oscopos}{549}{section.8.6}%
+\contentsline {subsection}{\numberline {8.6.1}Gir'oscopos y 4-vector de spin}{549}{subsection.8.6.1}%
+\contentsline {subsection}{\numberline {8.6.2}Determinaci'on de la velocidad angular de precesi'on del spin de un gir'oscopo movi'endose en una geod'esica bajo la acci'on del campo gravitomagn'etico.}{553}{subsection.8.6.2}%
+\contentsline {subsection}{\numberline {8.6.3}Predicci'on para un gir'oscopo que orbita la Tierra y que intenta medir el GPB}{563}{subsection.8.6.3}%
+\contentsline {chapter}{\numberline {9}Equilibrio Estelar Newtoniano}{570}{chapter.9}%
+\contentsline {section}{\numberline {9.1}Ecuaciones de equilibrio}{571}{section.9.1}%
+\contentsline {section}{\numberline {9.2}Resolviendo las ecuaciones de estructura}{574}{section.9.2}%
+\contentsline {section}{\numberline {9.3}Solución: Densidad constante}{577}{section.9.3}%
+\contentsline {subsection}{\numberline {9.3.1}Obteniendo la presión $P(r)$}{577}{subsection.9.3.1}%
+\contentsline {subsection}{\numberline {9.3.2}Validez de la descripción newtoniana}{580}{subsection.9.3.2}%
+\contentsline {section}{\numberline {9.4}Solución: Estrellas politrópicas}{583}{section.9.4}%
+\contentsline {subsection}{\numberline {9.4.1}Ecuación de Lane-Emden}{583}{subsection.9.4.1}%
+\contentsline {subsection}{\numberline {9.4.2}Propiedades físicas de las funciones de Lane-Emden}{588}{subsection.9.4.2}%
+\contentsline {subsubsection}{\numberline {9.4.2.1}Radio estelar politrópico}{589}{subsubsection.9.4.2.1}%
+\contentsline {subsubsection}{\numberline {9.4.2.2}Masa estelar politrópica}{591}{subsubsection.9.4.2.2}%
+\contentsline {subsubsection}{\numberline {9.4.2.3}Relación Masa-Radio}{594}{subsubsection.9.4.2.3}%
+\contentsline {subsubsection}{\numberline {9.4.2.4}Densidad central y media *}{596}{subsubsection.9.4.2.4}%
+\contentsline {subsection}{\numberline {9.4.3}Soluciones exactas de la ecuación de Lane-Emden}{598}{subsection.9.4.3}%
+\contentsline {subsubsection}{\numberline {9.4.3.1}Caso $n=0$}{598}{subsubsection.9.4.3.1}%
+\contentsline {subsubsection}{\numberline {9.4.3.2}Caso $n=1$}{601}{subsubsection.9.4.3.2}%
+\contentsline {subsubsection}{\numberline {9.4.3.3}Caso $n=5$}{603}{subsubsection.9.4.3.3}%
+\contentsline {subsection}{\numberline {9.4.4}Soluciones numéricas de la ecuación de Lane-Emden}{610}{subsection.9.4.4}%
+\contentsline {subsection}{\numberline {9.4.5}Comportamiento físico de algunas soluciones particulares}{617}{subsection.9.4.5}%
+\contentsline {subsubsection}{\numberline {9.4.5.1}Determinación de parámetros estelares en función de $M$, $R$ y $\gamma $}{627}{subsubsection.9.4.5.1}%
+\contentsline {section}{\numberline {9.5}Solución exacta para gas de Fermi}{632}{section.9.5}%
+\contentsline {subsection}{\numberline {9.5.1}Ecuación de estructura de Fermi}{633}{subsection.9.5.1}%
+\contentsline {subsection}{\numberline {9.5.2}Propiedades físicas de la ecuación de estructura de Fermi}{637}{subsection.9.5.2}%
+\contentsline {subsubsection}{\numberline {9.5.2.1}Radio de la estrella}{637}{subsubsection.9.5.2.1}%
+\contentsline {subsubsection}{\numberline {9.5.2.2}Masa de la estrella}{639}{subsubsection.9.5.2.2}%
+\contentsline {subsubsection}{\numberline {9.5.2.3}Densidad central y media}{642}{subsubsection.9.5.2.3}%
+\contentsline {subsection}{\numberline {9.5.3}Casos límite de las soluciones}{647}{subsection.9.5.3}%
+\contentsline {subsubsection}{\numberline {9.5.3.1}Aproximación de bajas densidades}{647}{subsubsection.9.5.3.1}%
+\contentsline {subsubsection}{\numberline {9.5.3.2}Aproximación de altas densidades: Masa límite}{656}{subsubsection.9.5.3.2}%
+\contentsline {subsection}{\numberline {9.5.4}Solución numérica de la ecuación de estructura de Fermi}{661}{subsection.9.5.4}%
+\contentsline {section}{\numberline {9.6}Aplicación: Estrellas degeneradas}{667}{section.9.6}%
+\contentsline {subsection}{\numberline {9.6.1}Enanas blancas}{667}{subsection.9.6.1}%
+\contentsline {subsubsection}{\numberline {9.6.1.1}Masas y Radios}{669}{subsubsection.9.6.1.1}%
+\contentsline {subsubsection}{\numberline {9.6.1.2}Gráficos y comparación entre modelos exactos y aproximados}{675}{subsubsection.9.6.1.2}%
+\contentsline {subsection}{\numberline {9.6.2}Estrellas de neutrones}{681}{subsection.9.6.2}%
+\contentsline {subsubsection}{\numberline {9.6.2.1}Masas y Radios}{683}{subsubsection.9.6.2.1}%
+\contentsline {subsubsection}{\numberline {9.6.2.2}Gráficos}{688}{subsubsection.9.6.2.2}%
+\contentsline {chapter}{\numberline {10}Equilibrio Estelar Relativista}{693}{chapter.10}%
+\contentsline {section}{\numberline {10.1}Métrica de Schwarzschild interna}{694}{section.10.1}%
+\contentsline {subsection}{\numberline {10.1.1}Ecuaciones de Einstein para un fluido ideal}{694}{subsection.10.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.1.1}Tensor energía-momentum de un fluido ideal}{694}{subsubsection.10.1.1.1}%
+\contentsline {subsubsection}{\numberline {10.1.1.2}Ecuaciones a resolver y procedimiento}{697}{subsubsection.10.1.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.1.3}Obtención del coeficiente métrico $\beta $}{699}{subsubsection.10.1.1.3}%
+\contentsline {subsubsection}{\numberline {10.1.1.4}Obtención del coeficiente métrico $\alpha '$}{702}{subsubsection.10.1.1.4}%
+\contentsline {subsubsection}{\numberline {10.1.1.5}Obtención de la ecuación T.O.V. para $P'$}{705}{subsubsection.10.1.1.5}%
+\contentsline {subsubsection}{\numberline {10.1.1.6}Obtención del coeficiente métrico $\alpha $}{708}{subsubsection.10.1.1.6}%
+\contentsline {subsection}{\numberline {10.1.2}Métrica de Schwarzschild interior}{711}{subsection.10.1.2}%
+\contentsline {subsubsection}{\numberline {10.1.2.1}Schwarzschild interior y exterior}{712}{subsubsection.10.1.2.1}%
+\contentsline {section}{\numberline {10.2}Ecuación de Tolman-Oppenheimer-Volkoff}{715}{section.10.2}%
+\contentsline {subsection}{\numberline {10.2.1}Ecuaciones de Estructura Estelar}{715}{subsection.10.2.1}%
+\contentsline {subsection}{\numberline {10.2.2}Propiedades de la ecuación TOV}{717}{subsection.10.2.2}%
+\contentsline {section}{\numberline {10.3}Solución: Densidad constante}{721}{section.10.3}%
+\contentsline {subsection}{\numberline {10.3.1}Obteniendo la presión $P(r)$ relativista}{721}{subsection.10.3.1}%
+\contentsline {subsubsection}{\numberline {10.3.1.1}Límite newtoniano}{724}{subsubsection.10.3.1.1}%
+\contentsline {subsection}{\numberline {10.3.2}Obteniendo los coeficientes métricos}{726}{subsection.10.3.2}%
+\contentsline {subsection}{\numberline {10.3.3}Estabilidad de la solución}{730}{subsection.10.3.3}%
+\contentsline {section}{\numberline {10.4}Solución numérica para gas ideal de Fermi}{733}{section.10.4}%
+\contentsline {subsection}{\numberline {10.4.1}Reducción de las ecuaciones a la forma de OV}{733}{subsection.10.4.1}%
+\contentsline {subsection}{\numberline {10.4.2}Método y Gráficos}{740}{subsection.10.4.2}%
+\contentsline {chapter}{\numberline {A}Problema de Kepler Newtoniano}{746}{appendix.Alph1}%
+\contentsline {chapter}{\numberline {B}Nociones de Termodinámica}{765}{appendix.Alph2}%
+\contentsline {section}{\numberline {B.1}Primera ley de la Termodinámica}{766}{section.Alph2.1}%
+\contentsline {section}{\numberline {B.2}Ecuación de estado adiabática o politrópica}{770}{section.Alph2.2}%
+\contentsline {section}{\numberline {B.3}Involucrando la Temperatura y Entropía}{773}{section.Alph2.3}%
+\contentsline {section}{\numberline {B.4}Ecuaciones de estado de Fermi}{776}{section.Alph2.4}%
+\contentsline {subsection}{\numberline {B.4.1}Definiciones estadísticas}{776}{subsection.Alph2.4.1}%
+\contentsline {subsection}{\numberline {B.4.2}Función de distribución de Fermi}{780}{subsection.Alph2.4.2}%
+\contentsline {subsection}{\numberline {B.4.3}Ecuación de estado de Fermi exacta}{781}{subsection.Alph2.4.3}%
+\contentsline {subsubsection}{\numberline {B.4.3.1}Densidad numérica y densidad propia de masa}{781}{subsubsection.Alph2.4.3.1}%
+\contentsline {subsubsection}{\numberline {B.4.3.2}Calculando la presión y densidad de energía}{783}{subsubsection.Alph2.4.3.2}%
+\contentsline {subsubsection}{\numberline {B.4.3.3}Obtención de la ecuación de estado explícita}{792}{subsubsection.Alph2.4.3.3}%
+\contentsline {subsection}{\numberline {B.4.4}Ecuaciones de estado de Fermi aproximadas}{794}{subsection.Alph2.4.4}%
+\contentsline {chapter}{\numberline {C}Enanas Blancas y Estrellas de Neutrones: Rese\~na Hist'orica}{803}{appendix.Alph3}%
+\contentsline {chapter}{\numberline {D}Constantes F'isicas (S.I.)}{810}{appendix.Alph4}%
+\contentsline {chapter}{Bibliograf'ia}{812}{appendix*.3}%
